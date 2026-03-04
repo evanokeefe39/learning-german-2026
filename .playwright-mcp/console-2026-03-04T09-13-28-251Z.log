@@ -1,0 +1,14 @@
+[   63079ms] [WARNING] VIDEOJS: WARN: videojs.plugin() is deprecated; use videojs.registerPlugin() instead @ https://cdn.rollbar.com/rollbarjs/refs/tags/v2.26.2/rollbar.min.js:0
+[   63151ms] [WARNING] Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently @ https://www.blinklearning.com/libs/paper/paper-full.min.js?gestioneu00000253001:36
+[   65314ms] [WARNING] Your server has not been configured to serve WebAssembly threads. See https://docs.apryse.com/documentation/web/faq/wasm-threads for instructions on how to resolve this. @ https://www.blinklearning.com/libs/pdfTron/10.6/lib/core/webviewer-core.min.js:241
+[  241967ms] [WARNING] VIDEOJS: WARN: videojs.plugin() is deprecated; use videojs.registerPlugin() instead @ https://www.blinklearning.com/themes/responsive/assets/js/vendor/vendor.min.js?gestioneu00000253001:20759
+[  242088ms] [WARNING] Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently @ https://www.blinklearning.com/libs/paper/paper-full.min.js?gestioneu00000253001:36
+[  259380ms] [WARNING] VIDEOJS: WARN: videojs.plugin() is deprecated; use videojs.registerPlugin() instead @ https://cdn.rollbar.com/rollbarjs/refs/tags/v2.26.2/rollbar.min.js:0
+[  259431ms] [WARNING] Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently @ https://www.blinklearning.com/libs/paper/paper-full.min.js?gestioneu00000253001:36
+[  261785ms] [WARNING] Your server has not been configured to serve WebAssembly threads. See https://docs.apryse.com/documentation/web/faq/wasm-threads for instructions on how to resolve this. @ https://www.blinklearning.com/libs/pdfTron/10.6/lib/core/webviewer-core.min.js:241
+[  269432ms] [WARNING] [object Object] not found in queue @ https://www.blinklearning.com/libs/pdfTron/10.6/lib/core/webviewer-core.min.js:241
+[  269432ms] [WARNING] [object Object] not found in queue @ https://www.blinklearning.com/libs/pdfTron/10.6/lib/core/webviewer-core.min.js:241
+[  269432ms] [WARNING] [object Object] not found in queue @ https://www.blinklearning.com/libs/pdfTron/10.6/lib/core/webviewer-core.min.js:241
+[  269433ms] [WARNING] [object Object] not found in queue @ https://www.blinklearning.com/libs/pdfTron/10.6/lib/core/webviewer-core.min.js:241
+[  269433ms] [WARNING] [object Object] not found in queue @ https://www.blinklearning.com/libs/pdfTron/10.6/lib/core/webviewer-core.min.js:241
+[  269433ms] [WARNING] [object Object] not found in queue @ https://www.blinklearning.com/libs/pdfTron/10.6/lib/core/webviewer-core.min.js:241

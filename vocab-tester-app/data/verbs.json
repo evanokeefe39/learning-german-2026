@@ -1,27 +1,2687 @@
 [
-  {"chapter":7,"infinitive":"fahren","english":"to drive/travel","type":"irregular","stemChangePattern":"a->ä","conjugation":{"ich":"fahre","du":"fährst","er/sie/es":"fährt","wir":"fahren","ihr":"fahrt","sie/Sie":"fahren"}},
-  {"chapter":7,"infinitive":"weiterfahren","english":"to continue driving","type":"irregular","stemChangePattern":"a->ä (separable)","conjugation":{"ich":"fahre weiter","du":"fährst weiter","er/sie/es":"fährt weiter","wir":"fahren weiter","ihr":"fahrt weiter","sie/Sie":"fahren weiter"}},
-  {"chapter":7,"infinitive":"nehmen","english":"to take","type":"irregular","stemChangePattern":"e->i (+consonant change)","conjugation":{"ich":"nehme","du":"nimmst","er/sie/es":"nimmt","wir":"nehmen","ihr":"nehmt","sie/Sie":"nehmen"}},
-  {"chapter":7,"infinitive":"sprechen","english":"to speak","type":"irregular","stemChangePattern":"e->i","conjugation":{"ich":"spreche","du":"sprichst","er/sie/es":"spricht","wir":"sprechen","ihr":"sprecht","sie/Sie":"sprechen"}},
-  {"chapter":7,"infinitive":"lesen","english":"to read","type":"irregular","stemChangePattern":"e->ie","conjugation":{"ich":"lese","du":"liest","er/sie/es":"liest","wir":"lesen","ihr":"lest","sie/Sie":"lesen"}},
-  {"chapter":7,"infinitive":"wollen","english":"to want to","type":"modal","stemChangePattern":"modal (irregular)","conjugation":{"ich":"will","du":"willst","er/sie/es":"will","wir":"wollen","ihr":"wollt","sie/Sie":"wollen"}},
-  {"chapter":7,"infinitive":"können","english":"can / to be able to","type":"modal","stemChangePattern":"modal (irregular)","conjugation":{"ich":"kann","du":"kannst","er/sie/es":"kann","wir":"können","ihr":"könnt","sie/Sie":"können"}},
-  {"chapter":7,"infinitive":"mögen","english":"to like","type":"modal","stemChangePattern":"modal (irregular)","conjugation":{"ich":"mag","du":"magst","er/sie/es":"mag","wir":"mögen","ihr":"mögt","sie/Sie":"mögen"}},
-  {"chapter":7,"infinitive":"möchten","english":"would like to","type":"modal","stemChangePattern":"modal (subjunctive)","conjugation":{"ich":"möchte","du":"möchtest","er/sie/es":"möchte","wir":"möchten","ihr":"möchtet","sie/Sie":"möchten"}},
-  {"chapter":7,"infinitive":"nutzen","english":"to use","type":"regular","stemChangePattern":"none","conjugation":{"ich":"nutze","du":"nutzt","er/sie/es":"nutzt","wir":"nutzen","ihr":"nutzt","sie/Sie":"nutzen"}},
-  {"chapter":7,"infinitive":"fliegen","english":"to fly","type":"regular","stemChangePattern":"none","conjugation":{"ich":"fliege","du":"fliegst","er/sie/es":"fliegt","wir":"fliegen","ihr":"fliegt","sie/Sie":"fliegen"}},
-  {"chapter":7,"infinitive":"stehen","english":"to stand","type":"regular","stemChangePattern":"none","conjugation":{"ich":"stehe","du":"stehst","er/sie/es":"steht","wir":"stehen","ihr":"steht","sie/Sie":"stehen"}},
-  {"chapter":7,"infinitive":"liegen","english":"to lie/be situated","type":"regular","stemChangePattern":"none","conjugation":{"ich":"liege","du":"liegst","er/sie/es":"liegt","wir":"liegen","ihr":"liegt","sie/Sie":"liegen"}},
-  {"chapter":7,"infinitive":"haben","english":"to have","type":"irregular","stemChangePattern":"irregular (du/er)","conjugation":{"ich":"habe","du":"hast","er/sie/es":"hat","wir":"haben","ihr":"habt","sie/Sie":"haben"}},
-  {"chapter":7,"infinitive":"finden","english":"to find","type":"regular","stemChangePattern":"none","conjugation":{"ich":"finde","du":"findest","er/sie/es":"findet","wir":"finden","ihr":"findet","sie/Sie":"finden"}},
-  {"chapter":7,"infinitive":"bleiben","english":"to stay","type":"regular","stemChangePattern":"none","conjugation":{"ich":"bleibe","du":"bleibst","er/sie/es":"bleibt","wir":"bleiben","ihr":"bleibt","sie/Sie":"bleiben"}},
-  {"chapter":7,"infinitive":"klingen","english":"to sound","type":"regular","stemChangePattern":"none","conjugation":{"ich":"klinge","du":"klingst","er/sie/es":"klingt","wir":"klingen","ihr":"klingt","sie/Sie":"klingen"}},
-  {"chapter":7,"infinitive":"regnen","english":"to rain","type":"regular","stemChangePattern":"none","conjugation":{"ich":"regne","du":"regnest","er/sie/es":"regnet","wir":"regnen","ihr":"regnet","sie/Sie":"regnen"}},
-  {"chapter":7,"infinitive":"schneien","english":"to snow","type":"regular","stemChangePattern":"none","conjugation":{"ich":"schneie","du":"schneist","er/sie/es":"schneit","wir":"schneien","ihr":"schneit","sie/Sie":"schneien"}},
-  {"chapter":7,"infinitive":"scheinen","english":"to shine","type":"regular","stemChangePattern":"none","conjugation":{"ich":"scheine","du":"scheinst","er/sie/es":"scheint","wir":"scheinen","ihr":"scheint","sie/Sie":"scheinen"}},
-  {"chapter":7,"infinitive":"kosten","english":"to cost","type":"regular","stemChangePattern":"none","conjugation":{"ich":"koste","du":"kostest","er/sie/es":"kostet","wir":"kosten","ihr":"kostet","sie/Sie":"kosten"}},
-  {"chapter":7,"infinitive":"dauern","english":"to last/take (time)","type":"regular","stemChangePattern":"none","conjugation":{"ich":"dauere","du":"dauerst","er/sie/es":"dauert","wir":"dauern","ihr":"dauert","sie/Sie":"dauern"}},
-  {"chapter":7,"infinitive":"ankommen","english":"to arrive","type":"regular","stemChangePattern":"none (separable)","conjugation":{"ich":"komme an","du":"kommst an","er/sie/es":"kommt an","wir":"kommen an","ihr":"kommt an","sie/Sie":"kommen an"}},
-  {"chapter":7,"infinitive":"aussteigen","english":"to get out/off","type":"regular","stemChangePattern":"none (separable)","conjugation":{"ich":"steige aus","du":"steigst aus","er/sie/es":"steigt aus","wir":"steigen aus","ihr":"steigt aus","sie/Sie":"steigen aus"}},
-  {"chapter":7,"infinitive":"einsteigen","english":"to get in/on","type":"regular","stemChangePattern":"none (separable)","conjugation":{"ich":"steige ein","du":"steigst ein","er/sie/es":"steigt ein","wir":"steigen ein","ihr":"steigt ein","sie/Sie":"steigen ein"}}
+  {
+    "chapter": 1,
+    "infinitive": "heißen",
+    "english": "to be called",
+    "type": "irregular",
+    "stemChangePattern": "stem ending -ß (no -st)",
+    "conjugation": {
+      "ich": "heiße",
+      "du": "heißt",
+      "er/sie/es": "heißt",
+      "wir": "heißen",
+      "ihr": "heißt",
+      "sie/Sie": "heißen"
+    }
+  },
+  {
+    "chapter": 1,
+    "infinitive": "sein",
+    "english": "to be",
+    "type": "irregular",
+    "stemChangePattern": "fully irregular",
+    "conjugation": {
+      "ich": "bin",
+      "du": "bist",
+      "er/sie/es": "ist",
+      "wir": "sind",
+      "ihr": "seid",
+      "sie/Sie": "sind"
+    }
+  },
+  {
+    "chapter": 1,
+    "infinitive": "kommen",
+    "english": "to come",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "komme",
+      "du": "kommst",
+      "er/sie/es": "kommt",
+      "wir": "kommen",
+      "ihr": "kommt",
+      "sie/Sie": "kommen"
+    }
+  },
+  {
+    "chapter": 1,
+    "infinitive": "wohnen",
+    "english": "to live (reside)",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "wohne",
+      "du": "wohnst",
+      "er/sie/es": "wohnt",
+      "wir": "wohnen",
+      "ihr": "wohnt",
+      "sie/Sie": "wohnen"
+    }
+  },
+  {
+    "chapter": 1,
+    "infinitive": "sprechen",
+    "english": "to speak",
+    "type": "irregular",
+    "stemChangePattern": "e->i",
+    "conjugation": {
+      "ich": "spreche",
+      "du": "sprichst",
+      "er/sie/es": "spricht",
+      "wir": "sprechen",
+      "ihr": "sprecht",
+      "sie/Sie": "sprechen"
+    }
+  },
+  {
+    "chapter": 1,
+    "infinitive": "lernen",
+    "english": "to learn",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "lerne",
+      "du": "lernst",
+      "er/sie/es": "lernt",
+      "wir": "lernen",
+      "ihr": "lernt",
+      "sie/Sie": "lernen"
+    }
+  },
+  {
+    "chapter": 1,
+    "infinitive": "spielen",
+    "english": "to play",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "spiele",
+      "du": "spielst",
+      "er/sie/es": "spielt",
+      "wir": "spielen",
+      "ihr": "spielt",
+      "sie/Sie": "spielen"
+    }
+  },
+  {
+    "chapter": 1,
+    "infinitive": "machen",
+    "english": "to do/make",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "mache",
+      "du": "machst",
+      "er/sie/es": "macht",
+      "wir": "machen",
+      "ihr": "macht",
+      "sie/Sie": "machen"
+    }
+  },
+  {
+    "chapter": 1,
+    "infinitive": "hören",
+    "english": "to hear/listen",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "höre",
+      "du": "hörst",
+      "er/sie/es": "hört",
+      "wir": "hören",
+      "ihr": "hört",
+      "sie/Sie": "hören"
+    }
+  },
+  {
+    "chapter": 1,
+    "infinitive": "tanzen",
+    "english": "to dance",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "tanze",
+      "du": "tanzt",
+      "er/sie/es": "tanzt",
+      "wir": "tanzen",
+      "ihr": "tanzt",
+      "sie/Sie": "tanzen"
+    }
+  },
+  {
+    "chapter": 1,
+    "infinitive": "fotografieren",
+    "english": "to photograph",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "fotografiere",
+      "du": "fotografierst",
+      "er/sie/es": "fotografiert",
+      "wir": "fotografieren",
+      "ihr": "fotografiert",
+      "sie/Sie": "fotografieren"
+    }
+  },
+  {
+    "chapter": 1,
+    "infinitive": "buchstabieren",
+    "english": "to spell",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "buchstabiere",
+      "du": "buchstabierst",
+      "er/sie/es": "buchstabiert",
+      "wir": "buchstabieren",
+      "ihr": "buchstabiert",
+      "sie/Sie": "buchstabieren"
+    }
+  },
+  {
+    "chapter": 1,
+    "infinitive": "ergänzen",
+    "english": "to complete/fill in",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "ergänze",
+      "du": "ergänzt",
+      "er/sie/es": "ergänzt",
+      "wir": "ergänzen",
+      "ihr": "ergänzt",
+      "sie/Sie": "ergänzen"
+    }
+  },
+  {
+    "chapter": 1,
+    "infinitive": "haben",
+    "english": "to have",
+    "type": "irregular",
+    "stemChangePattern": "irregular (du/er)",
+    "conjugation": {
+      "ich": "habe",
+      "du": "hast",
+      "er/sie/es": "hat",
+      "wir": "haben",
+      "ihr": "habt",
+      "sie/Sie": "haben"
+    }
+  },
+  {
+    "chapter": 1,
+    "infinitive": "kennen",
+    "english": "to know (be familiar with)",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "kenne",
+      "du": "kennst",
+      "er/sie/es": "kennt",
+      "wir": "kennen",
+      "ihr": "kennt",
+      "sie/Sie": "kennen"
+    }
+  },
+  {
+    "chapter": 2,
+    "infinitive": "arbeiten",
+    "english": "to work",
+    "type": "regular",
+    "stemChangePattern": "stem ending -t (extra e)",
+    "conjugation": {
+      "ich": "arbeite",
+      "du": "arbeitest",
+      "er/sie/es": "arbeitet",
+      "wir": "arbeiten",
+      "ihr": "arbeitet",
+      "sie/Sie": "arbeiten"
+    }
+  },
+  {
+    "chapter": 2,
+    "infinitive": "kochen",
+    "english": "to cook",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "koche",
+      "du": "kochst",
+      "er/sie/es": "kocht",
+      "wir": "kochen",
+      "ihr": "kocht",
+      "sie/Sie": "kochen"
+    }
+  },
+  {
+    "chapter": 2,
+    "infinitive": "lesen",
+    "english": "to read",
+    "type": "irregular",
+    "stemChangePattern": "e->ie",
+    "conjugation": {
+      "ich": "lese",
+      "du": "liest",
+      "er/sie/es": "liest",
+      "wir": "lesen",
+      "ihr": "lest",
+      "sie/Sie": "lesen"
+    }
+  },
+  {
+    "chapter": 2,
+    "infinitive": "schreiben",
+    "english": "to write",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "schreibe",
+      "du": "schreibst",
+      "er/sie/es": "schreibt",
+      "wir": "schreiben",
+      "ihr": "schreibt",
+      "sie/Sie": "schreiben"
+    }
+  },
+  {
+    "chapter": 2,
+    "infinitive": "malen",
+    "english": "to paint/draw",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "male",
+      "du": "malst",
+      "er/sie/es": "malt",
+      "wir": "malen",
+      "ihr": "malt",
+      "sie/Sie": "malen"
+    }
+  },
+  {
+    "chapter": 2,
+    "infinitive": "telefonieren",
+    "english": "to make a phone call",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "telefoniere",
+      "du": "telefonierst",
+      "er/sie/es": "telefoniert",
+      "wir": "telefonieren",
+      "ihr": "telefoniert",
+      "sie/Sie": "telefonieren"
+    }
+  },
+  {
+    "chapter": 2,
+    "infinitive": "präsentieren",
+    "english": "to present",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "präsentiere",
+      "du": "präsentierst",
+      "er/sie/es": "präsentiert",
+      "wir": "präsentieren",
+      "ihr": "präsentiert",
+      "sie/Sie": "präsentieren"
+    }
+  },
+  {
+    "chapter": 2,
+    "infinitive": "entwickeln",
+    "english": "to develop",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "entwickle",
+      "du": "entwickelst",
+      "er/sie/es": "entwickelt",
+      "wir": "entwickeln",
+      "ihr": "entwickelt",
+      "sie/Sie": "entwickeln"
+    }
+  },
+  {
+    "chapter": 2,
+    "infinitive": "schwimmen",
+    "english": "to swim",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "schwimme",
+      "du": "schwimmst",
+      "er/sie/es": "schwimmt",
+      "wir": "schwimmen",
+      "ihr": "schwimmt",
+      "sie/Sie": "schwimmen"
+    }
+  },
+  {
+    "chapter": 2,
+    "infinitive": "brauchen",
+    "english": "to need",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "brauche",
+      "du": "brauchst",
+      "er/sie/es": "braucht",
+      "wir": "brauchen",
+      "ihr": "braucht",
+      "sie/Sie": "brauchen"
+    }
+  },
+  {
+    "chapter": 2,
+    "infinitive": "suchen",
+    "english": "to search/look for",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "suche",
+      "du": "suchst",
+      "er/sie/es": "sucht",
+      "wir": "suchen",
+      "ihr": "sucht",
+      "sie/Sie": "suchen"
+    }
+  },
+  {
+    "chapter": 2,
+    "infinitive": "haben",
+    "english": "to have",
+    "type": "irregular",
+    "stemChangePattern": "irregular (du/er)",
+    "conjugation": {
+      "ich": "habe",
+      "du": "hast",
+      "er/sie/es": "hat",
+      "wir": "haben",
+      "ihr": "habt",
+      "sie/Sie": "haben"
+    }
+  },
+  {
+    "chapter": 2,
+    "infinitive": "sein",
+    "english": "to be",
+    "type": "irregular",
+    "stemChangePattern": "fully irregular",
+    "conjugation": {
+      "ich": "bin",
+      "du": "bist",
+      "er/sie/es": "ist",
+      "wir": "sind",
+      "ihr": "seid",
+      "sie/Sie": "sind"
+    }
+  },
+  {
+    "chapter": 2,
+    "infinitive": "sprechen",
+    "english": "to speak",
+    "type": "irregular",
+    "stemChangePattern": "e->i",
+    "conjugation": {
+      "ich": "spreche",
+      "du": "sprichst",
+      "er/sie/es": "spricht",
+      "wir": "sprechen",
+      "ihr": "sprecht",
+      "sie/Sie": "sprechen"
+    }
+  },
+  {
+    "chapter": 2,
+    "infinitive": "fahren",
+    "english": "to drive/travel",
+    "type": "irregular",
+    "stemChangePattern": "a->ä",
+    "conjugation": {
+      "ich": "fahre",
+      "du": "fährst",
+      "er/sie/es": "fährt",
+      "wir": "fahren",
+      "ihr": "fahrt",
+      "sie/Sie": "fahren"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "essen",
+    "english": "to eat",
+    "type": "irregular",
+    "stemChangePattern": "e->i",
+    "conjugation": {
+      "ich": "esse",
+      "du": "isst",
+      "er/sie/es": "isst",
+      "wir": "essen",
+      "ihr": "esst",
+      "sie/Sie": "essen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "trinken",
+    "english": "to drink",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "trinke",
+      "du": "trinkst",
+      "er/sie/es": "trinkt",
+      "wir": "trinken",
+      "ihr": "trinkt",
+      "sie/Sie": "trinken"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "nehmen",
+    "english": "to take",
+    "type": "irregular",
+    "stemChangePattern": "e->i (+consonant change)",
+    "conjugation": {
+      "ich": "nehme",
+      "du": "nimmst",
+      "er/sie/es": "nimmt",
+      "wir": "nehmen",
+      "ihr": "nehmt",
+      "sie/Sie": "nehmen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "bestellen",
+    "english": "to order",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "bestelle",
+      "du": "bestellst",
+      "er/sie/es": "bestellt",
+      "wir": "bestellen",
+      "ihr": "bestellt",
+      "sie/Sie": "bestellen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "bezahlen",
+    "english": "to pay",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "bezahle",
+      "du": "bezahlst",
+      "er/sie/es": "bezahlt",
+      "wir": "bezahlen",
+      "ihr": "bezahlt",
+      "sie/Sie": "bezahlen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "zahlen",
+    "english": "to pay",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "zahle",
+      "du": "zahlst",
+      "er/sie/es": "zahlt",
+      "wir": "zahlen",
+      "ihr": "zahlt",
+      "sie/Sie": "zahlen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "bekommen",
+    "english": "to get/receive",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "bekomme",
+      "du": "bekommst",
+      "er/sie/es": "bekommt",
+      "wir": "bekommen",
+      "ihr": "bekommt",
+      "sie/Sie": "bekommen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "empfehlen",
+    "english": "to recommend",
+    "type": "irregular",
+    "stemChangePattern": "e->ie",
+    "conjugation": {
+      "ich": "empfehle",
+      "du": "empfiehlst",
+      "er/sie/es": "empfiehlt",
+      "wir": "empfehlen",
+      "ihr": "empfehlt",
+      "sie/Sie": "empfehlen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "möchten",
+    "english": "would like to",
+    "type": "modal",
+    "stemChangePattern": "modal (subjunctive)",
+    "conjugation": {
+      "ich": "möchte",
+      "du": "möchtest",
+      "er/sie/es": "möchte",
+      "wir": "möchten",
+      "ihr": "möchtet",
+      "sie/Sie": "möchten"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "mögen",
+    "english": "to like",
+    "type": "modal",
+    "stemChangePattern": "modal (irregular)",
+    "conjugation": {
+      "ich": "mag",
+      "du": "magst",
+      "er/sie/es": "mag",
+      "wir": "mögen",
+      "ihr": "mögt",
+      "sie/Sie": "mögen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "kosten",
+    "english": "to cost",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "koste",
+      "du": "kostest",
+      "er/sie/es": "kostet",
+      "wir": "kosten",
+      "ihr": "kostet",
+      "sie/Sie": "kosten"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "schmecken",
+    "english": "to taste",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "schmecke",
+      "du": "schmeckst",
+      "er/sie/es": "schmeckt",
+      "wir": "schmecken",
+      "ihr": "schmeckt",
+      "sie/Sie": "schmecken"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "brauchen",
+    "english": "to need",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "brauche",
+      "du": "brauchst",
+      "er/sie/es": "braucht",
+      "wir": "brauchen",
+      "ihr": "braucht",
+      "sie/Sie": "brauchen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "kaufen",
+    "english": "to buy",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "kaufe",
+      "du": "kaufst",
+      "er/sie/es": "kauft",
+      "wir": "kaufen",
+      "ihr": "kauft",
+      "sie/Sie": "kaufen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "einkaufen",
+    "english": "to shop/go shopping",
+    "type": "regular",
+    "stemChangePattern": "none (separable)",
+    "conjugation": {
+      "ich": "kaufe ein",
+      "du": "kaufst ein",
+      "er/sie/es": "kauft ein",
+      "wir": "kaufen ein",
+      "ihr": "kauft ein",
+      "sie/Sie": "kaufen ein"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "verkaufen",
+    "english": "to sell",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "verkaufe",
+      "du": "verkaufst",
+      "er/sie/es": "verkauft",
+      "wir": "verkaufen",
+      "ihr": "verkauft",
+      "sie/Sie": "verkaufen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "suchen",
+    "english": "to search/look for",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "suche",
+      "du": "suchst",
+      "er/sie/es": "sucht",
+      "wir": "suchen",
+      "ihr": "sucht",
+      "sie/Sie": "suchen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "besuchen",
+    "english": "to visit",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "besuche",
+      "du": "besuchst",
+      "er/sie/es": "besucht",
+      "wir": "besuchen",
+      "ihr": "besucht",
+      "sie/Sie": "besuchen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "besichtigen",
+    "english": "to visit/sightsee",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "besichtige",
+      "du": "besichtigst",
+      "er/sie/es": "besichtigt",
+      "wir": "besichtigen",
+      "ihr": "besichtigt",
+      "sie/Sie": "besichtigen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "kennen",
+    "english": "to know (be familiar with)",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "kenne",
+      "du": "kennst",
+      "er/sie/es": "kennt",
+      "wir": "kennen",
+      "ihr": "kennt",
+      "sie/Sie": "kennen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "geben",
+    "english": "to give",
+    "type": "irregular",
+    "stemChangePattern": "e->i",
+    "conjugation": {
+      "ich": "gebe",
+      "du": "gibst",
+      "er/sie/es": "gibt",
+      "wir": "geben",
+      "ihr": "gebt",
+      "sie/Sie": "geben"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "lesen",
+    "english": "to read",
+    "type": "irregular",
+    "stemChangePattern": "e->ie",
+    "conjugation": {
+      "ich": "lese",
+      "du": "liest",
+      "er/sie/es": "liest",
+      "wir": "lesen",
+      "ihr": "lest",
+      "sie/Sie": "lesen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "sprechen",
+    "english": "to speak",
+    "type": "irregular",
+    "stemChangePattern": "e->i",
+    "conjugation": {
+      "ich": "spreche",
+      "du": "sprichst",
+      "er/sie/es": "spricht",
+      "wir": "sprechen",
+      "ihr": "sprecht",
+      "sie/Sie": "sprechen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "sehen",
+    "english": "to see",
+    "type": "irregular",
+    "stemChangePattern": "e->ie",
+    "conjugation": {
+      "ich": "sehe",
+      "du": "siehst",
+      "er/sie/es": "sieht",
+      "wir": "sehen",
+      "ihr": "seht",
+      "sie/Sie": "sehen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "fahren",
+    "english": "to drive/go",
+    "type": "irregular",
+    "stemChangePattern": "a->ä",
+    "conjugation": {
+      "ich": "fahre",
+      "du": "fährst",
+      "er/sie/es": "fährt",
+      "wir": "fahren",
+      "ihr": "fahrt",
+      "sie/Sie": "fahren"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "schlafen",
+    "english": "to sleep",
+    "type": "irregular",
+    "stemChangePattern": "a->ä",
+    "conjugation": {
+      "ich": "schlafe",
+      "du": "schläfst",
+      "er/sie/es": "schläft",
+      "wir": "schlafen",
+      "ihr": "schlaft",
+      "sie/Sie": "schlafen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "haben",
+    "english": "to have",
+    "type": "irregular",
+    "stemChangePattern": "irregular (du/er)",
+    "conjugation": {
+      "ich": "habe",
+      "du": "hast",
+      "er/sie/es": "hat",
+      "wir": "haben",
+      "ihr": "habt",
+      "sie/Sie": "haben"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "sein",
+    "english": "to be",
+    "type": "irregular",
+    "stemChangePattern": "fully irregular",
+    "conjugation": {
+      "ich": "bin",
+      "du": "bist",
+      "er/sie/es": "ist",
+      "wir": "sind",
+      "ihr": "seid",
+      "sie/Sie": "sind"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "wohnen",
+    "english": "to live (reside)",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "wohne",
+      "du": "wohnst",
+      "er/sie/es": "wohnt",
+      "wir": "wohnen",
+      "ihr": "wohnt",
+      "sie/Sie": "wohnen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "machen",
+    "english": "to do/make",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "mache",
+      "du": "machst",
+      "er/sie/es": "macht",
+      "wir": "machen",
+      "ihr": "macht",
+      "sie/Sie": "machen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "gehen",
+    "english": "to go (on foot)",
+    "type": "irregular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "gehe",
+      "du": "gehst",
+      "er/sie/es": "geht",
+      "wir": "gehen",
+      "ihr": "geht",
+      "sie/Sie": "gehen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "finden",
+    "english": "to find/think",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "finde",
+      "du": "findest",
+      "er/sie/es": "findet",
+      "wir": "finden",
+      "ihr": "findet",
+      "sie/Sie": "finden"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "stimmen",
+    "english": "to be correct",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "stimme",
+      "du": "stimmst",
+      "er/sie/es": "stimmt",
+      "wir": "stimmen",
+      "ihr": "stimmt",
+      "sie/Sie": "stimmen"
+    }
+  },
+  {
+    "chapter": 3,
+    "infinitive": "ergänzen",
+    "english": "to complete/fill in",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "ergänze",
+      "du": "ergänzt",
+      "er/sie/es": "ergänzt",
+      "wir": "ergänzen",
+      "ihr": "ergänzt",
+      "sie/Sie": "ergänzen"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "aufstehen",
+    "english": "to get up",
+    "type": "regular",
+    "stemChangePattern": "none (separable)",
+    "conjugation": {
+      "ich": "stehe auf",
+      "du": "stehst auf",
+      "er/sie/es": "steht auf",
+      "wir": "stehen auf",
+      "ihr": "steht auf",
+      "sie/Sie": "stehen auf"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "duschen",
+    "english": "to shower",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "dusche",
+      "du": "duschst",
+      "er/sie/es": "duscht",
+      "wir": "duschen",
+      "ihr": "duscht",
+      "sie/Sie": "duschen"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "frühstücken",
+    "english": "to have breakfast",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "frühstücke",
+      "du": "frühstückst",
+      "er/sie/es": "frühstückt",
+      "wir": "frühstücken",
+      "ihr": "frühstückt",
+      "sie/Sie": "frühstücken"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "arbeiten",
+    "english": "to work",
+    "type": "regular",
+    "stemChangePattern": "none (stem ending -t)",
+    "conjugation": {
+      "ich": "arbeite",
+      "du": "arbeitest",
+      "er/sie/es": "arbeitet",
+      "wir": "arbeiten",
+      "ihr": "arbeitet",
+      "sie/Sie": "arbeiten"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "einkaufen",
+    "english": "to shop/buy",
+    "type": "regular",
+    "stemChangePattern": "none (separable)",
+    "conjugation": {
+      "ich": "kaufe ein",
+      "du": "kaufst ein",
+      "er/sie/es": "kauft ein",
+      "wir": "kaufen ein",
+      "ihr": "kauft ein",
+      "sie/Sie": "kaufen ein"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "kochen",
+    "english": "to cook",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "koche",
+      "du": "kochst",
+      "er/sie/es": "kocht",
+      "wir": "kochen",
+      "ihr": "kocht",
+      "sie/Sie": "kochen"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "fernsehen",
+    "english": "to watch TV",
+    "type": "irregular",
+    "stemChangePattern": "e->ie (separable)",
+    "conjugation": {
+      "ich": "sehe fern",
+      "du": "siehst fern",
+      "er/sie/es": "sieht fern",
+      "wir": "sehen fern",
+      "ihr": "seht fern",
+      "sie/Sie": "sehen fern"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "schlafen",
+    "english": "to sleep",
+    "type": "irregular",
+    "stemChangePattern": "a->ä",
+    "conjugation": {
+      "ich": "schlafe",
+      "du": "schläfst",
+      "er/sie/es": "schläft",
+      "wir": "schlafen",
+      "ihr": "schlaft",
+      "sie/Sie": "schlafen"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "anfangen",
+    "english": "to begin/start",
+    "type": "irregular",
+    "stemChangePattern": "a->ä (separable)",
+    "conjugation": {
+      "ich": "fange an",
+      "du": "fängst an",
+      "er/sie/es": "fängt an",
+      "wir": "fangen an",
+      "ihr": "fangt an",
+      "sie/Sie": "fangen an"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "beginnen",
+    "english": "to begin",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "beginne",
+      "du": "beginnst",
+      "er/sie/es": "beginnt",
+      "wir": "beginnen",
+      "ihr": "beginnt",
+      "sie/Sie": "beginnen"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "anrufen",
+    "english": "to call (phone)",
+    "type": "regular",
+    "stemChangePattern": "none (separable)",
+    "conjugation": {
+      "ich": "rufe an",
+      "du": "rufst an",
+      "er/sie/es": "ruft an",
+      "wir": "rufen an",
+      "ihr": "ruft an",
+      "sie/Sie": "rufen an"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "aufräumen",
+    "english": "to tidy up",
+    "type": "regular",
+    "stemChangePattern": "none (separable)",
+    "conjugation": {
+      "ich": "räume auf",
+      "du": "räumst auf",
+      "er/sie/es": "räumt auf",
+      "wir": "räumen auf",
+      "ihr": "räumt auf",
+      "sie/Sie": "räumen auf"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "mitkommen",
+    "english": "to come along",
+    "type": "regular",
+    "stemChangePattern": "none (separable)",
+    "conjugation": {
+      "ich": "komme mit",
+      "du": "kommst mit",
+      "er/sie/es": "kommt mit",
+      "wir": "kommen mit",
+      "ihr": "kommt mit",
+      "sie/Sie": "kommen mit"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "stattfinden",
+    "english": "to take place",
+    "type": "regular",
+    "stemChangePattern": "none (separable)",
+    "conjugation": {
+      "ich": "finde statt",
+      "du": "findest statt",
+      "er/sie/es": "findet statt",
+      "wir": "finden statt",
+      "ihr": "findet statt",
+      "sie/Sie": "finden statt"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "lesen",
+    "english": "to read",
+    "type": "irregular",
+    "stemChangePattern": "e->ie",
+    "conjugation": {
+      "ich": "lese",
+      "du": "liest",
+      "er/sie/es": "liest",
+      "wir": "lesen",
+      "ihr": "lest",
+      "sie/Sie": "lesen"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "sehen",
+    "english": "to see/watch",
+    "type": "irregular",
+    "stemChangePattern": "e->ie",
+    "conjugation": {
+      "ich": "sehe",
+      "du": "siehst",
+      "er/sie/es": "sieht",
+      "wir": "sehen",
+      "ihr": "seht",
+      "sie/Sie": "sehen"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "treffen",
+    "english": "to meet",
+    "type": "irregular",
+    "stemChangePattern": "e->i",
+    "conjugation": {
+      "ich": "treffe",
+      "du": "triffst",
+      "er/sie/es": "trifft",
+      "wir": "treffen",
+      "ihr": "trefft",
+      "sie/Sie": "treffen"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "schwimmen",
+    "english": "to swim",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "schwimme",
+      "du": "schwimmst",
+      "er/sie/es": "schwimmt",
+      "wir": "schwimmen",
+      "ihr": "schwimmt",
+      "sie/Sie": "schwimmen"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "trainieren",
+    "english": "to train/exercise",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "trainiere",
+      "du": "trainierst",
+      "er/sie/es": "trainiert",
+      "wir": "trainieren",
+      "ihr": "trainiert",
+      "sie/Sie": "trainieren"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "schreiben",
+    "english": "to write",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "schreibe",
+      "du": "schreibst",
+      "er/sie/es": "schreibt",
+      "wir": "schreiben",
+      "ihr": "schreibt",
+      "sie/Sie": "schreiben"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "präsentieren",
+    "english": "to present",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "präsentiere",
+      "du": "präsentierst",
+      "er/sie/es": "präsentiert",
+      "wir": "präsentieren",
+      "ihr": "präsentiert",
+      "sie/Sie": "präsentieren"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "dauern",
+    "english": "to last/take (time)",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "dauere",
+      "du": "dauerst",
+      "er/sie/es": "dauert",
+      "wir": "dauern",
+      "ihr": "dauert",
+      "sie/Sie": "dauern"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "telefonieren",
+    "english": "to make a phone call",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "telefoniere",
+      "du": "telefonierst",
+      "er/sie/es": "telefoniert",
+      "wir": "telefonieren",
+      "ihr": "telefoniert",
+      "sie/Sie": "telefonieren"
+    }
+  },
+  {
+    "chapter": 4,
+    "infinitive": "spazieren gehen",
+    "english": "to go for a walk",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "gehe spazieren",
+      "du": "gehst spazieren",
+      "er/sie/es": "geht spazieren",
+      "wir": "gehen spazieren",
+      "ihr": "geht spazieren",
+      "sie/Sie": "gehen spazieren"
+    }
+  },
+  {
+    "chapter": 5,
+    "infinitive": "essen",
+    "english": "to eat",
+    "type": "irregular",
+    "stemChangePattern": "e->i",
+    "conjugation": {
+      "ich": "esse",
+      "du": "isst",
+      "er/sie/es": "isst",
+      "wir": "essen",
+      "ihr": "esst",
+      "sie/Sie": "essen"
+    }
+  },
+  {
+    "chapter": 5,
+    "infinitive": "trinken",
+    "english": "to drink",
+    "type": "irregular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "trinke",
+      "du": "trinkst",
+      "er/sie/es": "trinkt",
+      "wir": "trinken",
+      "ihr": "trinkt",
+      "sie/Sie": "trinken"
+    }
+  },
+  {
+    "chapter": 5,
+    "infinitive": "kochen",
+    "english": "to cook",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "koche",
+      "du": "kochst",
+      "er/sie/es": "kocht",
+      "wir": "kochen",
+      "ihr": "kocht",
+      "sie/Sie": "kochen"
+    }
+  },
+  {
+    "chapter": 5,
+    "infinitive": "mögen",
+    "english": "to like",
+    "type": "modal",
+    "stemChangePattern": "modal (irregular)",
+    "conjugation": {
+      "ich": "mag",
+      "du": "magst",
+      "er/sie/es": "mag",
+      "wir": "mögen",
+      "ihr": "mögt",
+      "sie/Sie": "mögen"
+    }
+  },
+  {
+    "chapter": 5,
+    "infinitive": "möchten",
+    "english": "would like to",
+    "type": "modal",
+    "stemChangePattern": "modal (subjunctive)",
+    "conjugation": {
+      "ich": "möchte",
+      "du": "möchtest",
+      "er/sie/es": "möchte",
+      "wir": "möchten",
+      "ihr": "möchtet",
+      "sie/Sie": "möchten"
+    }
+  },
+  {
+    "chapter": 5,
+    "infinitive": "nehmen",
+    "english": "to take/to have (food)",
+    "type": "irregular",
+    "stemChangePattern": "e->i (+consonant change)",
+    "conjugation": {
+      "ich": "nehme",
+      "du": "nimmst",
+      "er/sie/es": "nimmt",
+      "wir": "nehmen",
+      "ihr": "nehmt",
+      "sie/Sie": "nehmen"
+    }
+  },
+  {
+    "chapter": 5,
+    "infinitive": "bestellen",
+    "english": "to order",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "bestelle",
+      "du": "bestellst",
+      "er/sie/es": "bestellt",
+      "wir": "bestellen",
+      "ihr": "bestellt",
+      "sie/Sie": "bestellen"
+    }
+  },
+  {
+    "chapter": 5,
+    "infinitive": "bezahlen",
+    "english": "to pay",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "bezahle",
+      "du": "bezahlst",
+      "er/sie/es": "bezahlt",
+      "wir": "bezahlen",
+      "ihr": "bezahlt",
+      "sie/Sie": "bezahlen"
+    }
+  },
+  {
+    "chapter": 5,
+    "infinitive": "bekommen",
+    "english": "to get/receive",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "bekomme",
+      "du": "bekommst",
+      "er/sie/es": "bekommt",
+      "wir": "bekommen",
+      "ihr": "bekommt",
+      "sie/Sie": "bekommen"
+    }
+  },
+  {
+    "chapter": 5,
+    "infinitive": "brauchen",
+    "english": "to need",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "brauche",
+      "du": "brauchst",
+      "er/sie/es": "braucht",
+      "wir": "brauchen",
+      "ihr": "braucht",
+      "sie/Sie": "brauchen"
+    }
+  },
+  {
+    "chapter": 5,
+    "infinitive": "kaufen",
+    "english": "to buy",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "kaufe",
+      "du": "kaufst",
+      "er/sie/es": "kauft",
+      "wir": "kaufen",
+      "ihr": "kauft",
+      "sie/Sie": "kaufen"
+    }
+  },
+  {
+    "chapter": 5,
+    "infinitive": "einkaufen",
+    "english": "to shop/go shopping",
+    "type": "regular",
+    "stemChangePattern": "none (separable)",
+    "conjugation": {
+      "ich": "kaufe ein",
+      "du": "kaufst ein",
+      "er/sie/es": "kauft ein",
+      "wir": "kaufen ein",
+      "ihr": "kauft ein",
+      "sie/Sie": "kaufen ein"
+    }
+  },
+  {
+    "chapter": 5,
+    "infinitive": "schneiden",
+    "english": "to cut",
+    "type": "irregular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "schneide",
+      "du": "schneidest",
+      "er/sie/es": "schneidet",
+      "wir": "schneiden",
+      "ihr": "schneidet",
+      "sie/Sie": "schneiden"
+    }
+  },
+  {
+    "chapter": 5,
+    "infinitive": "schmecken",
+    "english": "to taste",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "schmecke",
+      "du": "schmeckst",
+      "er/sie/es": "schmeckt",
+      "wir": "schmecken",
+      "ihr": "schmeckt",
+      "sie/Sie": "schmecken"
+    }
+  },
+  {
+    "chapter": 5,
+    "infinitive": "reservieren",
+    "english": "to reserve",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "reserviere",
+      "du": "reservierst",
+      "er/sie/es": "reserviert",
+      "wir": "reservieren",
+      "ihr": "reserviert",
+      "sie/Sie": "reservieren"
+    }
+  },
+  {
+    "chapter": 5,
+    "infinitive": "empfehlen",
+    "english": "to recommend",
+    "type": "irregular",
+    "stemChangePattern": "e->ie",
+    "conjugation": {
+      "ich": "empfehle",
+      "du": "empfiehlst",
+      "er/sie/es": "empfiehlt",
+      "wir": "empfehlen",
+      "ihr": "empfehlt",
+      "sie/Sie": "empfehlen"
+    }
+  },
+  {
+    "chapter": 5,
+    "infinitive": "anbieten",
+    "english": "to offer",
+    "type": "irregular",
+    "stemChangePattern": "none (separable)",
+    "conjugation": {
+      "ich": "biete an",
+      "du": "bietest an",
+      "er/sie/es": "bietet an",
+      "wir": "bieten an",
+      "ihr": "bietet an",
+      "sie/Sie": "bieten an"
+    }
+  },
+  {
+    "chapter": 5,
+    "infinitive": "mitkommen",
+    "english": "to come along",
+    "type": "irregular",
+    "stemChangePattern": "none (separable)",
+    "conjugation": {
+      "ich": "komme mit",
+      "du": "kommst mit",
+      "er/sie/es": "kommt mit",
+      "wir": "kommen mit",
+      "ihr": "kommt mit",
+      "sie/Sie": "kommen mit"
+    }
+  },
+  {
+    "chapter": 5,
+    "infinitive": "produzieren",
+    "english": "to produce",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "produziere",
+      "du": "produzierst",
+      "er/sie/es": "produziert",
+      "wir": "produzieren",
+      "ihr": "produziert",
+      "sie/Sie": "produzieren"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "putzen",
+    "english": "to clean",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "putze",
+      "du": "putzt",
+      "er/sie/es": "putzt",
+      "wir": "putzen",
+      "ihr": "putzt",
+      "sie/Sie": "putzen"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "kochen",
+    "english": "to cook",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "koche",
+      "du": "kochst",
+      "er/sie/es": "kocht",
+      "wir": "kochen",
+      "ihr": "kocht",
+      "sie/Sie": "kochen"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "spülen",
+    "english": "to wash dishes/rinse",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "spüle",
+      "du": "spülst",
+      "er/sie/es": "spült",
+      "wir": "spülen",
+      "ihr": "spült",
+      "sie/Sie": "spülen"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "saugen",
+    "english": "to vacuum",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "sauge",
+      "du": "saugst",
+      "er/sie/es": "saugt",
+      "wir": "saugen",
+      "ihr": "saugt",
+      "sie/Sie": "saugen"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "wischen",
+    "english": "to mop/wipe",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "wische",
+      "du": "wischst",
+      "er/sie/es": "wischt",
+      "wir": "wischen",
+      "ihr": "wischt",
+      "sie/Sie": "wischen"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "bügeln",
+    "english": "to iron",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "bügle",
+      "du": "bügelst",
+      "er/sie/es": "bügelt",
+      "wir": "bügeln",
+      "ihr": "bügelt",
+      "sie/Sie": "bügeln"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "waschen",
+    "english": "to wash",
+    "type": "irregular",
+    "stemChangePattern": "a->ä",
+    "conjugation": {
+      "ich": "wasche",
+      "du": "wäschst",
+      "er/sie/es": "wäscht",
+      "wir": "waschen",
+      "ihr": "wascht",
+      "sie/Sie": "waschen"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "frühstücken",
+    "english": "to eat breakfast",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "frühstücke",
+      "du": "frühstückst",
+      "er/sie/es": "frühstückt",
+      "wir": "frühstücken",
+      "ihr": "frühstückt",
+      "sie/Sie": "frühstücken"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "telefonieren",
+    "english": "to phone/make a call",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "telefoniere",
+      "du": "telefonierst",
+      "er/sie/es": "telefoniert",
+      "wir": "telefonieren",
+      "ihr": "telefoniert",
+      "sie/Sie": "telefonieren"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "besuchen",
+    "english": "to visit",
+    "type": "regular",
+    "stemChangePattern": "none (inseparable)",
+    "conjugation": {
+      "ich": "besuche",
+      "du": "besuchst",
+      "er/sie/es": "besucht",
+      "wir": "besuchen",
+      "ihr": "besucht",
+      "sie/Sie": "besuchen"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "bezahlen",
+    "english": "to pay",
+    "type": "regular",
+    "stemChangePattern": "none (inseparable)",
+    "conjugation": {
+      "ich": "bezahle",
+      "du": "bezahlst",
+      "er/sie/es": "bezahlt",
+      "wir": "bezahlen",
+      "ihr": "bezahlt",
+      "sie/Sie": "bezahlen"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "bekommen",
+    "english": "to receive/get",
+    "type": "irregular",
+    "stemChangePattern": "none (inseparable)",
+    "conjugation": {
+      "ich": "bekomme",
+      "du": "bekommst",
+      "er/sie/es": "bekommt",
+      "wir": "bekommen",
+      "ihr": "bekommt",
+      "sie/Sie": "bekommen"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "erzählen",
+    "english": "to tell/narrate",
+    "type": "regular",
+    "stemChangePattern": "none (inseparable)",
+    "conjugation": {
+      "ich": "erzähle",
+      "du": "erzählst",
+      "er/sie/es": "erzählt",
+      "wir": "erzählen",
+      "ihr": "erzählt",
+      "sie/Sie": "erzählen"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "studieren",
+    "english": "to study (at university)",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "studiere",
+      "du": "studierst",
+      "er/sie/es": "studiert",
+      "wir": "studieren",
+      "ihr": "studiert",
+      "sie/Sie": "studieren"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "einkaufen",
+    "english": "to shop/go shopping",
+    "type": "regular",
+    "stemChangePattern": "none (separable)",
+    "conjugation": {
+      "ich": "kaufe ein",
+      "du": "kaufst ein",
+      "er/sie/es": "kauft ein",
+      "wir": "kaufen ein",
+      "ihr": "kauft ein",
+      "sie/Sie": "kaufen ein"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "aufräumen",
+    "english": "to tidy up",
+    "type": "regular",
+    "stemChangePattern": "none (separable)",
+    "conjugation": {
+      "ich": "räume auf",
+      "du": "räumst auf",
+      "er/sie/es": "räumt auf",
+      "wir": "räumen auf",
+      "ihr": "räumt auf",
+      "sie/Sie": "räumen auf"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "aufstehen",
+    "english": "to get up",
+    "type": "irregular",
+    "stemChangePattern": "none (separable)",
+    "conjugation": {
+      "ich": "stehe auf",
+      "du": "stehst auf",
+      "er/sie/es": "steht auf",
+      "wir": "stehen auf",
+      "ihr": "steht auf",
+      "sie/Sie": "stehen auf"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "fernsehen",
+    "english": "to watch TV",
+    "type": "irregular",
+    "stemChangePattern": "e->ie (separable)",
+    "conjugation": {
+      "ich": "sehe fern",
+      "du": "siehst fern",
+      "er/sie/es": "sieht fern",
+      "wir": "sehen fern",
+      "ihr": "seht fern",
+      "sie/Sie": "sehen fern"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "anfangen",
+    "english": "to begin/start",
+    "type": "irregular",
+    "stemChangePattern": "a->ä (separable)",
+    "conjugation": {
+      "ich": "fange an",
+      "du": "fängst an",
+      "er/sie/es": "fängt an",
+      "wir": "fangen an",
+      "ihr": "fangt an",
+      "sie/Sie": "fangen an"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "schlafen",
+    "english": "to sleep",
+    "type": "irregular",
+    "stemChangePattern": "a->ä",
+    "conjugation": {
+      "ich": "schlafe",
+      "du": "schläfst",
+      "er/sie/es": "schläft",
+      "wir": "schlafen",
+      "ihr": "schlaft",
+      "sie/Sie": "schlafen"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "treffen",
+    "english": "to meet",
+    "type": "irregular",
+    "stemChangePattern": "e->i",
+    "conjugation": {
+      "ich": "treffe",
+      "du": "triffst",
+      "er/sie/es": "trifft",
+      "wir": "treffen",
+      "ihr": "trefft",
+      "sie/Sie": "treffen"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "essen",
+    "english": "to eat",
+    "type": "irregular",
+    "stemChangePattern": "e->i",
+    "conjugation": {
+      "ich": "esse",
+      "du": "isst",
+      "er/sie/es": "isst",
+      "wir": "essen",
+      "ihr": "esst",
+      "sie/Sie": "essen"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "schreiben",
+    "english": "to write",
+    "type": "irregular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "schreibe",
+      "du": "schreibst",
+      "er/sie/es": "schreibt",
+      "wir": "schreiben",
+      "ihr": "schreibt",
+      "sie/Sie": "schreiben"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "trinken",
+    "english": "to drink",
+    "type": "irregular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "trinke",
+      "du": "trinkst",
+      "er/sie/es": "trinkt",
+      "wir": "trinken",
+      "ihr": "trinkt",
+      "sie/Sie": "trinken"
+    }
+  },
+  {
+    "chapter": 6,
+    "infinitive": "gehen",
+    "english": "to go",
+    "type": "irregular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "gehe",
+      "du": "gehst",
+      "er/sie/es": "geht",
+      "wir": "gehen",
+      "ihr": "geht",
+      "sie/Sie": "gehen"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "fahren",
+    "english": "to drive/travel",
+    "type": "irregular",
+    "stemChangePattern": "a->ä",
+    "conjugation": {
+      "ich": "fahre",
+      "du": "fährst",
+      "er/sie/es": "fährt",
+      "wir": "fahren",
+      "ihr": "fahrt",
+      "sie/Sie": "fahren"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "weiterfahren",
+    "english": "to continue driving",
+    "type": "irregular",
+    "stemChangePattern": "a->ä (separable)",
+    "conjugation": {
+      "ich": "fahre weiter",
+      "du": "fährst weiter",
+      "er/sie/es": "fährt weiter",
+      "wir": "fahren weiter",
+      "ihr": "fahrt weiter",
+      "sie/Sie": "fahren weiter"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "nehmen",
+    "english": "to take",
+    "type": "irregular",
+    "stemChangePattern": "e->i (+consonant change)",
+    "conjugation": {
+      "ich": "nehme",
+      "du": "nimmst",
+      "er/sie/es": "nimmt",
+      "wir": "nehmen",
+      "ihr": "nehmt",
+      "sie/Sie": "nehmen"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "sprechen",
+    "english": "to speak",
+    "type": "irregular",
+    "stemChangePattern": "e->i",
+    "conjugation": {
+      "ich": "spreche",
+      "du": "sprichst",
+      "er/sie/es": "spricht",
+      "wir": "sprechen",
+      "ihr": "sprecht",
+      "sie/Sie": "sprechen"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "lesen",
+    "english": "to read",
+    "type": "irregular",
+    "stemChangePattern": "e->ie",
+    "conjugation": {
+      "ich": "lese",
+      "du": "liest",
+      "er/sie/es": "liest",
+      "wir": "lesen",
+      "ihr": "lest",
+      "sie/Sie": "lesen"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "wollen",
+    "english": "to want to",
+    "type": "modal",
+    "stemChangePattern": "modal (irregular)",
+    "conjugation": {
+      "ich": "will",
+      "du": "willst",
+      "er/sie/es": "will",
+      "wir": "wollen",
+      "ihr": "wollt",
+      "sie/Sie": "wollen"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "können",
+    "english": "can / to be able to",
+    "type": "modal",
+    "stemChangePattern": "modal (irregular)",
+    "conjugation": {
+      "ich": "kann",
+      "du": "kannst",
+      "er/sie/es": "kann",
+      "wir": "können",
+      "ihr": "könnt",
+      "sie/Sie": "können"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "mögen",
+    "english": "to like",
+    "type": "modal",
+    "stemChangePattern": "modal (irregular)",
+    "conjugation": {
+      "ich": "mag",
+      "du": "magst",
+      "er/sie/es": "mag",
+      "wir": "mögen",
+      "ihr": "mögt",
+      "sie/Sie": "mögen"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "möchten",
+    "english": "would like to",
+    "type": "modal",
+    "stemChangePattern": "modal (subjunctive)",
+    "conjugation": {
+      "ich": "möchte",
+      "du": "möchtest",
+      "er/sie/es": "möchte",
+      "wir": "möchten",
+      "ihr": "möchtet",
+      "sie/Sie": "möchten"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "nutzen",
+    "english": "to use",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "nutze",
+      "du": "nutzt",
+      "er/sie/es": "nutzt",
+      "wir": "nutzen",
+      "ihr": "nutzt",
+      "sie/Sie": "nutzen"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "fliegen",
+    "english": "to fly",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "fliege",
+      "du": "fliegst",
+      "er/sie/es": "fliegt",
+      "wir": "fliegen",
+      "ihr": "fliegt",
+      "sie/Sie": "fliegen"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "stehen",
+    "english": "to stand",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "stehe",
+      "du": "stehst",
+      "er/sie/es": "steht",
+      "wir": "stehen",
+      "ihr": "steht",
+      "sie/Sie": "stehen"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "liegen",
+    "english": "to lie/be situated",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "liege",
+      "du": "liegst",
+      "er/sie/es": "liegt",
+      "wir": "liegen",
+      "ihr": "liegt",
+      "sie/Sie": "liegen"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "haben",
+    "english": "to have",
+    "type": "irregular",
+    "stemChangePattern": "irregular (du/er)",
+    "conjugation": {
+      "ich": "habe",
+      "du": "hast",
+      "er/sie/es": "hat",
+      "wir": "haben",
+      "ihr": "habt",
+      "sie/Sie": "haben"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "finden",
+    "english": "to find",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "finde",
+      "du": "findest",
+      "er/sie/es": "findet",
+      "wir": "finden",
+      "ihr": "findet",
+      "sie/Sie": "finden"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "bleiben",
+    "english": "to stay",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "bleibe",
+      "du": "bleibst",
+      "er/sie/es": "bleibt",
+      "wir": "bleiben",
+      "ihr": "bleibt",
+      "sie/Sie": "bleiben"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "klingen",
+    "english": "to sound",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "klinge",
+      "du": "klingst",
+      "er/sie/es": "klingt",
+      "wir": "klingen",
+      "ihr": "klingt",
+      "sie/Sie": "klingen"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "regnen",
+    "english": "to rain",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "regne",
+      "du": "regnest",
+      "er/sie/es": "regnet",
+      "wir": "regnen",
+      "ihr": "regnet",
+      "sie/Sie": "regnen"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "schneien",
+    "english": "to snow",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "schneie",
+      "du": "schneist",
+      "er/sie/es": "schneit",
+      "wir": "schneien",
+      "ihr": "schneit",
+      "sie/Sie": "schneien"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "scheinen",
+    "english": "to shine",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "scheine",
+      "du": "scheinst",
+      "er/sie/es": "scheint",
+      "wir": "scheinen",
+      "ihr": "scheint",
+      "sie/Sie": "scheinen"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "kosten",
+    "english": "to cost",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "koste",
+      "du": "kostest",
+      "er/sie/es": "kostet",
+      "wir": "kosten",
+      "ihr": "kostet",
+      "sie/Sie": "kosten"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "dauern",
+    "english": "to last/take (time)",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "dauere",
+      "du": "dauerst",
+      "er/sie/es": "dauert",
+      "wir": "dauern",
+      "ihr": "dauert",
+      "sie/Sie": "dauern"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "ankommen",
+    "english": "to arrive",
+    "type": "regular",
+    "stemChangePattern": "none (separable)",
+    "conjugation": {
+      "ich": "komme an",
+      "du": "kommst an",
+      "er/sie/es": "kommt an",
+      "wir": "kommen an",
+      "ihr": "kommt an",
+      "sie/Sie": "kommen an"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "aussteigen",
+    "english": "to get out/off",
+    "type": "regular",
+    "stemChangePattern": "none (separable)",
+    "conjugation": {
+      "ich": "steige aus",
+      "du": "steigst aus",
+      "er/sie/es": "steigt aus",
+      "wir": "steigen aus",
+      "ihr": "steigt aus",
+      "sie/Sie": "steigen aus"
+    }
+  },
+  {
+    "chapter": 7,
+    "infinitive": "einsteigen",
+    "english": "to get in/on",
+    "type": "regular",
+    "stemChangePattern": "none (separable)",
+    "conjugation": {
+      "ich": "steige ein",
+      "du": "steigst ein",
+      "er/sie/es": "steigt ein",
+      "wir": "steigen ein",
+      "ihr": "steigt ein",
+      "sie/Sie": "steigen ein"
+    }
+  },
+  {
+    "chapter": 8,
+    "infinitive": "brauchen",
+    "english": "to need",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "brauche",
+      "du": "brauchst",
+      "er/sie/es": "braucht",
+      "wir": "brauchen",
+      "ihr": "braucht",
+      "sie/Sie": "brauchen"
+    }
+  },
+  {
+    "chapter": 8,
+    "infinitive": "tragen",
+    "english": "to wear/carry",
+    "type": "irregular",
+    "stemChangePattern": "a->ä",
+    "conjugation": {
+      "ich": "trage",
+      "du": "trägst",
+      "er/sie/es": "trägt",
+      "wir": "tragen",
+      "ihr": "tragt",
+      "sie/Sie": "tragen"
+    }
+  },
+  {
+    "chapter": 8,
+    "infinitive": "kaufen",
+    "english": "to buy",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "kaufe",
+      "du": "kaufst",
+      "er/sie/es": "kauft",
+      "wir": "kaufen",
+      "ihr": "kauft",
+      "sie/Sie": "kaufen"
+    }
+  },
+  {
+    "chapter": 8,
+    "infinitive": "einkaufen",
+    "english": "to shop/go shopping",
+    "type": "regular",
+    "stemChangePattern": "none (separable)",
+    "conjugation": {
+      "ich": "kaufe ein",
+      "du": "kaufst ein",
+      "er/sie/es": "kauft ein",
+      "wir": "kaufen ein",
+      "ihr": "kauft ein",
+      "sie/Sie": "kaufen ein"
+    }
+  },
+  {
+    "chapter": 8,
+    "infinitive": "verkaufen",
+    "english": "to sell",
+    "type": "regular",
+    "stemChangePattern": "none (inseparable)",
+    "conjugation": {
+      "ich": "verkaufe",
+      "du": "verkaufst",
+      "er/sie/es": "verkauft",
+      "wir": "verkaufen",
+      "ihr": "verkauft",
+      "sie/Sie": "verkaufen"
+    }
+  },
+  {
+    "chapter": 8,
+    "infinitive": "bezahlen",
+    "english": "to pay",
+    "type": "regular",
+    "stemChangePattern": "none (inseparable)",
+    "conjugation": {
+      "ich": "bezahle",
+      "du": "bezahlst",
+      "er/sie/es": "bezahlt",
+      "wir": "bezahlen",
+      "ihr": "bezahlt",
+      "sie/Sie": "bezahlen"
+    }
+  },
+  {
+    "chapter": 8,
+    "infinitive": "anprobieren",
+    "english": "to try on",
+    "type": "regular",
+    "stemChangePattern": "none (separable)",
+    "conjugation": {
+      "ich": "probiere an",
+      "du": "probierst an",
+      "er/sie/es": "probiert an",
+      "wir": "probieren an",
+      "ihr": "probiert an",
+      "sie/Sie": "probieren an"
+    }
+  },
+  {
+    "chapter": 8,
+    "infinitive": "passen",
+    "english": "to fit",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "passe",
+      "du": "passt",
+      "er/sie/es": "passt",
+      "wir": "passen",
+      "ihr": "passt",
+      "sie/Sie": "passen"
+    }
+  },
+  {
+    "chapter": 8,
+    "infinitive": "gefallen",
+    "english": "to please/to like",
+    "type": "irregular",
+    "stemChangePattern": "a->ä",
+    "conjugation": {
+      "ich": "gefalle",
+      "du": "gefällst",
+      "er/sie/es": "gefällt",
+      "wir": "gefallen",
+      "ihr": "gefallt",
+      "sie/Sie": "gefallen"
+    }
+  },
+  {
+    "chapter": 8,
+    "infinitive": "nehmen",
+    "english": "to take",
+    "type": "irregular",
+    "stemChangePattern": "e->i (+consonant change)",
+    "conjugation": {
+      "ich": "nehme",
+      "du": "nimmst",
+      "er/sie/es": "nimmt",
+      "wir": "nehmen",
+      "ihr": "nehmt",
+      "sie/Sie": "nehmen"
+    }
+  },
+  {
+    "chapter": 8,
+    "infinitive": "suchen",
+    "english": "to look for/search",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "suche",
+      "du": "suchst",
+      "er/sie/es": "sucht",
+      "wir": "suchen",
+      "ihr": "sucht",
+      "sie/Sie": "suchen"
+    }
+  },
+  {
+    "chapter": 8,
+    "infinitive": "finden",
+    "english": "to find",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "finde",
+      "du": "findest",
+      "er/sie/es": "findet",
+      "wir": "finden",
+      "ihr": "findet",
+      "sie/Sie": "finden"
+    }
+  },
+  {
+    "chapter": 8,
+    "infinitive": "aussehen",
+    "english": "to look/appear",
+    "type": "irregular",
+    "stemChangePattern": "e->ie (separable)",
+    "conjugation": {
+      "ich": "sehe aus",
+      "du": "siehst aus",
+      "er/sie/es": "sieht aus",
+      "wir": "sehen aus",
+      "ihr": "seht aus",
+      "sie/Sie": "sehen aus"
+    }
+  },
+  {
+    "chapter": 8,
+    "infinitive": "stehen",
+    "english": "to suit (clothing)",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "stehe",
+      "du": "stehst",
+      "er/sie/es": "steht",
+      "wir": "stehen",
+      "ihr": "steht",
+      "sie/Sie": "stehen"
+    }
+  },
+  {
+    "chapter": 8,
+    "infinitive": "bestellen",
+    "english": "to order",
+    "type": "regular",
+    "stemChangePattern": "none (inseparable)",
+    "conjugation": {
+      "ich": "bestelle",
+      "du": "bestellst",
+      "er/sie/es": "bestellt",
+      "wir": "bestellen",
+      "ihr": "bestellt",
+      "sie/Sie": "bestellen"
+    }
+  },
+  {
+    "chapter": 8,
+    "infinitive": "zurückschicken",
+    "english": "to send back",
+    "type": "regular",
+    "stemChangePattern": "none (separable)",
+    "conjugation": {
+      "ich": "schicke zurück",
+      "du": "schickst zurück",
+      "er/sie/es": "schickt zurück",
+      "wir": "schicken zurück",
+      "ihr": "schickt zurück",
+      "sie/Sie": "schicken zurück"
+    }
+  },
+  {
+    "chapter": 8,
+    "infinitive": "umtauschen",
+    "english": "to exchange/return",
+    "type": "regular",
+    "stemChangePattern": "none (separable)",
+    "conjugation": {
+      "ich": "tausche um",
+      "du": "tauschst um",
+      "er/sie/es": "tauscht um",
+      "wir": "tauschen um",
+      "ihr": "tauscht um",
+      "sie/Sie": "tauschen um"
+    }
+  },
+  {
+    "chapter": 8,
+    "infinitive": "kosten",
+    "english": "to cost",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "koste",
+      "du": "kostest",
+      "er/sie/es": "kostet",
+      "wir": "kosten",
+      "ihr": "kostet",
+      "sie/Sie": "kosten"
+    }
+  },
+  {
+    "chapter": 8,
+    "infinitive": "möchten",
+    "english": "would like to",
+    "type": "modal",
+    "stemChangePattern": "modal (subjunctive)",
+    "conjugation": {
+      "ich": "möchte",
+      "du": "möchtest",
+      "er/sie/es": "möchte",
+      "wir": "möchten",
+      "ihr": "möchtet",
+      "sie/Sie": "möchten"
+    }
+  },
+  {
+    "chapter": 8,
+    "infinitive": "schenken",
+    "english": "to give (a gift)",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "schenke",
+      "du": "schenkst",
+      "er/sie/es": "schenkt",
+      "wir": "schenken",
+      "ihr": "schenkt",
+      "sie/Sie": "schenken"
+    }
+  },
+  {
+    "chapter": 8,
+    "infinitive": "bekommen",
+    "english": "to receive/get",
+    "type": "regular",
+    "stemChangePattern": "none (inseparable)",
+    "conjugation": {
+      "ich": "bekomme",
+      "du": "bekommst",
+      "er/sie/es": "bekommt",
+      "wir": "bekommen",
+      "ihr": "bekommt",
+      "sie/Sie": "bekommen"
+    }
+  },
+  {
+    "chapter": 8,
+    "infinitive": "kombinieren",
+    "english": "to combine/match",
+    "type": "regular",
+    "stemChangePattern": "none",
+    "conjugation": {
+      "ich": "kombiniere",
+      "du": "kombinierst",
+      "er/sie/es": "kombiniert",
+      "wir": "kombinieren",
+      "ihr": "kombiniert",
+      "sie/Sie": "kombinieren"
+    }
+  }
 ]

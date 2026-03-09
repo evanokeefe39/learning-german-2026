@@ -4,7 +4,7 @@
     "german": "Name",
     "article": "der",
     "english": "name",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "what people call you, it appears on your ID card"
   },
   {
@@ -12,7 +12,7 @@
     "german": "Vorname",
     "article": "der",
     "english": "first name",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "the personal name your parents chose for you, not the family one"
   },
   {
@@ -20,7 +20,7 @@
     "german": "Nachname",
     "article": "der",
     "english": "surname",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "the name you share with your family, not your first name"
   },
   {
@@ -28,7 +28,7 @@
     "german": "Familienname",
     "article": "der",
     "english": "family name",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "another word for Nachname, the name your whole family shares"
   },
   {
@@ -36,7 +36,7 @@
     "german": "Wohnort",
     "article": "der",
     "english": "place of residence",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "the city or town where you live"
   },
   {
@@ -44,7 +44,7 @@
     "german": "Geburtsort",
     "article": "der",
     "english": "place of birth",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "the city or town where you were born"
   },
   {
@@ -52,7 +52,7 @@
     "german": "Beruf",
     "article": "der",
     "english": "profession/occupation",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "what you do for work, your job title"
   },
   {
@@ -60,7 +60,7 @@
     "german": "Kurs",
     "article": "der",
     "english": "course",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "a class you attend to learn something, like a Deutschkurs"
   },
   {
@@ -68,7 +68,7 @@
     "german": "Kursteilnehmer",
     "article": "der",
     "english": "course participant (male)",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "a male person who attends a Kurs"
   },
   {
@@ -76,7 +76,7 @@
     "german": "Kursteilnehmerin",
     "article": "die",
     "english": "course participant (female)",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "a female person who attends a Kurs"
   },
   {
@@ -84,7 +84,7 @@
     "german": "Morgen",
     "article": "der",
     "english": "morning",
-    "category": "Greetings & Farewells",
+    "category": "People & Social",
     "hint": "the early part of the day, Guten ___!"
   },
   {
@@ -92,7 +92,7 @@
     "german": "Tag",
     "article": "der",
     "english": "day",
-    "category": "Greetings & Farewells",
+    "category": "People & Social",
     "hint": "24 hours, or used in the greeting Guten ___!"
   },
   {
@@ -100,7 +100,7 @@
     "german": "Abend",
     "article": "der",
     "english": "evening",
-    "category": "Greetings & Farewells",
+    "category": "People & Social",
     "hint": "the late part of the day before night, Guten ___!"
   },
   {
@@ -108,7 +108,7 @@
     "german": "Nacht",
     "article": "die",
     "english": "night",
-    "category": "Greetings & Farewells",
+    "category": "People & Social",
     "hint": "the dark hours when you sleep, Gute ___!"
   },
   {
@@ -116,7 +116,7 @@
     "german": "Herr",
     "article": "der",
     "english": "Mr.",
-    "category": "Forms of Address",
+    "category": "People & Social",
     "hint": "formal title for a man, used before Nachname"
   },
   {
@@ -124,7 +124,7 @@
     "german": "Frau",
     "article": "die",
     "english": "Mrs./Ms.",
-    "category": "Forms of Address",
+    "category": "People & Social",
     "hint": "formal title for a woman, used before Nachname"
   },
   {
@@ -132,7 +132,7 @@
     "german": "Telefonnummer",
     "article": "die",
     "english": "telephone number",
-    "category": "Contact Information",
+    "category": "People & Social",
     "hint": "the number someone dials to call you on the phone"
   },
   {
@@ -140,7 +140,7 @@
     "german": "Handynummer",
     "article": "die",
     "english": "mobile number",
-    "category": "Contact Information",
+    "category": "People & Social",
     "hint": "the number for your portable phone, not a landline"
   },
   {
@@ -148,7 +148,7 @@
     "german": "E-Mail-Adresse",
     "article": "die",
     "english": "email address",
-    "category": "Contact Information",
+    "category": "People & Social",
     "hint": "your electronic mail address with an @ symbol"
   },
   {
@@ -156,7 +156,7 @@
     "german": "Adresse",
     "article": "die",
     "english": "address",
-    "category": "Contact Information",
+    "category": "People & Social",
     "hint": "where you live, with street name and number"
   },
   {
@@ -164,7 +164,7 @@
     "german": "Postleitzahl",
     "article": "die",
     "english": "postcode/zip code",
-    "category": "Contact Information",
+    "category": "People & Social",
     "hint": "a number code that identifies your area for mail delivery"
   },
   {
@@ -172,7 +172,7 @@
     "german": "Nummer",
     "article": "die",
     "english": "number",
-    "category": "Contact Information",
+    "category": "People & Social",
     "hint": "a figure like 1, 2, 3 used for counting or identification"
   },
   {
@@ -292,7 +292,7 @@
     "german": "Fußball",
     "article": "der",
     "english": "football/soccer",
-    "category": "Hobbies & Activities",
+    "category": "Hobbies & Leisure",
     "hint": "the world's most popular sport, played with a round ball and your feet"
   },
   {
@@ -300,7 +300,7 @@
     "german": "Volleyball",
     "article": "der",
     "english": "volleyball",
-    "category": "Hobbies & Activities",
+    "category": "Hobbies & Leisure",
     "hint": "a sport where teams hit a ball over a high net"
   },
   {
@@ -308,7 +308,7 @@
     "german": "Tennis",
     "article": "das",
     "english": "tennis",
-    "category": "Hobbies & Activities",
+    "category": "Hobbies & Leisure",
     "hint": "a racket sport played on a court with a net"
   },
   {
@@ -316,7 +316,7 @@
     "german": "Hobby",
     "article": "das",
     "english": "hobby",
-    "category": "Hobbies & Activities",
+    "category": "Hobbies & Leisure",
     "hint": "something you enjoy doing in your free time"
   },
   {
@@ -324,7 +324,7 @@
     "german": "Musik",
     "article": "die",
     "english": "music",
-    "category": "Hobbies & Activities",
+    "category": "Hobbies & Leisure",
     "hint": "sounds organized into melodies and rhythms, you can horen or spielen it"
   },
   {
@@ -332,7 +332,7 @@
     "german": "Alphabet",
     "article": "das",
     "english": "alphabet",
-    "category": "Classroom & Learning",
+    "category": "Work & Education",
     "hint": "A to Z, the set of letters used in a language"
   },
   {
@@ -340,7 +340,7 @@
     "german": "Buchstabe",
     "article": "der",
     "english": "letter (of alphabet)",
-    "category": "Classroom & Learning",
+    "category": "Work & Education",
     "hint": "A, B, C — a single character in the Alphabet"
   },
   {
@@ -348,7 +348,7 @@
     "german": "Wort",
     "article": "das",
     "english": "word",
-    "category": "Classroom & Learning",
+    "category": "Work & Education",
     "hint": "a unit of language made up of Buchstaben"
   },
   {
@@ -356,7 +356,7 @@
     "german": "Satz",
     "article": "der",
     "english": "sentence",
-    "category": "Classroom & Learning",
+    "category": "Work & Education",
     "hint": "a group of Worter that expresses a complete thought"
   },
   {
@@ -364,7 +364,7 @@
     "german": "Frage",
     "article": "die",
     "english": "question",
-    "category": "Classroom & Learning",
+    "category": "Work & Education",
     "hint": "you ask one when you want information, marked with ?"
   },
   {
@@ -372,7 +372,7 @@
     "german": "Antwort",
     "article": "die",
     "english": "answer",
-    "category": "Classroom & Learning",
+    "category": "Work & Education",
     "hint": "what you give when someone asks a Frage"
   },
   {
@@ -380,7 +380,7 @@
     "german": "Dialog",
     "article": "der",
     "english": "dialogue",
-    "category": "Classroom & Learning",
+    "category": "Work & Education",
     "hint": "a conversation between two or more people"
   },
   {
@@ -388,7 +388,7 @@
     "german": "Beispiel",
     "article": "das",
     "english": "example",
-    "category": "Classroom & Learning",
+    "category": "Work & Education",
     "hint": "a sample that shows how something works, zum ___"
   },
   {
@@ -396,7 +396,7 @@
     "german": "Aufgabe",
     "article": "die",
     "english": "task/exercise",
-    "category": "Classroom & Learning",
+    "category": "Work & Education",
     "hint": "a piece of work you must complete, like in a textbook"
   },
   {
@@ -404,7 +404,7 @@
     "german": "Foto",
     "article": "das",
     "english": "photo",
-    "category": "Classroom & Learning",
+    "category": "Work & Education",
     "hint": "a picture taken with a camera"
   },
   {
@@ -412,7 +412,7 @@
     "german": "Bild",
     "article": "das",
     "english": "picture/image",
-    "category": "Classroom & Learning",
+    "category": "Work & Education",
     "hint": "a visual representation, like a drawing or photograph"
   },
   {
@@ -420,7 +420,7 @@
     "german": "Tabelle",
     "article": "die",
     "english": "table/chart",
-    "category": "Classroom & Learning",
+    "category": "Work & Education",
     "hint": "information organized in rows and columns"
   },
   {
@@ -428,7 +428,7 @@
     "german": "Formular",
     "article": "das",
     "english": "form",
-    "category": "Classroom & Learning",
+    "category": "Work & Education",
     "hint": "a document with blank spaces to fill in your information"
   },
   {
@@ -436,7 +436,7 @@
     "german": "Visitenkarte",
     "article": "die",
     "english": "business card",
-    "category": "Classroom & Learning",
+    "category": "Work & Education",
     "hint": "a small card with your Name, Beruf, and contact details"
   },
   {
@@ -444,7 +444,7 @@
     "german": "Steckbrief",
     "article": "der",
     "english": "profile/fact sheet",
-    "category": "Classroom & Learning",
+    "category": "Work & Education",
     "hint": "a short summary of personal information about someone"
   },
   {
@@ -452,7 +452,7 @@
     "german": "Vater",
     "article": "der",
     "english": "father",
-    "category": "Family",
+    "category": "People & Social",
     "hint": "the male parent in a family"
   },
   {
@@ -460,7 +460,7 @@
     "german": "Bruder",
     "article": "der",
     "english": "brother",
-    "category": "Family",
+    "category": "People & Social",
     "hint": "a male sibling"
   },
   {
@@ -468,7 +468,7 @@
     "german": "Sohn",
     "article": "der",
     "english": "son",
-    "category": "Family",
+    "category": "People & Social",
     "hint": "a male child of a parent"
   },
   {
@@ -476,7 +476,7 @@
     "german": "Großvater",
     "article": "der",
     "english": "grandfather",
-    "category": "Family",
+    "category": "People & Social",
     "hint": "the father of your Vater or Mutter, also called Opa"
   },
   {
@@ -484,7 +484,7 @@
     "german": "Onkel",
     "article": "der",
     "english": "uncle",
-    "category": "Family",
+    "category": "People & Social",
     "hint": "the brother of your Mutter or Vater"
   },
   {
@@ -492,7 +492,7 @@
     "german": "Mann",
     "article": "der",
     "english": "husband/man",
-    "category": "Family",
+    "category": "People & Social",
     "hint": "a married male partner, or an adult male person"
   },
   {
@@ -500,7 +500,7 @@
     "german": "Mutter",
     "article": "die",
     "english": "mother",
-    "category": "Family",
+    "category": "People & Social",
     "hint": "the female parent in a family"
   },
   {
@@ -508,7 +508,7 @@
     "german": "Schwester",
     "article": "die",
     "english": "sister",
-    "category": "Family",
+    "category": "People & Social",
     "hint": "a female sibling"
   },
   {
@@ -516,7 +516,7 @@
     "german": "Tochter",
     "article": "die",
     "english": "daughter",
-    "category": "Family",
+    "category": "People & Social",
     "hint": "a female child of a parent"
   },
   {
@@ -524,7 +524,7 @@
     "german": "Großmutter",
     "article": "die",
     "english": "grandmother",
-    "category": "Family",
+    "category": "People & Social",
     "hint": "the mother of your Vater or Mutter, also called Oma"
   },
   {
@@ -532,7 +532,7 @@
     "german": "Tante",
     "article": "die",
     "english": "aunt",
-    "category": "Family",
+    "category": "People & Social",
     "hint": "the sister of your Mutter or Vater"
   },
   {
@@ -540,7 +540,7 @@
     "german": "Frau",
     "article": "die",
     "english": "wife/woman",
-    "category": "Family",
+    "category": "People & Social",
     "hint": "a married female partner, or an adult female person"
   },
   {
@@ -548,7 +548,7 @@
     "german": "Familie",
     "article": "die",
     "english": "family",
-    "category": "Family",
+    "category": "People & Social",
     "hint": "parents, children, siblings — the people closest to you"
   },
   {
@@ -556,7 +556,7 @@
     "german": "Eltern",
     "article": "die",
     "english": "parents",
-    "category": "Family",
+    "category": "People & Social",
     "hint": "your Vater and Mutter together (plural only)"
   },
   {
@@ -564,7 +564,7 @@
     "german": "Geschwister",
     "article": "die",
     "english": "siblings",
-    "category": "Family",
+    "category": "People & Social",
     "hint": "your Brüder and Schwestern together (plural only)"
   },
   {
@@ -572,7 +572,7 @@
     "german": "Kind",
     "article": "das",
     "english": "child",
-    "category": "Family",
+    "category": "People & Social",
     "hint": "a young person, or a son or daughter"
   },
   {
@@ -580,7 +580,7 @@
     "german": "Baby",
     "article": "das",
     "english": "baby",
-    "category": "Family",
+    "category": "People & Social",
     "hint": "a very young child, ein Neugeborenes"
   },
   {
@@ -588,7 +588,7 @@
     "german": "Ingenieur",
     "article": "der",
     "english": "engineer",
-    "category": "Professions",
+    "category": "Work & Education",
     "hint": "designs and builds machines, bridges, or technical systems"
   },
   {
@@ -596,7 +596,7 @@
     "german": "Architekt",
     "article": "der",
     "english": "architect",
-    "category": "Professions",
+    "category": "Work & Education",
     "hint": "designs buildings and plans how they are built"
   },
   {
@@ -604,7 +604,7 @@
     "german": "Informatiker",
     "article": "der",
     "english": "IT specialist/computer scientist",
-    "category": "Professions",
+    "category": "Work & Education",
     "hint": "works with computers, software, and technology"
   },
   {
@@ -612,7 +612,7 @@
     "german": "Manager",
     "article": "der",
     "english": "manager",
-    "category": "Professions",
+    "category": "Work & Education",
     "hint": "leads a team or department in a company"
   },
   {
@@ -620,7 +620,7 @@
     "german": "Student",
     "article": "der",
     "english": "student (male)",
-    "category": "Professions",
+    "category": "Work & Education",
     "hint": "a person studying at a Universität"
   },
   {
@@ -628,7 +628,7 @@
     "german": "Arzt",
     "article": "der",
     "english": "doctor (male)",
-    "category": "Professions",
+    "category": "Work & Education",
     "hint": "a medical professional who treats sick people"
   },
   {
@@ -636,7 +636,7 @@
     "german": "Lehrer",
     "article": "der",
     "english": "teacher (male)",
-    "category": "Professions",
+    "category": "Work & Education",
     "hint": "a person who teaches at a Schule"
   },
   {
@@ -644,7 +644,7 @@
     "german": "Beruf",
     "article": "der",
     "english": "profession/job",
-    "category": "Professions",
+    "category": "Work & Education",
     "hint": "what someone does for work, Was sind Sie von ___?"
   },
   {
@@ -652,7 +652,7 @@
     "german": "Ingenieurin",
     "article": "die",
     "english": "engineer (female)",
-    "category": "Professions",
+    "category": "Work & Education",
     "hint": "a woman who designs and builds technical systems"
   },
   {
@@ -660,7 +660,7 @@
     "german": "Architektin",
     "article": "die",
     "english": "architect (female)",
-    "category": "Professions",
+    "category": "Work & Education",
     "hint": "a woman who designs buildings"
   },
   {
@@ -668,7 +668,7 @@
     "german": "Informatikerin",
     "article": "die",
     "english": "IT specialist (female)",
-    "category": "Professions",
+    "category": "Work & Education",
     "hint": "a woman who works with computers and software"
   },
   {
@@ -676,7 +676,7 @@
     "german": "Studentin",
     "article": "die",
     "english": "student (female)",
-    "category": "Professions",
+    "category": "Work & Education",
     "hint": "a woman studying at a Universität"
   },
   {
@@ -684,7 +684,7 @@
     "german": "Ärztin",
     "article": "die",
     "english": "doctor (female)",
-    "category": "Professions",
+    "category": "Work & Education",
     "hint": "a female medical professional"
   },
   {
@@ -692,7 +692,7 @@
     "german": "Lehrerin",
     "article": "die",
     "english": "teacher (female)",
-    "category": "Professions",
+    "category": "Work & Education",
     "hint": "a woman who teaches at a Schule"
   },
   {
@@ -700,7 +700,7 @@
     "german": "Künstlerin",
     "article": "die",
     "english": "artist (female)",
-    "category": "Professions",
+    "category": "Work & Education",
     "hint": "a woman who creates art — Bilder, Skulpturen"
   },
   {
@@ -708,7 +708,7 @@
     "german": "Firma",
     "article": "die",
     "english": "company/firm",
-    "category": "Professions",
+    "category": "Work & Education",
     "hint": "a business organization where people work"
   },
   {
@@ -716,7 +716,7 @@
     "german": "Computer",
     "article": "der",
     "english": "computer",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "an electronic device you use for work, email, and internet"
   },
   {
@@ -724,7 +724,7 @@
     "german": "Drucker",
     "article": "der",
     "english": "printer",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "a machine that puts text and images onto paper"
   },
   {
@@ -732,7 +732,7 @@
     "german": "Kalender",
     "article": "der",
     "english": "calendar",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "shows dates and days, helps you plan Termine"
   },
   {
@@ -740,7 +740,7 @@
     "german": "Kugelschreiber",
     "article": "der",
     "english": "ballpoint pen",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "a writing instrument with ink, shorter: Kuli"
   },
   {
@@ -748,7 +748,7 @@
     "german": "Bildschirm",
     "article": "der",
     "english": "screen/monitor",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "the display part of a Computer where you see images and text"
   },
   {
@@ -756,7 +756,7 @@
     "german": "Stuhl",
     "article": "der",
     "english": "chair",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "a piece of furniture you sit on at a desk"
   },
   {
@@ -764,7 +764,7 @@
     "german": "Schreibtisch",
     "article": "der",
     "english": "desk",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "a table where you work or write, Schreib means write"
   },
   {
@@ -772,7 +772,7 @@
     "german": "Tisch",
     "article": "der",
     "english": "table",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "a flat piece of furniture with legs, you eat or work at it"
   },
   {
@@ -780,7 +780,7 @@
     "german": "Schlüssel",
     "article": "der",
     "english": "key",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "a small metal object that opens a lock or door"
   },
   {
@@ -788,7 +788,7 @@
     "german": "Briefumschlag",
     "article": "der",
     "english": "envelope",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "a paper container for sending a Brief through the post"
   },
   {
@@ -796,7 +796,7 @@
     "german": "Maus",
     "article": "die",
     "english": "mouse (computer)",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "a small device you click to control the Computer cursor"
   },
   {
@@ -804,7 +804,7 @@
     "german": "Tastatur",
     "article": "die",
     "english": "keyboard",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "the part of the Computer with letters and numbers you type on"
   },
   {
@@ -812,7 +812,7 @@
     "german": "Lampe",
     "article": "die",
     "english": "lamp",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "gives light in a room, sits on a Schreibtisch or hangs from the ceiling"
   },
   {
@@ -820,7 +820,7 @@
     "german": "Brille",
     "article": "die",
     "english": "glasses",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "you wear them on your nose to see better"
   },
   {
@@ -828,7 +828,7 @@
     "german": "Tasche",
     "article": "die",
     "english": "bag",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "you carry things in it, like a handbag or briefcase"
   },
   {
@@ -836,7 +836,7 @@
     "german": "Schere",
     "article": "die",
     "english": "scissors",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "a tool with two blades for cutting paper"
   },
   {
@@ -844,7 +844,7 @@
     "german": "Handy",
     "article": "das",
     "english": "mobile phone",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "a portable telephone you carry everywhere — not the English meaning"
   },
   {
@@ -852,7 +852,7 @@
     "german": "Telefon",
     "article": "das",
     "english": "telephone",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "a device for making calls, can be at home or in the Büro"
   },
   {
@@ -860,7 +860,7 @@
     "german": "Büro",
     "article": "das",
     "english": "office",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "the room or place where you work at a Schreibtisch"
   },
   {
@@ -868,7 +868,7 @@
     "german": "Bild",
     "article": "das",
     "english": "picture/image",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "a photo, painting, or drawing that you can look at"
   },
   {
@@ -876,7 +876,7 @@
     "german": "Buch",
     "article": "das",
     "english": "book",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "pages with text bound together, you read it"
   },
   {
@@ -884,7 +884,7 @@
     "german": "Wörterbuch",
     "article": "das",
     "english": "dictionary",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "a Buch that explains the meaning of Wörter"
   },
   {
@@ -892,7 +892,7 @@
     "german": "Notizbuch",
     "article": "das",
     "english": "notebook",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "a small Buch where you write notes"
   },
   {
@@ -900,7 +900,7 @@
     "german": "Papier",
     "article": "das",
     "english": "paper",
-    "category": "Workplace & Objects",
+    "category": "Work & Education",
     "hint": "thin white sheets you write or print on"
   },
   {
@@ -908,7 +908,7 @@
     "german": "Vorname",
     "article": "der",
     "english": "first name",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "your given name, not your Familienname"
   },
   {
@@ -916,7 +916,7 @@
     "german": "Familienname",
     "article": "der",
     "english": "surname/family name",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "your last name, shared with your Familie"
   },
   {
@@ -924,7 +924,7 @@
     "german": "Name",
     "article": "der",
     "english": "name",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "what people call you — Vor- and Familienname together"
   },
   {
@@ -932,7 +932,7 @@
     "german": "Wohnort",
     "article": "der",
     "english": "place of residence",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "the city or town where you live"
   },
   {
@@ -940,7 +940,7 @@
     "german": "Geburtsort",
     "article": "der",
     "english": "place of birth",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "the city or town where you were born"
   },
   {
@@ -948,7 +948,7 @@
     "german": "Familienstand",
     "article": "der",
     "english": "marital status",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "ledig, verheiratet, or geschieden — your relationship status"
   },
   {
@@ -956,7 +956,7 @@
     "german": "Adresse",
     "article": "die",
     "english": "address",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "the street and number where you live"
   },
   {
@@ -964,7 +964,7 @@
     "german": "Telefonnummer",
     "article": "die",
     "english": "telephone number",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "the number someone dials to call you"
   },
   {
@@ -972,7 +972,7 @@
     "german": "Handynummer",
     "article": "die",
     "english": "mobile number",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "the Telefonnummer for your Handy"
   },
   {
@@ -980,7 +980,7 @@
     "german": "E-Mail",
     "article": "die",
     "english": "email",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "an electronic message sent over the internet"
   },
   {
@@ -988,7 +988,7 @@
     "german": "Sprache",
     "article": "die",
     "english": "language",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "Deutsch, Englisch, Spanisch — what people speak"
   },
   {
@@ -996,7 +996,7 @@
     "german": "Muttersprache",
     "article": "die",
     "english": "mother tongue/native language",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "the first Sprache you learned as a Kind"
   },
   {
@@ -1004,7 +1004,7 @@
     "german": "Hobby",
     "article": "das",
     "english": "hobby",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "an activity you do for fun in your free time"
   },
   {
@@ -1012,7 +1012,7 @@
     "german": "Alter",
     "article": "das",
     "english": "age",
-    "category": "Personal Information",
+    "category": "People & Social",
     "hint": "how old you are, measured in years"
   },
   {
@@ -1020,7 +1020,7 @@
     "german": "Fußball",
     "article": "der",
     "english": "football/soccer",
-    "category": "Hobbies & Activities",
+    "category": "Hobbies & Leisure",
     "hint": "a sport where two teams kick a ball into a goal"
   },
   {
@@ -1028,7 +1028,7 @@
     "german": "Sport",
     "article": "der",
     "english": "sport",
-    "category": "Hobbies & Activities",
+    "category": "Hobbies & Leisure",
     "hint": "physical activities like Fußball, Tennis, or Schwimmen"
   },
   {
@@ -1132,7 +1132,7 @@
     "german": "Stadt",
     "article": "die",
     "english": "city",
-    "category": "City & Places",
+    "category": "City & Transport",
     "hint": "an urban area where many people live, work, and shop"
   },
   {
@@ -1140,7 +1140,7 @@
     "german": "Marktplatz",
     "article": "der",
     "english": "market square",
-    "category": "City & Places",
+    "category": "City & Transport",
     "hint": "an open square in the center of town where markets are held"
   },
   {
@@ -1148,7 +1148,7 @@
     "german": "Dom",
     "article": "der",
     "english": "cathedral",
-    "category": "City & Places",
+    "category": "City & Transport",
     "hint": "a large and important church, like the Kölner ___"
   },
   {
@@ -1156,7 +1156,7 @@
     "german": "Park",
     "article": "der",
     "english": "park",
-    "category": "City & Places",
+    "category": "City & Transport",
     "hint": "a green area in a city with trees and grass for walking"
   },
   {
@@ -1164,7 +1164,7 @@
     "german": "Fluss",
     "article": "der",
     "english": "river",
-    "category": "City & Places",
+    "category": "City & Transport",
     "hint": "a large natural stream of water flowing through a city, like the Main"
   },
   {
@@ -1172,7 +1172,7 @@
     "german": "Turm",
     "article": "der",
     "english": "tower",
-    "category": "City & Places",
+    "category": "City & Transport",
     "hint": "a tall narrow building or part of a building"
   },
   {
@@ -1180,7 +1180,7 @@
     "german": "Römer",
     "article": "der",
     "english": "Römer (Frankfurt city hall)",
-    "category": "City & Places",
+    "category": "City & Transport",
     "hint": "the historic town hall building in Frankfurt am Main"
   },
   {
@@ -1188,7 +1188,7 @@
     "german": "Altstadt",
     "article": "die",
     "english": "old town",
-    "category": "City & Places",
+    "category": "City & Transport",
     "hint": "the historic center of a city with old buildings"
   },
   {
@@ -1196,7 +1196,7 @@
     "german": "Zeil",
     "article": "die",
     "english": "Zeil (shopping street)",
-    "category": "City & Places",
+    "category": "City & Transport",
     "hint": "Frankfurt's famous shopping street"
   },
   {
@@ -1748,7 +1748,7 @@
     "german": "Museumsbesuch",
     "article": "der",
     "english": "museum visit",
-    "category": "City Activities",
+    "category": "City & Transport",
     "hint": "going to see art or history exhibitions in a public building"
   },
   {
@@ -1756,7 +1756,7 @@
     "german": "Palmengarten",
     "article": "der",
     "english": "palm garden",
-    "category": "City Activities",
+    "category": "City & Transport",
     "hint": "a botanical garden in Frankfurt with tropical plants"
   },
   {
@@ -1764,7 +1764,7 @@
     "german": "Zoo",
     "article": "der",
     "english": "zoo",
-    "category": "City Activities",
+    "category": "City & Transport",
     "hint": "a place where you can see wild animals from around the world"
   },
   {
@@ -1772,7 +1772,7 @@
     "german": "Eintritt",
     "article": "der",
     "english": "entrance/admission",
-    "category": "City Activities",
+    "category": "City & Transport",
     "hint": "the fee you pay to enter a Museum or Zoo"
   },
   {
@@ -1780,7 +1780,7 @@
     "german": "Lieblingsort",
     "article": "der",
     "english": "favourite place",
-    "category": "City Activities",
+    "category": "City & Transport",
     "hint": "the place in the city you like the most"
   },
   {
@@ -1788,7 +1788,7 @@
     "german": "Oper",
     "article": "die",
     "english": "opera house",
-    "category": "City Activities",
+    "category": "City & Transport",
     "hint": "a building where musical dramas with singing are performed"
   },
   {
@@ -1796,7 +1796,7 @@
     "german": "Messe",
     "article": "die",
     "english": "trade fair",
-    "category": "City Activities",
+    "category": "City & Transport",
     "hint": "a large exhibition where companies show their products"
   },
   {
@@ -1804,7 +1804,7 @@
     "german": "Sehenswürdigkeit",
     "article": "die",
     "english": "sight/attraction",
-    "category": "City Activities",
+    "category": "City & Transport",
     "hint": "something worth seeing in a city, like a famous building"
   },
   {
@@ -1812,7 +1812,7 @@
     "german": "Kirche",
     "article": "die",
     "english": "church",
-    "category": "City Activities",
+    "category": "City & Transport",
     "hint": "a building where Christians go to worship"
   },
   {
@@ -1820,7 +1820,7 @@
     "german": "Bibliothek",
     "article": "die",
     "english": "library",
-    "category": "City Activities",
+    "category": "City & Transport",
     "hint": "a public building where you borrow Bücher for free"
   },
   {
@@ -1828,7 +1828,7 @@
     "german": "Museum",
     "article": "das",
     "english": "museum",
-    "category": "City Activities",
+    "category": "City & Transport",
     "hint": "a building where art, history, or science objects are displayed"
   },
   {
@@ -1836,7 +1836,7 @@
     "german": "Theater",
     "article": "das",
     "english": "theatre",
-    "category": "City Activities",
+    "category": "City & Transport",
     "hint": "a building where plays and performances are shown on stage"
   },
   {
@@ -1844,7 +1844,7 @@
     "german": "Kino",
     "article": "das",
     "english": "cinema",
-    "category": "City Activities",
+    "category": "City & Transport",
     "hint": "a place where you watch Filme on a big screen"
   },
   {
@@ -1852,7 +1852,7 @@
     "german": "Konzert",
     "article": "das",
     "english": "concert",
-    "category": "City Activities",
+    "category": "City & Transport",
     "hint": "a live musical performance by musicians or a band"
   },
   {
@@ -1860,7 +1860,7 @@
     "german": "Schwimmbad",
     "article": "das",
     "english": "swimming pool",
-    "category": "City Activities",
+    "category": "City & Transport",
     "hint": "a public place with water where you swim for fun or exercise"
   },
   {
@@ -1868,7 +1868,7 @@
     "german": "Schloss",
     "article": "das",
     "english": "castle/palace",
-    "category": "City Activities",
+    "category": "City & Transport",
     "hint": "a large old building where kings or nobles lived"
   },
   {
@@ -2076,7 +2076,7 @@
     "german": "Morgen",
     "article": "der",
     "english": "morning",
-    "category": "Times of Day",
+    "category": "Time & Calendar",
     "hint": "the early part of the day when you wake up and have Frühstück"
   },
   {
@@ -2084,7 +2084,7 @@
     "german": "Vormittag",
     "article": "der",
     "english": "late morning",
-    "category": "Times of Day",
+    "category": "Time & Calendar",
     "hint": "the time between Morgen and Mittag, roughly 9 to 12"
   },
   {
@@ -2092,7 +2092,7 @@
     "german": "Mittag",
     "article": "der",
     "english": "midday/noon",
-    "category": "Times of Day",
+    "category": "Time & Calendar",
     "hint": "12 o'clock, the middle of the day when you eat Mittagessen"
   },
   {
@@ -2100,7 +2100,7 @@
     "german": "Nachmittag",
     "article": "der",
     "english": "afternoon",
-    "category": "Times of Day",
+    "category": "Time & Calendar",
     "hint": "the time after Mittag, roughly 12 to 6"
   },
   {
@@ -2108,7 +2108,7 @@
     "german": "Abend",
     "article": "der",
     "english": "evening",
-    "category": "Times of Day",
+    "category": "Time & Calendar",
     "hint": "the later part of the day, after work, before Nacht"
   },
   {
@@ -2116,7 +2116,7 @@
     "german": "Nacht",
     "article": "die",
     "english": "night",
-    "category": "Times of Day",
+    "category": "Time & Calendar",
     "hint": "the dark hours when most people sleep"
   },
   {
@@ -2124,7 +2124,7 @@
     "german": "Uhr",
     "article": "die",
     "english": "clock/watch/o'clock",
-    "category": "Time & Schedule",
+    "category": "Time & Calendar",
     "hint": "tells you the time, or used after a number: es ist drei ___"
   },
   {
@@ -2132,7 +2132,7 @@
     "german": "Uhrzeit",
     "article": "die",
     "english": "time (of day)",
-    "category": "Time & Schedule",
+    "category": "Time & Calendar",
     "hint": "when you ask Wie spät ist es? you want to know the ___"
   },
   {
@@ -2140,7 +2140,7 @@
     "german": "Stunde",
     "article": "die",
     "english": "hour",
-    "category": "Time & Schedule",
+    "category": "Time & Calendar",
     "hint": "60 Minuten, der Unterricht dauert zwei ___n"
   },
   {
@@ -2148,7 +2148,7 @@
     "german": "Minute",
     "article": "die",
     "english": "minute",
-    "category": "Time & Schedule",
+    "category": "Time & Calendar",
     "hint": "60 Sekunden, es ist fünf ___n vor drei"
   },
   {
@@ -2156,7 +2156,7 @@
     "german": "Viertel",
     "article": "das",
     "english": "quarter",
-    "category": "Time & Schedule",
+    "category": "Time & Calendar",
     "hint": "15 Minuten, ___ vor or ___ nach the hour"
   },
   {
@@ -2164,7 +2164,7 @@
     "german": "Zeit",
     "article": "die",
     "english": "time",
-    "category": "Time & Schedule",
+    "category": "Time & Calendar",
     "hint": "ich habe keine ___ — what you lack when you are very busy"
   },
   {
@@ -2172,7 +2172,7 @@
     "german": "Zeitpunkt",
     "article": "der",
     "english": "point in time",
-    "category": "Time & Schedule",
+    "category": "Time & Calendar",
     "hint": "a specific moment, like wann beginnt der Unterricht"
   },
   {
@@ -2180,7 +2180,7 @@
     "german": "Dauer",
     "article": "die",
     "english": "duration",
-    "category": "Time & Schedule",
+    "category": "Time & Calendar",
     "hint": "how long something lasts, wie lange dauert es"
   },
   {
@@ -2188,7 +2188,7 @@
     "german": "Frühstück",
     "article": "das",
     "english": "breakfast",
-    "category": "Meals",
+    "category": "Food & Drink",
     "hint": "the first meal of the day, in the morning"
   },
   {
@@ -2196,7 +2196,7 @@
     "german": "Mittagessen",
     "article": "das",
     "english": "lunch",
-    "category": "Meals",
+    "category": "Food & Drink",
     "hint": "the meal you eat around Mittag, the midday meal"
   },
   {
@@ -2204,7 +2204,7 @@
     "german": "Abendessen",
     "article": "das",
     "english": "dinner/supper",
-    "category": "Meals",
+    "category": "Food & Drink",
     "hint": "the last meal of the day, in the evening"
   },
   {
@@ -2212,7 +2212,7 @@
     "german": "Kaffee",
     "article": "der",
     "english": "coffee",
-    "category": "Meals",
+    "category": "Food & Drink",
     "hint": "a hot brown drink, popular in the Nachmittag in Germany"
   },
   {
@@ -2220,7 +2220,7 @@
     "german": "Tee",
     "article": "der",
     "english": "tea",
-    "category": "Meals",
+    "category": "Food & Drink",
     "hint": "a hot drink made by pouring water over dried leaves"
   },
   {
@@ -2228,7 +2228,7 @@
     "german": "Brötchen",
     "article": "das",
     "english": "bread roll",
-    "category": "Meals",
+    "category": "Food & Drink",
     "hint": "a small round bread, typical German Frühstück item"
   },
   {
@@ -2236,7 +2236,7 @@
     "german": "Pause",
     "article": "die",
     "english": "break/pause",
-    "category": "Meals",
+    "category": "Food & Drink",
     "hint": "a short rest period, ___ machen means to take a break"
   },
   {
@@ -2244,7 +2244,7 @@
     "german": "Montag",
     "article": "der",
     "english": "Monday",
-    "category": "Days of the Week",
+    "category": "Time & Calendar",
     "hint": "the first day of the work week, after Sonntag"
   },
   {
@@ -2252,7 +2252,7 @@
     "german": "Dienstag",
     "article": "der",
     "english": "Tuesday",
-    "category": "Days of the Week",
+    "category": "Time & Calendar",
     "hint": "the second day of the work week, after Montag"
   },
   {
@@ -2260,7 +2260,7 @@
     "german": "Mittwoch",
     "article": "der",
     "english": "Wednesday",
-    "category": "Days of the Week",
+    "category": "Time & Calendar",
     "hint": "the middle of the week, Mitte der Woche"
   },
   {
@@ -2268,7 +2268,7 @@
     "german": "Donnerstag",
     "article": "der",
     "english": "Thursday",
-    "category": "Days of the Week",
+    "category": "Time & Calendar",
     "hint": "the fourth day of the work week, named after the thunder god"
   },
   {
@@ -2276,7 +2276,7 @@
     "german": "Freitag",
     "article": "der",
     "english": "Friday",
-    "category": "Days of the Week",
+    "category": "Time & Calendar",
     "hint": "the last day of the work week, before the weekend"
   },
   {
@@ -2284,7 +2284,7 @@
     "german": "Samstag",
     "article": "der",
     "english": "Saturday",
-    "category": "Days of the Week",
+    "category": "Time & Calendar",
     "hint": "the first day of the weekend, also called Sonnabend"
   },
   {
@@ -2292,7 +2292,7 @@
     "german": "Sonntag",
     "article": "der",
     "english": "Sunday",
-    "category": "Days of the Week",
+    "category": "Time & Calendar",
     "hint": "the day of rest, most shops in Germany are closed"
   },
   {
@@ -2300,7 +2300,7 @@
     "german": "Wochentag",
     "article": "der",
     "english": "weekday",
-    "category": "Days of the Week",
+    "category": "Time & Calendar",
     "hint": "Montag through Freitag, a working day"
   },
   {
@@ -2308,7 +2308,7 @@
     "german": "Wochenende",
     "article": "das",
     "english": "weekend",
-    "category": "Days of the Week",
+    "category": "Time & Calendar",
     "hint": "Samstag and Sonntag, the end of the week"
   },
   {
@@ -2316,7 +2316,7 @@
     "german": "Januar",
     "article": "der",
     "english": "January",
-    "category": "Months",
+    "category": "Time & Calendar",
     "hint": "the first month of the year, in winter"
   },
   {
@@ -2324,7 +2324,7 @@
     "german": "Februar",
     "article": "der",
     "english": "February",
-    "category": "Months",
+    "category": "Time & Calendar",
     "hint": "the second and shortest month of the year"
   },
   {
@@ -2332,7 +2332,7 @@
     "german": "März",
     "article": "der",
     "english": "March",
-    "category": "Months",
+    "category": "Time & Calendar",
     "hint": "the third month, spring begins"
   },
   {
@@ -2340,7 +2340,7 @@
     "german": "April",
     "article": "der",
     "english": "April",
-    "category": "Months",
+    "category": "Time & Calendar",
     "hint": "the fourth month, known for changeable weather"
   },
   {
@@ -2348,7 +2348,7 @@
     "german": "Mai",
     "article": "der",
     "english": "May",
-    "category": "Months",
+    "category": "Time & Calendar",
     "hint": "the fifth month, flowers bloom"
   },
   {
@@ -2356,7 +2356,7 @@
     "german": "Juni",
     "article": "der",
     "english": "June",
-    "category": "Months",
+    "category": "Time & Calendar",
     "hint": "the sixth month, the start of summer"
   },
   {
@@ -2364,7 +2364,7 @@
     "german": "Juli",
     "article": "der",
     "english": "July",
-    "category": "Months",
+    "category": "Time & Calendar",
     "hint": "the seventh month, usually the warmest"
   },
   {
@@ -2372,7 +2372,7 @@
     "german": "August",
     "article": "der",
     "english": "August",
-    "category": "Months",
+    "category": "Time & Calendar",
     "hint": "the eighth month, still summer"
   },
   {
@@ -2380,7 +2380,7 @@
     "german": "September",
     "article": "der",
     "english": "September",
-    "category": "Months",
+    "category": "Time & Calendar",
     "hint": "the ninth month, autumn begins"
   },
   {
@@ -2388,7 +2388,7 @@
     "german": "Oktober",
     "article": "der",
     "english": "October",
-    "category": "Months",
+    "category": "Time & Calendar",
     "hint": "the tenth month, Oktoberfest in München"
   },
   {
@@ -2396,7 +2396,7 @@
     "german": "November",
     "article": "der",
     "english": "November",
-    "category": "Months",
+    "category": "Time & Calendar",
     "hint": "the eleventh month, days get shorter"
   },
   {
@@ -2404,7 +2404,7 @@
     "german": "Dezember",
     "article": "der",
     "english": "December",
-    "category": "Months",
+    "category": "Time & Calendar",
     "hint": "the twelfth and last month, Weihnachten"
   },
   {
@@ -2412,7 +2412,7 @@
     "german": "Monat",
     "article": "der",
     "english": "month",
-    "category": "Months",
+    "category": "Time & Calendar",
     "hint": "a period of about 30 Tage, ein Jahr hat 12 ___e"
   },
   {
@@ -2420,7 +2420,7 @@
     "german": "Jahr",
     "article": "das",
     "english": "year",
-    "category": "Months",
+    "category": "Time & Calendar",
     "hint": "365 Tage, 12 Monate, 52 Wochen"
   },
   {
@@ -2428,7 +2428,7 @@
     "german": "Woche",
     "article": "die",
     "english": "week",
-    "category": "Months",
+    "category": "Time & Calendar",
     "hint": "7 Tage, von Montag bis Sonntag"
   },
   {
@@ -2500,7 +2500,7 @@
     "german": "Tagesablauf",
     "article": "der",
     "english": "daily routine",
-    "category": "Daily Routine",
+    "category": "Daily Life",
     "hint": "the sequence of activities from Morgen to Nacht"
   },
   {
@@ -2508,7 +2508,7 @@
     "german": "Termin",
     "article": "der",
     "english": "appointment",
-    "category": "Daily Routine",
+    "category": "Daily Life",
     "hint": "a fixed time to meet someone, like at the Arzt"
   },
   {
@@ -2516,7 +2516,7 @@
     "german": "Arzt",
     "article": "der",
     "english": "doctor",
-    "category": "Daily Routine",
+    "category": "Daily Life",
     "hint": "a medical professional you visit when you are krank"
   },
   {
@@ -2524,7 +2524,7 @@
     "german": "Ärztin",
     "article": "die",
     "english": "doctor (female)",
-    "category": "Daily Routine",
+    "category": "Daily Life",
     "hint": "a female medical professional"
   },
   {
@@ -2532,7 +2532,7 @@
     "german": "Markt",
     "article": "der",
     "english": "market",
-    "category": "Daily Routine",
+    "category": "Daily Life",
     "hint": "an outdoor place where people sell Obst, Gemüse, and other goods"
   },
   {
@@ -2540,7 +2540,7 @@
     "german": "Supermarkt",
     "article": "der",
     "english": "supermarket",
-    "category": "Daily Routine",
+    "category": "Daily Life",
     "hint": "a large shop where you buy food and everyday items"
   },
   {
@@ -2548,7 +2548,7 @@
     "german": "Bett",
     "article": "das",
     "english": "bed",
-    "category": "Daily Routine",
+    "category": "Daily Life",
     "hint": "the piece of furniture where you sleep, ins ___ gehen"
   },
   {
@@ -2556,7 +2556,7 @@
     "german": "Geburtstag",
     "article": "der",
     "english": "birthday",
-    "category": "Events & Social",
+    "category": "People & Social",
     "hint": "the anniversary of the day you were born, alles Gute zum ___"
   },
   {
@@ -2564,7 +2564,7 @@
     "german": "Einladung",
     "article": "die",
     "english": "invitation",
-    "category": "Events & Social",
+    "category": "People & Social",
     "hint": "when someone asks you to come to a party or event"
   },
   {
@@ -2572,7 +2572,7 @@
     "german": "Geburtstagsparty",
     "article": "die",
     "english": "birthday party",
-    "category": "Events & Social",
+    "category": "People & Social",
     "hint": "a celebration for someone's Geburtstag"
   },
   {
@@ -2580,7 +2580,7 @@
     "german": "Fest",
     "article": "das",
     "english": "celebration/festival",
-    "category": "Events & Social",
+    "category": "People & Social",
     "hint": "a party or festive event"
   },
   {
@@ -2588,7 +2588,7 @@
     "german": "Telefongespräch",
     "article": "das",
     "english": "telephone conversation",
-    "category": "Events & Social",
+    "category": "People & Social",
     "hint": "a conversation over the phone"
   },
   {
@@ -2596,7 +2596,7 @@
     "german": "Hobby",
     "article": "das",
     "english": "hobby",
-    "category": "Hobbies & Free Time",
+    "category": "Hobbies & Leisure",
     "hint": "something you enjoy doing in your Freizeit"
   },
   {
@@ -2604,7 +2604,7 @@
     "german": "Freizeit",
     "article": "die",
     "english": "free time/leisure",
-    "category": "Hobbies & Free Time",
+    "category": "Hobbies & Leisure",
     "hint": "time when you are not working, for Hobbys and fun"
   },
   {
@@ -2612,7 +2612,7 @@
     "german": "Sport",
     "article": "der",
     "english": "sport",
-    "category": "Hobbies & Free Time",
+    "category": "Hobbies & Leisure",
     "hint": "physical activity like Schwimmen, Fußball, Tennis"
   },
   {
@@ -2620,7 +2620,7 @@
     "german": "Schwimmen",
     "article": "das",
     "english": "swimming",
-    "category": "Hobbies & Free Time",
+    "category": "Hobbies & Leisure",
     "hint": "moving through water as exercise or sport"
   },
   {
@@ -2628,7 +2628,7 @@
     "german": "Schwimmbad",
     "article": "das",
     "english": "swimming pool",
-    "category": "Hobbies & Free Time",
+    "category": "Hobbies & Leisure",
     "hint": "a place with water where you go schwimmen"
   },
   {
@@ -2636,7 +2636,7 @@
     "german": "Zeitung",
     "article": "die",
     "english": "newspaper",
-    "category": "Hobbies & Free Time",
+    "category": "Hobbies & Leisure",
     "hint": "a daily printed publication with news"
   },
   {
@@ -2644,7 +2644,7 @@
     "german": "Buch",
     "article": "das",
     "english": "book",
-    "category": "Hobbies & Free Time",
+    "category": "Hobbies & Leisure",
     "hint": "pages bound together with text, Bücher lesen"
   },
   {
@@ -2652,7 +2652,7 @@
     "german": "Musik",
     "article": "die",
     "english": "music",
-    "category": "Hobbies & Free Time",
+    "category": "Hobbies & Leisure",
     "hint": "sounds arranged in melodies and rhythms, ___ hören"
   },
   {
@@ -2660,7 +2660,7 @@
     "german": "Film",
     "article": "der",
     "english": "film/movie",
-    "category": "Hobbies & Free Time",
+    "category": "Hobbies & Leisure",
     "hint": "a story shown on screen, einen ___ sehen"
   },
   {
@@ -2668,7 +2668,7 @@
     "german": "Fernsehen",
     "article": "das",
     "english": "television/TV",
-    "category": "Hobbies & Free Time",
+    "category": "Hobbies & Leisure",
     "hint": "watching programs on a screen at home"
   },
   {
@@ -2676,7 +2676,7 @@
     "german": "Freund",
     "article": "der",
     "english": "friend (male)",
-    "category": "Hobbies & Free Time",
+    "category": "Hobbies & Leisure",
     "hint": "a male person you like and spend time with"
   },
   {
@@ -2684,7 +2684,7 @@
     "german": "Freundin",
     "article": "die",
     "english": "friend (female)",
-    "category": "Hobbies & Free Time",
+    "category": "Hobbies & Leisure",
     "hint": "a female person you like and spend time with"
   },
   {
@@ -2692,7 +2692,7 @@
     "german": "Kaffee",
     "article": "der",
     "english": "coffee",
-    "category": "Drinks",
+    "category": "Food & Drink",
     "hint": "a hot brown beverage most Germans drink in the morning"
   },
   {
@@ -2700,7 +2700,7 @@
     "german": "Tee",
     "article": "der",
     "english": "tea",
-    "category": "Drinks",
+    "category": "Food & Drink",
     "hint": "a hot beverage made by pouring water over dried leaves"
   },
   {
@@ -2708,7 +2708,7 @@
     "german": "Saft",
     "article": "der",
     "english": "juice",
-    "category": "Drinks",
+    "category": "Food & Drink",
     "hint": "a drink made from pressed fruit, like Orangensaft"
   },
   {
@@ -2716,7 +2716,7 @@
     "german": "Orangensaft",
     "article": "der",
     "english": "orange juice",
-    "category": "Drinks",
+    "category": "Food & Drink",
     "hint": "Saft made from a round orange citrus fruit"
   },
   {
@@ -2724,7 +2724,7 @@
     "german": "Apfelsaft",
     "article": "der",
     "english": "apple juice",
-    "category": "Drinks",
+    "category": "Food & Drink",
     "hint": "Saft made from the most popular fruit in Germany"
   },
   {
@@ -2732,7 +2732,7 @@
     "german": "Wein",
     "article": "der",
     "english": "wine",
-    "category": "Drinks",
+    "category": "Food & Drink",
     "hint": "an alcoholic drink made from grapes, rot or weiß"
   },
   {
@@ -2740,7 +2740,7 @@
     "german": "Sprudel",
     "article": "der",
     "english": "sparkling water",
-    "category": "Drinks",
+    "category": "Food & Drink",
     "hint": "Mineralwasser with bubbles, Germans drink a lot of it"
   },
   {
@@ -2748,7 +2748,7 @@
     "german": "Joghurt",
     "article": "der",
     "english": "yogurt",
-    "category": "Dairy Products",
+    "category": "Food & Drink",
     "hint": "a creamy fermented milk product, often eaten with fruit"
   },
   {
@@ -2756,7 +2756,7 @@
     "german": "Käse",
     "article": "der",
     "english": "cheese",
-    "category": "Dairy Products",
+    "category": "Food & Drink",
     "hint": "a solid food made from milk, die Schweiz is famous for it"
   },
   {
@@ -2764,7 +2764,7 @@
     "german": "Quark",
     "article": "der",
     "english": "quark/curd cheese",
-    "category": "Dairy Products",
+    "category": "Food & Drink",
     "hint": "a soft fresh dairy product popular in Germany, similar to thick yogurt"
   },
   {
@@ -2772,7 +2772,7 @@
     "german": "Zucker",
     "article": "der",
     "english": "sugar",
-    "category": "Food Ingredients",
+    "category": "Food & Drink",
     "hint": "a sweet white substance you add to Kaffee or Tee"
   },
   {
@@ -2780,7 +2780,7 @@
     "german": "Reis",
     "article": "der",
     "english": "rice",
-    "category": "Grains & Starches",
+    "category": "Food & Drink",
     "hint": "small white grains, a staple food in Asian cooking"
   },
   {
@@ -2788,7 +2788,7 @@
     "german": "Salat",
     "article": "der",
     "english": "salad",
-    "category": "Vegetables & Side Dishes",
+    "category": "Food & Drink",
     "hint": "a dish of raw green leaves and other vegetables"
   },
   {
@@ -2796,7 +2796,7 @@
     "german": "Fisch",
     "article": "der",
     "english": "fish",
-    "category": "Meat & Protein",
+    "category": "Food & Drink",
     "hint": "an animal that lives in water and people eat it grilled or fried"
   },
   {
@@ -2804,7 +2804,7 @@
     "german": "Schinken",
     "article": "der",
     "english": "ham",
-    "category": "Meat & Protein",
+    "category": "Food & Drink",
     "hint": "a type of cured or cooked pork, often on Brot"
   },
   {
@@ -2812,7 +2812,7 @@
     "german": "Kuchen",
     "article": "der",
     "english": "cake",
-    "category": "Baked Goods & Sweets",
+    "category": "Food & Drink",
     "hint": "a sweet baked dessert, often eaten with Kaffee am Nachmittag"
   },
   {
@@ -2820,7 +2820,7 @@
     "german": "Apfel",
     "article": "der",
     "english": "apple",
-    "category": "Fruit",
+    "category": "Food & Drink",
     "hint": "a round red or green fruit, the most popular Obst in Germany"
   },
   {
@@ -2828,7 +2828,7 @@
     "german": "Tomatensaft",
     "article": "der",
     "english": "tomato juice",
-    "category": "Drinks",
+    "category": "Food & Drink",
     "hint": "Saft made from a red vegetable-fruit, popular on airplanes in Germany"
   },
   {
@@ -2836,7 +2836,7 @@
     "german": "Hunger",
     "article": "der",
     "english": "hunger",
-    "category": "Eating & Drinking",
+    "category": "Food & Drink",
     "hint": "the feeling when you need to eat, ich habe ___"
   },
   {
@@ -2844,7 +2844,7 @@
     "german": "Durst",
     "article": "der",
     "english": "thirst",
-    "category": "Eating & Drinking",
+    "category": "Food & Drink",
     "hint": "the feeling when you need to drink, ich habe ___"
   },
   {
@@ -2852,7 +2852,7 @@
     "german": "Kellner",
     "article": "der",
     "english": "waiter",
-    "category": "Restaurant",
+    "category": "Food & Drink",
     "hint": "the man who serves you food and drinks in a Restaurant"
   },
   {
@@ -2860,7 +2860,7 @@
     "german": "Nachtisch",
     "article": "der",
     "english": "dessert",
-    "category": "Restaurant",
+    "category": "Food & Drink",
     "hint": "the sweet course you eat after the main meal"
   },
   {
@@ -2868,7 +2868,7 @@
     "german": "Löffel",
     "article": "der",
     "english": "spoon",
-    "category": "Kitchen & Tableware",
+    "category": "Food & Drink",
     "hint": "a utensil with a round shallow bowl, used to eat Suppe"
   },
   {
@@ -2876,7 +2876,7 @@
     "german": "Teller",
     "article": "der",
     "english": "plate",
-    "category": "Kitchen & Tableware",
+    "category": "Food & Drink",
     "hint": "a flat round dish you put food on"
   },
   {
@@ -2884,7 +2884,7 @@
     "german": "Topf",
     "article": "der",
     "english": "pot",
-    "category": "Kitchen & Tableware",
+    "category": "Food & Drink",
     "hint": "a deep round container used for cooking on the stove"
   },
   {
@@ -2892,7 +2892,7 @@
     "german": "Herd",
     "article": "der",
     "english": "stove/cooker",
-    "category": "Kitchen & Tableware",
+    "category": "Food & Drink",
     "hint": "the appliance in the Küche where you cook with heat"
   },
   {
@@ -2900,7 +2900,7 @@
     "german": "Kühlschrank",
     "article": "der",
     "english": "refrigerator",
-    "category": "Kitchen & Tableware",
+    "category": "Food & Drink",
     "hint": "a cold appliance in the Küche that keeps food fresh"
   },
   {
@@ -2932,7 +2932,7 @@
     "german": "Liter",
     "article": "der",
     "english": "litre",
-    "category": "Measurements",
+    "category": "Daily Life",
     "hint": "a unit of liquid volume, eine Flasche Wasser is usually 1 or 1.5"
   },
   {
@@ -2940,7 +2940,7 @@
     "german": "Milch",
     "article": "die",
     "english": "milk",
-    "category": "Dairy Products",
+    "category": "Food & Drink",
     "hint": "a white liquid from cows, put it in Kaffee or drink it plain"
   },
   {
@@ -2948,7 +2948,7 @@
     "german": "Butter",
     "article": "die",
     "english": "butter",
-    "category": "Dairy Products",
+    "category": "Food & Drink",
     "hint": "a yellow fatty spread made from cream, put it on Brot"
   },
   {
@@ -2956,7 +2956,7 @@
     "german": "Sahne",
     "article": "die",
     "english": "cream",
-    "category": "Dairy Products",
+    "category": "Food & Drink",
     "hint": "the thick fatty part of Milch, put it on Kuchen or in Kaffee"
   },
   {
@@ -2964,7 +2964,7 @@
     "german": "Suppe",
     "article": "die",
     "english": "soup",
-    "category": "Food - Meals",
+    "category": "Food & Drink",
     "hint": "a warm liquid dish you eat with a Löffel"
   },
   {
@@ -2972,7 +2972,7 @@
     "german": "Tomatensuppe",
     "article": "die",
     "english": "tomato soup",
-    "category": "Food - Meals",
+    "category": "Food & Drink",
     "hint": "Suppe made from red fruits that are technically vegetables"
   },
   {
@@ -2980,7 +2980,7 @@
     "german": "Vorspeise",
     "article": "die",
     "english": "starter/appetizer",
-    "category": "Restaurant",
+    "category": "Food & Drink",
     "hint": "the first small dish before the Hauptgericht"
   },
   {
@@ -2988,7 +2988,7 @@
     "german": "Hauptspeise",
     "article": "die",
     "english": "main course",
-    "category": "Restaurant",
+    "category": "Food & Drink",
     "hint": "the largest and most important dish of a meal"
   },
   {
@@ -2996,7 +2996,7 @@
     "german": "Nachspeise",
     "article": "die",
     "english": "dessert",
-    "category": "Restaurant",
+    "category": "Food & Drink",
     "hint": "another word for Nachtisch, the sweet dish after the main course"
   },
   {
@@ -3004,7 +3004,7 @@
     "german": "Speisekarte",
     "article": "die",
     "english": "menu",
-    "category": "Restaurant",
+    "category": "Food & Drink",
     "hint": "the card in a Restaurant that lists all food and drinks you can order"
   },
   {
@@ -3012,7 +3012,7 @@
     "german": "Rechnung",
     "article": "die",
     "english": "bill/check",
-    "category": "Restaurant",
+    "category": "Food & Drink",
     "hint": "the paper that tells you how much to pay after eating"
   },
   {
@@ -3020,7 +3020,7 @@
     "german": "Bedienung",
     "article": "die",
     "english": "service/waiter",
-    "category": "Restaurant",
+    "category": "Food & Drink",
     "hint": "the service in a Restaurant, or the person who serves you"
   },
   {
@@ -3028,7 +3028,7 @@
     "german": "Kartoffel",
     "article": "die",
     "english": "potato",
-    "category": "Vegetables & Side Dishes",
+    "category": "Food & Drink",
     "hint": "a starchy root vegetable, Germans eat them as Pommes, Salat, or Brei"
   },
   {
@@ -3036,7 +3036,7 @@
     "german": "Tomate",
     "article": "die",
     "english": "tomato",
-    "category": "Vegetables & Side Dishes",
+    "category": "Food & Drink",
     "hint": "a round red fruit used in Salat and Suppe"
   },
   {
@@ -3044,7 +3044,7 @@
     "german": "Gurke",
     "article": "die",
     "english": "cucumber",
-    "category": "Vegetables & Side Dishes",
+    "category": "Food & Drink",
     "hint": "a long green vegetable often eaten raw in Salat"
   },
   {
@@ -3052,7 +3052,7 @@
     "german": "Zwiebel",
     "article": "die",
     "english": "onion",
-    "category": "Vegetables & Side Dishes",
+    "category": "Food & Drink",
     "hint": "a round vegetable with layers that makes you cry when you cut it"
   },
   {
@@ -3060,7 +3060,7 @@
     "german": "Banane",
     "article": "die",
     "english": "banana",
-    "category": "Fruit",
+    "category": "Food & Drink",
     "hint": "a long curved yellow fruit"
   },
   {
@@ -3068,7 +3068,7 @@
     "german": "Birne",
     "article": "die",
     "english": "pear",
-    "category": "Fruit",
+    "category": "Food & Drink",
     "hint": "a fruit shaped like a teardrop, similar to an Apfel"
   },
   {
@@ -3076,7 +3076,7 @@
     "german": "Ananas",
     "article": "die",
     "english": "pineapple",
-    "category": "Fruit",
+    "category": "Food & Drink",
     "hint": "a tropical fruit with spiky skin and a crown of leaves"
   },
   {
@@ -3084,7 +3084,7 @@
     "german": "Orange",
     "article": "die",
     "english": "orange",
-    "category": "Fruit",
+    "category": "Food & Drink",
     "hint": "a round citrus fruit with the same name as its color"
   },
   {
@@ -3092,7 +3092,7 @@
     "german": "Wurst",
     "article": "die",
     "english": "sausage",
-    "category": "Meat & Protein",
+    "category": "Food & Drink",
     "hint": "a tube of seasoned meat, very popular in Germany — Bratwurst, Currywurst"
   },
   {
@@ -3100,7 +3100,7 @@
     "german": "Currywurst",
     "article": "die",
     "english": "curried sausage",
-    "category": "Meat & Protein",
+    "category": "Food & Drink",
     "hint": "a famous Berlin street food — Wurst with curry ketchup"
   },
   {
@@ -3108,7 +3108,7 @@
     "german": "Nudel",
     "article": "die",
     "english": "noodle/pasta",
-    "category": "Grains & Starches",
+    "category": "Food & Drink",
     "hint": "long thin strips of dough, like Spaghetti"
   },
   {
@@ -3116,7 +3116,7 @@
     "german": "Torte",
     "article": "die",
     "english": "gateau/fancy cake",
-    "category": "Baked Goods & Sweets",
+    "category": "Food & Drink",
     "hint": "an elaborate layered cake, fancier than a normal Kuchen"
   },
   {
@@ -3124,7 +3124,7 @@
     "german": "Schokolade",
     "article": "die",
     "english": "chocolate",
-    "category": "Baked Goods & Sweets",
+    "category": "Food & Drink",
     "hint": "a sweet brown food made from cocoa beans"
   },
   {
@@ -3132,7 +3132,7 @@
     "german": "Süßigkeit",
     "article": "die",
     "english": "sweet/candy",
-    "category": "Baked Goods & Sweets",
+    "category": "Food & Drink",
     "hint": "sweet treats and candies, plural Süßigkeiten"
   },
   {
@@ -3140,7 +3140,7 @@
     "german": "Ernährungspyramide",
     "article": "die",
     "english": "food pyramid",
-    "category": "Nutrition",
+    "category": "Food & Drink",
     "hint": "a triangle diagram showing how much of each food group to eat"
   },
   {
@@ -3148,7 +3148,7 @@
     "german": "Küche",
     "article": "die",
     "english": "kitchen",
-    "category": "Kitchen & Tableware",
+    "category": "Food & Drink",
     "hint": "the room in a house where you cook food"
   },
   {
@@ -3156,7 +3156,7 @@
     "german": "Pfanne",
     "article": "die",
     "english": "pan/frying pan",
-    "category": "Kitchen & Tableware",
+    "category": "Food & Drink",
     "hint": "a flat metal cooking vessel you use to fry food"
   },
   {
@@ -3164,7 +3164,7 @@
     "german": "Gabel",
     "article": "die",
     "english": "fork",
-    "category": "Kitchen & Tableware",
+    "category": "Food & Drink",
     "hint": "a utensil with prongs used to pick up food"
   },
   {
@@ -3172,7 +3172,7 @@
     "german": "Tasse",
     "article": "die",
     "english": "cup",
-    "category": "Kitchen & Tableware",
+    "category": "Food & Drink",
     "hint": "a small container with a handle you drink Kaffee or Tee from"
   },
   {
@@ -3180,7 +3180,7 @@
     "german": "Flasche",
     "article": "die",
     "english": "bottle",
-    "category": "Kitchen & Tableware",
+    "category": "Food & Drink",
     "hint": "a tall narrow container for liquids like Wasser or Wein"
   },
   {
@@ -3188,7 +3188,7 @@
     "german": "Dose",
     "article": "die",
     "english": "can/tin",
-    "category": "Kitchen & Tableware",
+    "category": "Food & Drink",
     "hint": "a metal container for food or drinks, like a Bierdose"
   },
   {
@@ -3204,7 +3204,7 @@
     "german": "Scheibe",
     "article": "die",
     "english": "slice",
-    "category": "Food Portions",
+    "category": "Food & Drink",
     "hint": "a thin flat piece cut from something, like Brot or Käse"
   },
   {
@@ -3220,7 +3220,7 @@
     "german": "Mozartkugel",
     "article": "die",
     "english": "Mozart ball (chocolate)",
-    "category": "Baked Goods & Sweets",
+    "category": "Food & Drink",
     "hint": "a famous round chocolate from Österreich named after a composer"
   },
   {
@@ -3228,7 +3228,7 @@
     "german": "Salami",
     "article": "die",
     "english": "salami",
-    "category": "Meat & Protein",
+    "category": "Food & Drink",
     "hint": "a type of cured sausage often sliced thin on Brot or Pizza"
   },
   {
@@ -3236,7 +3236,7 @@
     "german": "Wasser",
     "article": "das",
     "english": "water",
-    "category": "Drinks",
+    "category": "Food & Drink",
     "hint": "the most basic drink, H2O — mit oder ohne Gas"
   },
   {
@@ -3244,7 +3244,7 @@
     "german": "Mineralwasser",
     "article": "das",
     "english": "mineral water",
-    "category": "Drinks",
+    "category": "Food & Drink",
     "hint": "Wasser from a natural spring, mit or ohne Kohlensäure"
   },
   {
@@ -3252,7 +3252,7 @@
     "german": "Bier",
     "article": "das",
     "english": "beer",
-    "category": "Drinks",
+    "category": "Food & Drink",
     "hint": "an alcoholic drink made from hops and barley, Germany is famous for it"
   },
   {
@@ -3260,7 +3260,7 @@
     "german": "Getränk",
     "article": "das",
     "english": "drink/beverage",
-    "category": "Drinks",
+    "category": "Food & Drink",
     "hint": "a general word for anything you drink"
   },
   {
@@ -3268,7 +3268,7 @@
     "german": "Brot",
     "article": "das",
     "english": "bread",
-    "category": "Baked Goods & Sweets",
+    "category": "Food & Drink",
     "hint": "a baked food made from flour, Germany has over 300 varieties"
   },
   {
@@ -3276,7 +3276,7 @@
     "german": "Brötchen",
     "article": "das",
     "english": "bread roll",
-    "category": "Baked Goods & Sweets",
+    "category": "Food & Drink",
     "hint": "a small round Brot, eaten at Frühstück in Germany"
   },
   {
@@ -3284,7 +3284,7 @@
     "german": "Ei",
     "article": "das",
     "english": "egg",
-    "category": "Food - Basics",
+    "category": "Food & Drink",
     "hint": "laid by a chicken, eaten boiled, fried, or scrambled, plural Eier"
   },
   {
@@ -3292,7 +3292,7 @@
     "german": "Mehl",
     "article": "das",
     "english": "flour",
-    "category": "Food Ingredients",
+    "category": "Food & Drink",
     "hint": "a white powder ground from grain, used to make Brot and Kuchen"
   },
   {
@@ -3300,7 +3300,7 @@
     "german": "Salz",
     "article": "das",
     "english": "salt",
-    "category": "Food Ingredients",
+    "category": "Food & Drink",
     "hint": "a white mineral you add to food for flavor"
   },
   {
@@ -3308,7 +3308,7 @@
     "german": "Öl",
     "article": "das",
     "english": "oil",
-    "category": "Food Ingredients",
+    "category": "Food & Drink",
     "hint": "a liquid fat used for cooking, like Olivenöl or Sonnenblumenöl"
   },
   {
@@ -3316,7 +3316,7 @@
     "german": "Obst",
     "article": "das",
     "english": "fruit",
-    "category": "Fruit",
+    "category": "Food & Drink",
     "hint": "the general word for fruits like Äpfel, Bananen, Birnen"
   },
   {
@@ -3324,7 +3324,7 @@
     "german": "Gemüse",
     "article": "das",
     "english": "vegetables",
-    "category": "Vegetables & Side Dishes",
+    "category": "Food & Drink",
     "hint": "the general word for vegetables like Kartoffeln, Tomaten, Gurken"
   },
   {
@@ -3332,7 +3332,7 @@
     "german": "Fleisch",
     "article": "das",
     "english": "meat",
-    "category": "Meat & Protein",
+    "category": "Food & Drink",
     "hint": "the general word for animal protein like Rindfleisch or Hähnchen"
   },
   {
@@ -3340,7 +3340,7 @@
     "german": "Hähnchen",
     "article": "das",
     "english": "chicken",
-    "category": "Meat & Protein",
+    "category": "Food & Drink",
     "hint": "poultry, a bird commonly eaten grilled or fried"
   },
   {
@@ -3348,7 +3348,7 @@
     "german": "Rindfleisch",
     "article": "das",
     "english": "beef",
-    "category": "Meat & Protein",
+    "category": "Food & Drink",
     "hint": "Fleisch from a cow"
   },
   {
@@ -3356,7 +3356,7 @@
     "german": "Schweinefleisch",
     "article": "das",
     "english": "pork",
-    "category": "Meat & Protein",
+    "category": "Food & Drink",
     "hint": "Fleisch from a pig, very common in German cuisine"
   },
   {
@@ -3364,7 +3364,7 @@
     "german": "Lebensmittel",
     "article": "das",
     "english": "food/groceries",
-    "category": "Food - Basics",
+    "category": "Food & Drink",
     "hint": "a general word for food items you buy at the Supermarkt"
   },
   {
@@ -3372,7 +3372,7 @@
     "german": "Frühstück",
     "article": "das",
     "english": "breakfast",
-    "category": "Meals",
+    "category": "Food & Drink",
     "hint": "the first meal of the day, in the morning"
   },
   {
@@ -3380,7 +3380,7 @@
     "german": "Mittagessen",
     "article": "das",
     "english": "lunch",
-    "category": "Meals",
+    "category": "Food & Drink",
     "hint": "the midday meal, usually the warm meal in Germany"
   },
   {
@@ -3388,7 +3388,7 @@
     "german": "Abendessen",
     "article": "das",
     "english": "dinner/supper",
-    "category": "Meals",
+    "category": "Food & Drink",
     "hint": "the evening meal, often cold Brot with Käse and Wurst in Germany"
   },
   {
@@ -3396,7 +3396,7 @@
     "german": "Gericht",
     "article": "das",
     "english": "dish/course",
-    "category": "Restaurant",
+    "category": "Food & Drink",
     "hint": "a prepared food item on the Speisekarte"
   },
   {
@@ -3404,7 +3404,7 @@
     "german": "Hauptgericht",
     "article": "das",
     "english": "main dish",
-    "category": "Restaurant",
+    "category": "Food & Drink",
     "hint": "the biggest and most important Gericht of a meal"
   },
   {
@@ -3412,7 +3412,7 @@
     "german": "Restaurant",
     "article": "das",
     "english": "restaurant",
-    "category": "Restaurant",
+    "category": "Food & Drink",
     "hint": "a place where you sit down and a Kellner brings you food"
   },
   {
@@ -3420,7 +3420,7 @@
     "german": "Messer",
     "article": "das",
     "english": "knife",
-    "category": "Kitchen & Tableware",
+    "category": "Food & Drink",
     "hint": "a sharp utensil used to cut food"
   },
   {
@@ -3428,7 +3428,7 @@
     "german": "Glas",
     "article": "das",
     "english": "glass",
-    "category": "Kitchen & Tableware",
+    "category": "Food & Drink",
     "hint": "a transparent container you drink Wasser or Saft from"
   },
   {
@@ -3436,7 +3436,7 @@
     "german": "Stück",
     "article": "das",
     "english": "piece",
-    "category": "Food Portions",
+    "category": "Food & Drink",
     "hint": "a portion of something, ein ___ Kuchen"
   },
   {
@@ -3444,7 +3444,7 @@
     "german": "Gramm",
     "article": "das",
     "english": "gram",
-    "category": "Measurements",
+    "category": "Daily Life",
     "hint": "a unit of weight, 1000 of these make a Kilogramm"
   },
   {
@@ -3452,7 +3452,7 @@
     "german": "Kilogramm",
     "article": "das",
     "english": "kilogram",
-    "category": "Measurements",
+    "category": "Daily Life",
     "hint": "a unit of weight equal to 1000 Gramm"
   },
   {
@@ -3460,7 +3460,7 @@
     "german": "Pfund",
     "article": "das",
     "english": "pound (500g)",
-    "category": "Measurements",
+    "category": "Daily Life",
     "hint": "in Germany this equals 500 Gramm, not the British unit"
   },
   {
@@ -3468,7 +3468,7 @@
     "german": "Rezept",
     "article": "das",
     "english": "recipe",
-    "category": "Cooking",
+    "category": "Food & Drink",
     "hint": "instructions for how to cook a Gericht"
   },
   {
@@ -3476,7 +3476,7 @@
     "german": "Gummibärchen",
     "article": "das",
     "english": "gummy bear",
-    "category": "Baked Goods & Sweets",
+    "category": "Food & Drink",
     "hint": "a small chewy bear-shaped candy, Haribo makes them"
   },
   {
@@ -3484,7 +3484,7 @@
     "german": "Getreideprodukt",
     "article": "das",
     "english": "grain product",
-    "category": "Grains & Starches",
+    "category": "Food & Drink",
     "hint": "foods made from grains like Brot, Nudeln, Reis"
   },
   {
@@ -3492,7 +3492,7 @@
     "german": "Milchprodukt",
     "article": "das",
     "english": "dairy product",
-    "category": "Dairy Products",
+    "category": "Food & Drink",
     "hint": "foods made from Milch like Käse, Joghurt, Butter"
   },
   {
@@ -3500,7 +3500,7 @@
     "german": "Schnitzel",
     "article": "das",
     "english": "schnitzel",
-    "category": "Meat & Protein",
+    "category": "Food & Drink",
     "hint": "a thin breaded and fried cutlet of meat, a classic German-Austrian dish"
   },
   {
@@ -3508,7 +3508,7 @@
     "german": "Haushalt",
     "article": "der",
     "english": "household",
-    "category": "Daily Life & Household",
+    "category": "Daily Life",
     "hint": "the general word for managing a home, cooking, cleaning, etc."
   },
   {
@@ -3516,7 +3516,7 @@
     "german": "Abwasch",
     "article": "der",
     "english": "dishes/washing-up",
-    "category": "Daily Life & Household",
+    "category": "Daily Life",
     "hint": "the dirty plates and cups you need to wash after eating"
   },
   {
@@ -3524,7 +3524,7 @@
     "german": "Müll",
     "article": "der",
     "english": "rubbish/trash",
-    "category": "Daily Life & Household",
+    "category": "Daily Life",
     "hint": "waste that you throw away and take outside in a bag"
   },
   {
@@ -3532,7 +3532,7 @@
     "german": "Boden",
     "article": "der",
     "english": "floor",
-    "category": "Daily Life & Household",
+    "category": "Daily Life",
     "hint": "the surface you walk on inside a room, you can wischen it"
   },
   {
@@ -3540,7 +3540,7 @@
     "german": "Staub",
     "article": "der",
     "english": "dust",
-    "category": "Daily Life & Household",
+    "category": "Daily Life",
     "hint": "tiny grey particles that settle on furniture, you saugen it"
   },
   {
@@ -3548,7 +3548,7 @@
     "german": "Staubsauger",
     "article": "der",
     "english": "vacuum cleaner",
-    "category": "Daily Life & Household",
+    "category": "Daily Life",
     "hint": "an electrical machine that sucks up Staub from the carpet"
   },
   {
@@ -3556,7 +3556,7 @@
     "german": "Einkauf",
     "article": "der",
     "english": "shopping/purchase",
-    "category": "Daily Life & Household",
+    "category": "Daily Life",
     "hint": "what you do at the Supermarkt to get food and supplies"
   },
   {
@@ -3564,7 +3564,7 @@
     "german": "Kühlschrank",
     "article": "der",
     "english": "fridge",
-    "category": "Daily Life & Household",
+    "category": "Daily Life",
     "hint": "a cold box in the Küche where you keep food fresh"
   },
   {
@@ -3572,7 +3572,7 @@
     "german": "Geschirrspüler",
     "article": "der",
     "english": "dishwasher",
-    "category": "Daily Life & Household",
+    "category": "Daily Life",
     "hint": "a machine that washes your Geschirr automatically"
   },
   {
@@ -3580,7 +3580,7 @@
     "german": "Wäsche",
     "article": "die",
     "english": "laundry",
-    "category": "Daily Life & Household",
+    "category": "Daily Life",
     "hint": "dirty clothes that need to be washed"
   },
   {
@@ -3588,7 +3588,7 @@
     "german": "Spülmaschine",
     "article": "die",
     "english": "dishwasher",
-    "category": "Daily Life & Household",
+    "category": "Daily Life",
     "hint": "another word for a machine that washes dishes"
   },
   {
@@ -3596,7 +3596,7 @@
     "german": "Küche",
     "article": "die",
     "english": "kitchen",
-    "category": "Daily Life & Household",
+    "category": "Daily Life",
     "hint": "the room in a house where you cook meals"
   },
   {
@@ -3604,7 +3604,7 @@
     "german": "Wohnung",
     "article": "die",
     "english": "apartment",
-    "category": "Daily Life & Household",
+    "category": "Daily Life",
     "hint": "a flat or living space in a building"
   },
   {
@@ -3612,7 +3612,7 @@
     "german": "Geschirr",
     "article": "das",
     "english": "dishes/crockery",
-    "category": "Daily Life & Household",
+    "category": "Daily Life",
     "hint": "plates, cups, and bowls used for eating"
   },
   {
@@ -3620,7 +3620,7 @@
     "german": "Fenster",
     "article": "das",
     "english": "window",
-    "category": "Daily Life & Household",
+    "category": "Daily Life",
     "hint": "the glass opening in a wall that lets in light and air"
   },
   {
@@ -3628,7 +3628,7 @@
     "german": "Bad",
     "article": "das",
     "english": "bathroom",
-    "category": "Daily Life & Household",
+    "category": "Daily Life",
     "hint": "the room with a shower, sink, and toilet"
   },
   {
@@ -3636,7 +3636,7 @@
     "german": "Vormittag",
     "article": "der",
     "english": "late morning",
-    "category": "Time & Daily Routine",
+    "category": "Time & Calendar",
     "hint": "the part of the day between Morgen and Mittag, roughly 10-12"
   },
   {
@@ -3644,7 +3644,7 @@
     "german": "Mittag",
     "article": "der",
     "english": "midday/noon",
-    "category": "Time & Daily Routine",
+    "category": "Time & Calendar",
     "hint": "12 o'clock, the middle of the day"
   },
   {
@@ -3652,7 +3652,7 @@
     "german": "Nachmittag",
     "article": "der",
     "english": "afternoon",
-    "category": "Time & Daily Routine",
+    "category": "Time & Calendar",
     "hint": "the part of the day after Mittag, roughly 13-17"
   },
   {
@@ -3660,7 +3660,7 @@
     "german": "Montag",
     "article": "der",
     "english": "Monday",
-    "category": "Time & Daily Routine",
+    "category": "Time & Calendar",
     "hint": "the first day of the work week in Germany"
   },
   {
@@ -3668,7 +3668,7 @@
     "german": "Dienstag",
     "article": "der",
     "english": "Tuesday",
-    "category": "Time & Daily Routine",
+    "category": "Time & Calendar",
     "hint": "the second day of the work week"
   },
   {
@@ -3676,7 +3676,7 @@
     "german": "Mittwoch",
     "article": "der",
     "english": "Wednesday",
-    "category": "Time & Daily Routine",
+    "category": "Time & Calendar",
     "hint": "the middle of the work week, Mitte der Woche"
   },
   {
@@ -3684,7 +3684,7 @@
     "german": "Donnerstag",
     "article": "der",
     "english": "Thursday",
-    "category": "Time & Daily Routine",
+    "category": "Time & Calendar",
     "hint": "the fourth day of the work week, named after the god of thunder"
   },
   {
@@ -3692,7 +3692,7 @@
     "german": "Freitag",
     "article": "der",
     "english": "Friday",
-    "category": "Time & Daily Routine",
+    "category": "Time & Calendar",
     "hint": "the last day of the work week, the weekend is coming"
   },
   {
@@ -3700,7 +3700,7 @@
     "german": "Samstag",
     "article": "der",
     "english": "Saturday",
-    "category": "Time & Daily Routine",
+    "category": "Time & Calendar",
     "hint": "the first day of the weekend"
   },
   {
@@ -3708,7 +3708,7 @@
     "german": "Sonntag",
     "article": "der",
     "english": "Sunday",
-    "category": "Time & Daily Routine",
+    "category": "Time & Calendar",
     "hint": "the last day of the weekend, shops are closed in Germany"
   },
   {
@@ -3716,7 +3716,7 @@
     "german": "Woche",
     "article": "die",
     "english": "week",
-    "category": "Time & Daily Routine",
+    "category": "Time & Calendar",
     "hint": "seven days from Montag to Sonntag"
   },
   {
@@ -3724,7 +3724,7 @@
     "german": "Wochenende",
     "article": "das",
     "english": "weekend",
-    "category": "Time & Daily Routine",
+    "category": "Time & Calendar",
     "hint": "Samstag und Sonntag, when you do not work"
   },
   {
@@ -3772,7 +3772,7 @@
     "german": "Supermarkt",
     "article": "der",
     "english": "supermarket",
-    "category": "Places & Education",
+    "category": "Work & Education",
     "hint": "a large shop where you buy Lebensmittel and household items"
   },
   {
@@ -3780,7 +3780,7 @@
     "german": "Kindergarten",
     "article": "der",
     "english": "kindergarten",
-    "category": "Places & Education",
+    "category": "Work & Education",
     "hint": "a place where small children go before Schule"
   },
   {
@@ -3788,7 +3788,7 @@
     "german": "Student",
     "article": "der",
     "english": "student (male, university)",
-    "category": "Places & Education",
+    "category": "Work & Education",
     "hint": "a male person studying at a Universität"
   },
   {
@@ -3796,7 +3796,7 @@
     "german": "Studienplatz",
     "article": "der",
     "english": "university place",
-    "category": "Places & Education",
+    "category": "Work & Education",
     "hint": "a spot or admission to study at a Universität"
   },
   {
@@ -3804,7 +3804,7 @@
     "german": "Studiengang",
     "article": "der",
     "english": "degree programme",
-    "category": "Places & Education",
+    "category": "Work & Education",
     "hint": "the specific course of study at a university, like Informatik"
   },
   {
@@ -3812,7 +3812,7 @@
     "german": "Stundenplan",
     "article": "der",
     "english": "timetable/schedule",
-    "category": "Places & Education",
+    "category": "Work & Education",
     "hint": "a plan showing when your Vorlesungen and Seminare take place"
   },
   {
@@ -3820,7 +3820,7 @@
     "german": "Dozent",
     "article": "der",
     "english": "lecturer",
-    "category": "Places & Education",
+    "category": "Work & Education",
     "hint": "a person who teaches at a Universität"
   },
   {
@@ -3828,7 +3828,7 @@
     "german": "Professor",
     "article": "der",
     "english": "professor",
-    "category": "Places & Education",
+    "category": "Work & Education",
     "hint": "a senior academic teacher at a Universität"
   },
   {
@@ -3836,7 +3836,7 @@
     "german": "Universität",
     "article": "die",
     "english": "university",
-    "category": "Places & Education",
+    "category": "Work & Education",
     "hint": "a place of higher education, often shortened to Uni"
   },
   {
@@ -3844,7 +3844,7 @@
     "german": "Uni",
     "article": "die",
     "english": "university (informal)",
-    "category": "Places & Education",
+    "category": "Work & Education",
     "hint": "short form of Universität, commonly used in everyday speech"
   },
   {
@@ -3852,7 +3852,7 @@
     "german": "Hochschule",
     "article": "die",
     "english": "college/university of applied sciences",
-    "category": "Places & Education",
+    "category": "Work & Education",
     "hint": "a higher education institution, sometimes more practical than a Uni"
   },
   {
@@ -3860,7 +3860,7 @@
     "german": "Vorlesung",
     "article": "die",
     "english": "lecture",
-    "category": "Places & Education",
+    "category": "Work & Education",
     "hint": "a talk by a Professor in a large hall at the Uni"
   },
   {
@@ -3868,7 +3868,7 @@
     "german": "Mensa",
     "article": "die",
     "english": "university canteen",
-    "category": "Places & Education",
+    "category": "Work & Education",
     "hint": "the cafeteria at a Uni where students eat cheaply"
   },
   {
@@ -3876,7 +3876,7 @@
     "german": "Bibliothek",
     "article": "die",
     "english": "library",
-    "category": "Places & Education",
+    "category": "Work & Education",
     "hint": "a place with many Bücher where students study and read"
   },
   {
@@ -3884,7 +3884,7 @@
     "german": "Prüfung",
     "article": "die",
     "english": "exam",
-    "category": "Places & Education",
+    "category": "Work & Education",
     "hint": "a test you take at the end of a course at Uni"
   },
   {
@@ -3892,7 +3892,7 @@
     "german": "Studentin",
     "article": "die",
     "english": "student (female, university)",
-    "category": "Places & Education",
+    "category": "Work & Education",
     "hint": "a female person studying at a Universität"
   },
   {
@@ -3900,7 +3900,7 @@
     "german": "Karriere",
     "article": "die",
     "english": "career",
-    "category": "Places & Education",
+    "category": "Work & Education",
     "hint": "your professional life and advancement in work"
   },
   {
@@ -3908,7 +3908,7 @@
     "german": "Studium",
     "article": "das",
     "english": "studies/degree",
-    "category": "Places & Education",
+    "category": "Work & Education",
     "hint": "the process or period of studying at a Universität"
   },
   {
@@ -3916,7 +3916,7 @@
     "german": "Semester",
     "article": "das",
     "english": "semester",
-    "category": "Places & Education",
+    "category": "Work & Education",
     "hint": "half of the academic year at a Universität"
   },
   {
@@ -3924,7 +3924,7 @@
     "german": "Seminar",
     "article": "das",
     "english": "seminar",
-    "category": "Places & Education",
+    "category": "Work & Education",
     "hint": "a smaller class at Uni with discussion, not just a Vorlesung"
   },
   {
@@ -3932,7 +3932,7 @@
     "german": "Stipendium",
     "article": "das",
     "english": "scholarship",
-    "category": "Places & Education",
+    "category": "Work & Education",
     "hint": "financial support for students, you do not have to pay it back"
   },
   {
@@ -3940,7 +3940,7 @@
     "german": "Fach",
     "article": "das",
     "english": "subject",
-    "category": "Places & Education",
+    "category": "Work & Education",
     "hint": "a specific area of study like Mathematik or Geschichte"
   },
   {
@@ -3948,7 +3948,7 @@
     "german": "Fußball",
     "article": "der",
     "english": "football/soccer",
-    "category": "Activities & Leisure",
+    "category": "Hobbies & Leisure",
     "hint": "a sport played with a round ball and two teams of eleven"
   },
   {
@@ -3956,7 +3956,7 @@
     "german": "Film",
     "article": "der",
     "english": "film/movie",
-    "category": "Activities & Leisure",
+    "category": "Hobbies & Leisure",
     "hint": "a motion picture you watch at the Kino or on TV"
   },
   {
@@ -3964,7 +3964,7 @@
     "german": "Kuchen",
     "article": "der",
     "english": "cake",
-    "category": "Activities & Leisure",
+    "category": "Hobbies & Leisure",
     "hint": "a sweet baked food, often eaten with Kaffee at a Geburtstag"
   },
   {
@@ -3972,7 +3972,7 @@
     "german": "Kaffee",
     "article": "der",
     "english": "coffee",
-    "category": "Activities & Leisure",
+    "category": "Hobbies & Leisure",
     "hint": "a hot brown drink many Germans enjoy in the Morgen"
   },
   {
@@ -3980,7 +3980,7 @@
     "german": "Geburtstag",
     "article": "der",
     "english": "birthday",
-    "category": "Activities & Leisure",
+    "category": "Hobbies & Leisure",
     "hint": "the anniversary of the day you were born"
   },
   {
@@ -3988,7 +3988,7 @@
     "german": "Musik",
     "article": "die",
     "english": "music",
-    "category": "Activities & Leisure",
+    "category": "Hobbies & Leisure",
     "hint": "sounds arranged in a pleasing way, you can hören it"
   },
   {
@@ -3996,7 +3996,7 @@
     "german": "Zeitung",
     "article": "die",
     "english": "newspaper",
-    "category": "Activities & Leisure",
+    "category": "Hobbies & Leisure",
     "hint": "a daily publication with Nachrichten printed on paper"
   },
   {
@@ -4004,7 +4004,7 @@
     "german": "Informatik",
     "article": "die",
     "english": "computer science",
-    "category": "Academic Subjects",
+    "category": "Work & Education",
     "hint": "the study of computers, programming, and data"
   },
   {
@@ -4012,7 +4012,7 @@
     "german": "Medienwissenschaft",
     "article": "die",
     "english": "media studies",
-    "category": "Academic Subjects",
+    "category": "Work & Education",
     "hint": "the academic study of media, journalism, and communication"
   },
   {
@@ -4020,7 +4020,7 @@
     "german": "Religionswissenschaft",
     "article": "die",
     "english": "religious studies",
-    "category": "Academic Subjects",
+    "category": "Work & Education",
     "hint": "the academic study of world religions and belief systems"
   },
   {
@@ -4028,7 +4028,7 @@
     "german": "Mathematik",
     "article": "die",
     "english": "mathematics",
-    "category": "Academic Subjects",
+    "category": "Work & Education",
     "hint": "the study of numbers, equations, and abstract structures"
   },
   {
@@ -4036,7 +4036,7 @@
     "german": "Medizin",
     "article": "die",
     "english": "medicine",
-    "category": "Academic Subjects",
+    "category": "Work & Education",
     "hint": "the study of health and treating sick people"
   },
   {
@@ -4044,7 +4044,7 @@
     "german": "Architektur",
     "article": "die",
     "english": "architecture",
-    "category": "Academic Subjects",
+    "category": "Work & Education",
     "hint": "the study of designing and constructing buildings"
   },
   {
@@ -4052,7 +4052,7 @@
     "german": "Zug",
     "article": "der",
     "english": "train",
-    "category": "Vehicles & Transport",
+    "category": "City & Transport",
     "hint": "something that runs on rails and stops at a Bahnhof"
   },
   {
@@ -4060,7 +4060,7 @@
     "german": "Bus",
     "article": "der",
     "english": "bus",
-    "category": "Vehicles & Transport",
+    "category": "City & Transport",
     "hint": "a large road vehicle for carrying many passengers"
   },
   {
@@ -4068,7 +4068,7 @@
     "german": "Bahn",
     "article": "die",
     "english": "railway/train",
-    "category": "Vehicles & Transport",
+    "category": "City & Transport",
     "hint": "the German railway system, also short for Eisenbahn"
   },
   {
@@ -4076,7 +4076,7 @@
     "german": "S-Bahn",
     "article": "die",
     "english": "suburban train",
-    "category": "Vehicles & Transport",
+    "category": "City & Transport",
     "hint": "a city train that goes to the suburbs, the S stands for Schnell or Stadt"
   },
   {
@@ -4084,7 +4084,7 @@
     "german": "Straßenbahn",
     "article": "die",
     "english": "tram",
-    "category": "Vehicles & Transport",
+    "category": "City & Transport",
     "hint": "a vehicle that runs on tracks through city streets"
   },
   {
@@ -4092,7 +4092,7 @@
     "german": "U-Bahn",
     "article": "die",
     "english": "underground/metro",
-    "category": "Vehicles & Transport",
+    "category": "City & Transport",
     "hint": "a train that runs underground in a city"
   },
   {
@@ -4100,7 +4100,7 @@
     "german": "Schnellbahn",
     "article": "die",
     "english": "express train",
-    "category": "Vehicles & Transport",
+    "category": "City & Transport",
     "hint": "a fast train, Schnell means fast"
   },
   {
@@ -4108,7 +4108,7 @@
     "german": "Fähre",
     "article": "die",
     "english": "ferry",
-    "category": "Vehicles & Transport",
+    "category": "City & Transport",
     "hint": "a boat that carries passengers and cars across water on a regular route"
   },
   {
@@ -4116,7 +4116,7 @@
     "german": "Auto",
     "article": "das",
     "english": "car",
-    "category": "Vehicles & Transport",
+    "category": "City & Transport",
     "hint": "the most popular Verkehrsmittel in Germany, 58% drive it to work"
   },
   {
@@ -4124,7 +4124,7 @@
     "german": "Fahrrad",
     "article": "das",
     "english": "bicycle",
-    "category": "Vehicles & Transport",
+    "category": "City & Transport",
     "hint": "72% of Germans have one, but many find riding it dangerous"
   },
   {
@@ -4132,7 +4132,7 @@
     "german": "Motorrad",
     "article": "das",
     "english": "motorcycle",
-    "category": "Vehicles & Transport",
+    "category": "City & Transport",
     "hint": "a two-wheeled vehicle with a motor, faster than a Fahrrad"
   },
   {
@@ -4140,7 +4140,7 @@
     "german": "Flugzeug",
     "article": "das",
     "english": "airplane",
-    "category": "Vehicles & Transport",
+    "category": "City & Transport",
     "hint": "it flies through the sky and lands at a Flughafen"
   },
   {
@@ -4148,7 +4148,7 @@
     "german": "Taxi",
     "article": "das",
     "english": "taxi",
-    "category": "Vehicles & Transport",
+    "category": "City & Transport",
     "hint": "a car you pay to ride in, usually yellow in some countries"
   },
   {
@@ -4156,7 +4156,7 @@
     "german": "Boot",
     "article": "das",
     "english": "boat",
-    "category": "Vehicles & Transport",
+    "category": "City & Transport",
     "hint": "a small vessel for travelling on water"
   },
   {
@@ -4164,7 +4164,7 @@
     "german": "Schiff",
     "article": "das",
     "english": "ship",
-    "category": "Vehicles & Transport",
+    "category": "City & Transport",
     "hint": "a large vessel for travelling on water, bigger than a Boot"
   },
   {
@@ -4172,7 +4172,7 @@
     "german": "Bahnhof",
     "article": "der",
     "english": "train station",
-    "category": "Transport Places & Infrastructure",
+    "category": "City & Transport",
     "hint": "the place where trains stop and passengers get on and off"
   },
   {
@@ -4180,7 +4180,7 @@
     "german": "Parkplatz",
     "article": "der",
     "english": "car park",
-    "category": "Transport Places & Infrastructure",
+    "category": "City & Transport",
     "hint": "a place where you leave your Auto when you arrive somewhere"
   },
   {
@@ -4188,7 +4188,7 @@
     "german": "Flughafen",
     "article": "der",
     "english": "airport",
-    "category": "Transport Places & Infrastructure",
+    "category": "City & Transport",
     "hint": "the place where Flugzeuge start and land"
   },
   {
@@ -4196,7 +4196,7 @@
     "german": "Sitzplatz",
     "article": "der",
     "english": "seat",
-    "category": "Transport Places & Infrastructure",
+    "category": "City & Transport",
     "hint": "a place to sit, for example on a Zug"
   },
   {
@@ -4204,7 +4204,7 @@
     "german": "Fahrplan",
     "article": "der",
     "english": "timetable",
-    "category": "Transport Places & Infrastructure",
+    "category": "City & Transport",
     "hint": "a schedule that tells you when trains or buses depart and arrive"
   },
   {
@@ -4212,7 +4212,7 @@
     "german": "Flugsteig",
     "article": "der",
     "english": "gate (airport)",
-    "category": "Transport Places & Infrastructure",
+    "category": "City & Transport",
     "hint": "the place at the Flughafen where you board your Flugzeug"
   },
   {
@@ -4220,7 +4220,7 @@
     "german": "Tankstelle",
     "article": "die",
     "english": "petrol station",
-    "category": "Transport Places & Infrastructure",
+    "category": "City & Transport",
     "hint": "a place where you can buy Benzin for your Auto"
   },
   {
@@ -4228,7 +4228,7 @@
     "german": "Straße",
     "article": "die",
     "english": "street",
-    "category": "Transport Places & Infrastructure",
+    "category": "City & Transport",
     "hint": "a road in a city where cars drive and people walk"
   },
   {
@@ -4236,7 +4236,7 @@
     "german": "Autobahn",
     "article": "die",
     "english": "motorway",
-    "category": "Transport Places & Infrastructure",
+    "category": "City & Transport",
     "hint": "a fast road in Germany famous for having no speed limit in some sections"
   },
   {
@@ -4244,7 +4244,7 @@
     "german": "Ampel",
     "article": "die",
     "english": "traffic light",
-    "category": "Transport Places & Infrastructure",
+    "category": "City & Transport",
     "hint": "red, yellow, green — it tells drivers when to stop and go"
   },
   {
@@ -4252,7 +4252,7 @@
     "german": "Ankunftshalle",
     "article": "die",
     "english": "arrivals hall",
-    "category": "Transport Places & Infrastructure",
+    "category": "City & Transport",
     "hint": "the area at a Flughafen where arriving passengers come out"
   },
   {
@@ -4260,7 +4260,7 @@
     "german": "Passkontrolle",
     "article": "die",
     "english": "passport control",
-    "category": "Transport Places & Infrastructure",
+    "category": "City & Transport",
     "hint": "the checkpoint where officials check your travel documents"
   },
   {
@@ -4268,7 +4268,7 @@
     "german": "Gleis",
     "article": "das",
     "english": "platform/track",
-    "category": "Transport Places & Infrastructure",
+    "category": "City & Transport",
     "hint": "der Zug kommt am ___ 3 an — where you stand to catch a train"
   },
   {
@@ -4276,7 +4276,7 @@
     "german": "Verkehrsschild",
     "article": "das",
     "english": "traffic sign",
-    "category": "Transport Places & Infrastructure",
+    "category": "City & Transport",
     "hint": "a sign on the road that gives drivers information or rules"
   },
   {
@@ -4284,7 +4284,7 @@
     "german": "Haltesignal",
     "article": "das",
     "english": "stop signal",
-    "category": "Transport Places & Infrastructure",
+    "category": "City & Transport",
     "hint": "a signal that tells a train or vehicle to stop"
   },
   {
@@ -4292,7 +4292,7 @@
     "german": "Fahrkartenautomat",
     "article": "der",
     "english": "ticket machine",
-    "category": "Tickets, People & Events",
+    "category": "City & Transport",
     "hint": "a machine at the Bahnhof where you can buy Bahntickets"
   },
   {
@@ -4300,7 +4300,7 @@
     "german": "Informationsschalter",
     "article": "der",
     "english": "information desk",
-    "category": "Tickets, People & Events",
+    "category": "City & Transport",
     "hint": "a counter where you can ask questions and get help"
   },
   {
@@ -4308,7 +4308,7 @@
     "german": "Check-in-Schalter",
     "article": "der",
     "english": "check-in desk",
-    "category": "Tickets, People & Events",
+    "category": "City & Transport",
     "hint": "the counter at a Flughafen where you show your ticket before flying"
   },
   {
@@ -4316,7 +4316,7 @@
     "german": "Passagier",
     "article": "der",
     "english": "passenger",
-    "category": "Tickets, People & Events",
+    "category": "City & Transport",
     "hint": "a person travelling in a vehicle they are not driving"
   },
   {
@@ -4324,7 +4324,7 @@
     "german": "Fahrgast",
     "article": "der",
     "english": "passenger (bus/train)",
-    "category": "Tickets, People & Events",
+    "category": "City & Transport",
     "hint": "a passenger specifically on public transport like Bus or Zug"
   },
   {
@@ -4332,7 +4332,7 @@
     "german": "Autofahrer",
     "article": "der",
     "english": "driver",
-    "category": "Tickets, People & Events",
+    "category": "City & Transport",
     "hint": "a person who drives an Auto"
   },
   {
@@ -4340,7 +4340,7 @@
     "german": "Großraumwagen",
     "article": "der",
     "english": "open-plan carriage",
-    "category": "Tickets, People & Events",
+    "category": "City & Transport",
     "hint": "a large open train carriage without compartments"
   },
   {
@@ -4348,7 +4348,7 @@
     "german": "Abflug",
     "article": "der",
     "english": "takeoff/departure",
-    "category": "Tickets, People & Events",
+    "category": "City & Transport",
     "hint": "when a Flugzeug leaves the Flughafen"
   },
   {
@@ -4356,7 +4356,7 @@
     "german": "Stau",
     "article": "der",
     "english": "traffic jam",
-    "category": "Tickets, People & Events",
+    "category": "City & Transport",
     "hint": "when Autos on the Straße cannot move because there are too many"
   },
   {
@@ -4364,7 +4364,7 @@
     "german": "Fahrkarte",
     "article": "die",
     "english": "ticket (travel)",
-    "category": "Tickets, People & Events",
+    "category": "City & Transport",
     "hint": "a piece of paper or card that allows you to travel on a Zug or Bus"
   },
   {
@@ -4372,7 +4372,7 @@
     "german": "Abfahrt",
     "article": "die",
     "english": "departure",
-    "category": "Tickets, People & Events",
+    "category": "City & Transport",
     "hint": "when a Zug or Bus leaves the Bahnhof"
   },
   {
@@ -4380,7 +4380,7 @@
     "german": "Ankunft",
     "article": "die",
     "english": "arrival",
-    "category": "Tickets, People & Events",
+    "category": "City & Transport",
     "hint": "when a Zug or Flugzeug reaches its destination"
   },
   {
@@ -4388,7 +4388,7 @@
     "german": "Fahrt",
     "article": "die",
     "english": "journey/trip",
-    "category": "Tickets, People & Events",
+    "category": "City & Transport",
     "hint": "the act of travelling from one place to another"
   },
   {
@@ -4396,7 +4396,7 @@
     "german": "Verspätung",
     "article": "die",
     "english": "delay",
-    "category": "Tickets, People & Events",
+    "category": "City & Transport",
     "hint": "when a Zug or Bus arrives later than the Fahrplan says"
   },
   {
@@ -4404,7 +4404,7 @@
     "german": "Hin- und Rückfahrt",
     "article": "die",
     "english": "return journey",
-    "category": "Tickets, People & Events",
+    "category": "City & Transport",
     "hint": "a trip that goes there and comes back"
   },
   {
@@ -4412,7 +4412,7 @@
     "german": "Bahnticket",
     "article": "das",
     "english": "train ticket",
-    "category": "Tickets, People & Events",
+    "category": "City & Transport",
     "hint": "a Fahrkarte specifically for the Bahn"
   },
   {
@@ -4420,7 +4420,7 @@
     "german": "Flugticket",
     "article": "das",
     "english": "flight ticket",
-    "category": "Tickets, People & Events",
+    "category": "City & Transport",
     "hint": "a Fahrkarte specifically for a Flugzeug"
   },
   {
@@ -4428,7 +4428,7 @@
     "german": "Sicherheitspersonal",
     "article": "das",
     "english": "security staff",
-    "category": "Tickets, People & Events",
+    "category": "City & Transport",
     "hint": "people who check for safety at a Flughafen"
   },
   {
@@ -4436,7 +4436,7 @@
     "german": "Verkehr",
     "article": "der",
     "english": "traffic",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "the movement of Autos, Busse, and other vehicles on the Straße"
   },
   {
@@ -4444,7 +4444,7 @@
     "german": "Urlaub",
     "article": "der",
     "english": "holiday",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "time off work when you travel or relax"
   },
   {
@@ -4452,7 +4452,7 @@
     "german": "Weg",
     "article": "der",
     "english": "way/path",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "the route you take to get somewhere"
   },
   {
@@ -4460,7 +4460,7 @@
     "german": "Bericht",
     "article": "der",
     "english": "report",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a written or spoken account of something"
   },
   {
@@ -4468,7 +4468,7 @@
     "german": "Berg",
     "article": "der",
     "english": "mountain",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a very high natural landform, you can ski down it in Winter"
   },
   {
@@ -4476,7 +4476,7 @@
     "german": "Meter",
     "article": "der",
     "english": "metre",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a unit of measurement, about one big step"
   },
   {
@@ -4484,7 +4484,7 @@
     "german": "Plan",
     "article": "der",
     "english": "plan",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "what you intend to do, plural is Pläne"
   },
   {
@@ -4492,7 +4492,7 @@
     "german": "Winterurlaub",
     "article": "der",
     "english": "winter holiday",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "Urlaub in the cold season, often involves skiing"
   },
   {
@@ -4500,7 +4500,7 @@
     "german": "Chef",
     "article": "der",
     "english": "boss",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "the person in charge at your workplace"
   },
   {
@@ -4508,7 +4508,7 @@
     "german": "Kollege",
     "article": "der",
     "english": "colleague",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a person you work with at the Büro"
   },
   {
@@ -4516,7 +4516,7 @@
     "german": "Hafen",
     "article": "der",
     "english": "harbour",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a place at the coast where Schiffe stop"
   },
   {
@@ -4524,7 +4524,7 @@
     "german": "Golfkurs",
     "article": "der",
     "english": "golf course",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a place where you play a sport with small balls and clubs"
   },
   {
@@ -4532,7 +4532,7 @@
     "german": "Bergblick",
     "article": "der",
     "english": "mountain view",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "what you see from your Hotel window when there are Berge"
   },
   {
@@ -4540,7 +4540,7 @@
     "german": "Motorroller",
     "article": "der",
     "english": "scooter",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a small two-wheeled vehicle, smaller than a Motorrad"
   },
   {
@@ -4548,7 +4548,7 @@
     "german": "Dialog",
     "article": "der",
     "english": "dialogue",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a conversation between two or more people"
   },
   {
@@ -4556,7 +4556,7 @@
     "german": "Buchstabe",
     "article": "der",
     "english": "letter (alphabet)",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "A, B, C — a single character in the alphabet"
   },
   {
@@ -4564,7 +4564,7 @@
     "german": "Monat",
     "article": "der",
     "english": "month",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "Januar, Februar, März — a period of about 30 days"
   },
   {
@@ -4572,7 +4572,7 @@
     "german": "Intercity",
     "article": "der",
     "english": "intercity train",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a fast train that connects big cities"
   },
   {
@@ -4580,7 +4580,7 @@
     "german": "Großstadt",
     "article": "die",
     "english": "big city",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a large urban area like Berlin or München"
   },
   {
@@ -4588,7 +4588,7 @@
     "german": "Stadt",
     "article": "die",
     "english": "city",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "an urban area where many people live and work"
   },
   {
@@ -4596,7 +4596,7 @@
     "german": "Urlaubsreise",
     "article": "die",
     "english": "holiday trip",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a Reise you take during your Urlaub"
   },
   {
@@ -4604,7 +4604,7 @@
     "german": "Aussage",
     "article": "die",
     "english": "statement",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "something someone says or claims"
   },
   {
@@ -4612,7 +4612,7 @@
     "german": "Durchsage",
     "article": "die",
     "english": "announcement",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a spoken message over a loudspeaker, for example at a Bahnhof"
   },
   {
@@ -4620,7 +4620,7 @@
     "german": "Richtung",
     "article": "die",
     "english": "direction",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "the way something is going, like north or south"
   },
   {
@@ -4628,7 +4628,7 @@
     "german": "Fahrbahn",
     "article": "die",
     "english": "carriageway",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "the part of the Straße where vehicles drive"
   },
   {
@@ -4636,7 +4636,7 @@
     "german": "Jahreszeit",
     "article": "die",
     "english": "season",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "Winter, Frühling, Sommer, Herbst — one of four periods in a year"
   },
   {
@@ -4644,7 +4644,7 @@
     "german": "Insel",
     "article": "die",
     "english": "island",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "land surrounded by water, like Kreta"
   },
   {
@@ -4652,7 +4652,7 @@
     "german": "Familie",
     "article": "die",
     "english": "family",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "your parents, siblings, children — the people closest to you"
   },
   {
@@ -4660,7 +4660,7 @@
     "german": "Reise",
     "article": "die",
     "english": "journey/trip",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "travelling from one place to another, often longer than a Fahrt"
   },
   {
@@ -4668,7 +4668,7 @@
     "german": "Postkarte",
     "article": "die",
     "english": "postcard",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a card with a picture that you send from Urlaub"
   },
   {
@@ -4676,7 +4676,7 @@
     "german": "Schweiz",
     "article": "die",
     "english": "Switzerland",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a country with article — ich fahre in ___ Schweiz"
   },
   {
@@ -4684,7 +4684,7 @@
     "german": "Schokolade",
     "article": "die",
     "english": "chocolate",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a sweet brown food, die Schweiz is famous for it"
   },
   {
@@ -4692,7 +4692,7 @@
     "german": "Brücke",
     "article": "die",
     "english": "bridge",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a structure that crosses over a river or road"
   },
   {
@@ -4700,7 +4700,7 @@
     "german": "Höhe",
     "article": "die",
     "english": "height",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "how tall or high something is, measured in Meter"
   },
   {
@@ -4708,7 +4708,7 @@
     "german": "Massage",
     "article": "die",
     "english": "massage",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a treatment where someone rubs your muscles to relax you"
   },
   {
@@ -4716,7 +4716,7 @@
     "german": "Absicht",
     "article": "die",
     "english": "intention",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "what you plan or want to do"
   },
   {
@@ -4724,7 +4724,7 @@
     "german": "Pferdekutsche",
     "article": "die",
     "english": "horse carriage",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a vehicle pulled by horses, used before Autos existed"
   },
   {
@@ -4732,7 +4732,7 @@
     "german": "Universität",
     "article": "die",
     "english": "university",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a place of higher education where you study for a degree"
   },
   {
@@ -4740,7 +4740,7 @@
     "german": "Fitness",
     "article": "die",
     "english": "fitness",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "physical health and exercise"
   },
   {
@@ -4748,7 +4748,7 @@
     "german": "Masterarbeit",
     "article": "die",
     "english": "master's thesis",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a long academic paper you write to finish a master's degree"
   },
   {
@@ -4756,7 +4756,7 @@
     "german": "Verkehrsmittel",
     "article": "das",
     "english": "means of transport",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a general word for anything you use to travel — Auto, Zug, Fahrrad"
   },
   {
@@ -4764,7 +4764,7 @@
     "german": "Gegenteil",
     "article": "das",
     "english": "opposite",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "the reverse of something, like heiß and kalt"
   },
   {
@@ -4772,7 +4772,7 @@
     "german": "Wort",
     "article": "das",
     "english": "word",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a unit of language, plural is Wörter"
   },
   {
@@ -4780,7 +4780,7 @@
     "german": "Reiseziel",
     "article": "das",
     "english": "travel destination",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "the place you want to go on your Reise"
   },
   {
@@ -4788,7 +4788,7 @@
     "german": "Hotel",
     "article": "das",
     "english": "hotel",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a building where you pay to sleep when travelling"
   },
   {
@@ -4796,7 +4796,7 @@
     "german": "Wellnesshotel",
     "article": "das",
     "english": "wellness hotel",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a Hotel with spa, Massage, and Schwimmbad"
   },
   {
@@ -4804,7 +4804,7 @@
     "german": "Schwimmbad",
     "article": "das",
     "english": "swimming pool",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a place filled with water where you swim"
   },
   {
@@ -4812,7 +4812,7 @@
     "german": "Freizeitangebot",
     "article": "das",
     "english": "leisure activity",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "things to do in your free time, like sports or Golfkurs"
   },
   {
@@ -4820,7 +4820,7 @@
     "german": "Büro",
     "article": "das",
     "english": "office",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "the place where you work with your Kollegen"
   },
   {
@@ -4828,7 +4828,7 @@
     "german": "Elektrofahrzeug",
     "article": "das",
     "english": "electric vehicle",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "an Auto or vehicle powered by electricity, not Benzin"
   },
   {
@@ -4836,7 +4836,7 @@
     "german": "Rätsel",
     "article": "das",
     "english": "puzzle",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a game or problem you solve for fun"
   },
   {
@@ -4844,7 +4844,7 @@
     "german": "Lösungswort",
     "article": "das",
     "english": "solution word",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "the answer word in a Rätsel or crossword"
   },
   {
@@ -4852,7 +4852,7 @@
     "german": "Posthotel",
     "article": "das",
     "english": "post hotel",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a Hotel named after the old postal system"
   },
   {
@@ -4860,7 +4860,7 @@
     "german": "Modalverb",
     "article": "das",
     "english": "modal verb",
-    "category": "General / Everyday",
+    "category": "Daily Life",
     "hint": "a grammar term — verbs like wollen, können, möchten"
   },
   {
@@ -4972,7 +4972,7 @@
     "german": "Schlüssel",
     "article": "der",
     "english": "key",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "you use it to open a door or start a car"
   },
   {
@@ -4980,7 +4980,7 @@
     "german": "Geldbeutel",
     "article": "der",
     "english": "wallet/purse",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "a small holder where you keep your Geld and cards"
   },
   {
@@ -4988,7 +4988,7 @@
     "german": "Regenschirm",
     "article": "der",
     "english": "umbrella",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "you open it over your head when it rains"
   },
   {
@@ -4996,7 +4996,7 @@
     "german": "Kugelschreiber",
     "article": "der",
     "english": "ballpoint pen",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "a writing instrument with ink, shorter word is Kuli"
   },
   {
@@ -5004,7 +5004,7 @@
     "german": "Ausweis",
     "article": "der",
     "english": "ID card",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "an official document that proves who you are"
   },
   {
@@ -5012,7 +5012,7 @@
     "german": "Führerschein",
     "article": "der",
     "english": "driving licence",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "the document that allows you to drive an Auto"
   },
   {
@@ -5020,7 +5020,7 @@
     "german": "Kamm",
     "article": "der",
     "english": "comb",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "you pull it through your hair to make it neat"
   },
   {
@@ -5028,7 +5028,7 @@
     "german": "Lippenstift",
     "article": "der",
     "english": "lipstick",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "cosmetic you put on your lips, usually red or pink"
   },
   {
@@ -5036,7 +5036,7 @@
     "german": "Spiegel",
     "article": "der",
     "english": "mirror",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "you look into it and see your own reflection"
   },
   {
@@ -5044,7 +5044,7 @@
     "german": "USB-Stick",
     "article": "der",
     "english": "USB stick",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "a small device for storing digital files, you plug it into a computer"
   },
   {
@@ -5052,7 +5052,7 @@
     "german": "Kopfhörer",
     "article": "der",
     "english": "headphones",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "you put them on your ears to listen to Musik privately"
   },
   {
@@ -5060,7 +5060,7 @@
     "german": "Ring",
     "article": "der",
     "english": "ring",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "jewellery you wear on your finger"
   },
   {
@@ -5068,7 +5068,7 @@
     "german": "Tasche",
     "article": "die",
     "english": "bag",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "you carry your things in it, can be a handbag or shoulder bag"
   },
   {
@@ -5076,7 +5076,7 @@
     "german": "Handtasche",
     "article": "die",
     "english": "handbag",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "a small Tasche carried by hand, often used by women"
   },
   {
@@ -5084,7 +5084,7 @@
     "german": "Brille",
     "article": "die",
     "english": "glasses",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "you wear them on your nose to see better"
   },
   {
@@ -5092,7 +5092,7 @@
     "german": "Sonnenbrille",
     "article": "die",
     "english": "sunglasses",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "dark Brille you wear when the Sonne is bright"
   },
   {
@@ -5100,7 +5100,7 @@
     "german": "Uhr",
     "article": "die",
     "english": "watch/clock",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "tells you the time, you can wear it on your wrist"
   },
   {
@@ -5108,7 +5108,7 @@
     "german": "Kreditkarte",
     "article": "die",
     "english": "credit card",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "a plastic card you use to pay without cash"
   },
   {
@@ -5116,7 +5116,7 @@
     "german": "Kamera",
     "article": "die",
     "english": "camera",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "a device for taking photos"
   },
   {
@@ -5124,7 +5124,7 @@
     "german": "Briefmarke",
     "article": "die",
     "english": "stamp",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "you stick it on a letter before posting it"
   },
   {
@@ -5132,7 +5132,7 @@
     "german": "Münze",
     "article": "die",
     "english": "coin",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "round metal Geld, like 1 Euro or 50 Cent"
   },
   {
@@ -5140,7 +5140,7 @@
     "german": "Zahnbürste",
     "article": "die",
     "english": "toothbrush",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "you use it with Zahnpasta to clean your teeth"
   },
   {
@@ -5148,7 +5148,7 @@
     "german": "Feuerzeug",
     "article": "das",
     "english": "lighter",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "a small device that makes fire, used to light cigarettes or candles"
   },
   {
@@ -5156,7 +5156,7 @@
     "german": "Handy",
     "article": "das",
     "english": "mobile phone",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "a portable phone you carry everywhere, also called Smartphone"
   },
   {
@@ -5164,7 +5164,7 @@
     "german": "Portemonnaie",
     "article": "das",
     "english": "wallet/purse",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "French-origin word for a small holder for Geld and Kreditkarten"
   },
   {
@@ -5172,7 +5172,7 @@
     "german": "Taschentuch",
     "article": "das",
     "english": "tissue/handkerchief",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "a small cloth or paper you use to blow your nose"
   },
   {
@@ -5180,7 +5180,7 @@
     "german": "Notizbuch",
     "article": "das",
     "english": "notebook",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "a small book where you write notes and reminders"
   },
   {
@@ -5188,7 +5188,7 @@
     "german": "Parfüm",
     "article": "das",
     "english": "perfume",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "a fragrant liquid you spray on yourself to smell nice"
   },
   {
@@ -5196,7 +5196,7 @@
     "german": "Geld",
     "article": "das",
     "english": "money",
-    "category": "Personal Belongings",
+    "category": "Daily Life",
     "hint": "what you use to buy things, Münzen and Scheine"
   },
   {
@@ -5204,7 +5204,7 @@
     "german": "Mantel",
     "article": "der",
     "english": "coat",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "a long warm garment you wear over your clothes in winter"
   },
   {
@@ -5212,7 +5212,7 @@
     "german": "Pullover",
     "article": "der",
     "english": "pullover/sweater",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "a warm knitted garment with long sleeves, you pull it over your head"
   },
   {
@@ -5220,7 +5220,7 @@
     "german": "Rock",
     "article": "der",
     "english": "skirt",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "a garment hanging from the waist, worn mostly by women, not trousers"
   },
   {
@@ -5228,7 +5228,7 @@
     "german": "Schuh",
     "article": "der",
     "english": "shoe",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "you wear a pair on your feet, can be formal or casual"
   },
   {
@@ -5236,7 +5236,7 @@
     "german": "Stiefel",
     "article": "der",
     "english": "boot",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "a tall Schuh that covers the ankle or goes up to the knee"
   },
   {
@@ -5244,7 +5244,7 @@
     "german": "Hut",
     "article": "der",
     "english": "hat",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "you wear it on your head, can be elegant or casual"
   },
   {
@@ -5252,7 +5252,7 @@
     "german": "Schal",
     "article": "der",
     "english": "scarf",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "a long piece of fabric you wrap around your neck when it is cold"
   },
   {
@@ -5260,7 +5260,7 @@
     "german": "Gürtel",
     "article": "der",
     "english": "belt",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "a strip you wear around your waist to hold up your trousers"
   },
   {
@@ -5268,7 +5268,7 @@
     "german": "Handschuh",
     "article": "der",
     "english": "glove",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "you wear them on your hands to keep warm in winter"
   },
   {
@@ -5276,7 +5276,7 @@
     "german": "Anzug",
     "article": "der",
     "english": "suit",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "formal clothing with a jacket and trousers, worn to business meetings"
   },
   {
@@ -5284,7 +5284,7 @@
     "german": "Bikini",
     "article": "der",
     "english": "bikini",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "a two-piece swimsuit for women, worn at the beach or pool"
   },
   {
@@ -5292,7 +5292,7 @@
     "german": "Hose",
     "article": "die",
     "english": "trousers/pants",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "a garment covering each leg separately, from waist to ankles"
   },
   {
@@ -5300,7 +5300,7 @@
     "german": "Jeans",
     "article": "die",
     "english": "jeans",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "casual blue trousers made of denim fabric"
   },
   {
@@ -5308,7 +5308,7 @@
     "german": "Jacke",
     "article": "die",
     "english": "jacket",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "a short coat, lighter than a Mantel"
   },
   {
@@ -5316,7 +5316,7 @@
     "german": "Bluse",
     "article": "die",
     "english": "blouse",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "a woman's shirt, often more elegant than a T-Shirt"
   },
   {
@@ -5324,7 +5324,7 @@
     "german": "Krawatte",
     "article": "die",
     "english": "tie",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "a long narrow piece of fabric worn around the neck with a formal shirt"
   },
   {
@@ -5332,7 +5332,7 @@
     "german": "Mütze",
     "article": "die",
     "english": "cap/beanie",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "a soft hat that fits closely on your head, worn in cold weather"
   },
   {
@@ -5340,7 +5340,7 @@
     "german": "Socke",
     "article": "die",
     "english": "sock",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "you wear them on your feet inside your Schuhe"
   },
   {
@@ -5348,7 +5348,7 @@
     "german": "Shorts",
     "article": "die",
     "english": "shorts",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "short trousers that end above the knee, worn in summer"
   },
   {
@@ -5356,7 +5356,7 @@
     "german": "Kleid",
     "article": "das",
     "english": "dress",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "a one-piece garment for women, covering the body and part of the legs"
   },
   {
@@ -5364,7 +5364,7 @@
     "german": "Hemd",
     "article": "das",
     "english": "shirt",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "a garment with a collar and buttons down the front, often worn by men"
   },
   {
@@ -5372,7 +5372,7 @@
     "german": "T-Shirt",
     "article": "das",
     "english": "T-shirt",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "a casual short-sleeved top, shaped like the letter T"
   },
   {
@@ -5380,7 +5380,7 @@
     "german": "Top",
     "article": "das",
     "english": "top",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "a sleeveless or light upper-body garment, often worn in summer"
   },
   {
@@ -5388,7 +5388,7 @@
     "german": "Sweatshirt",
     "article": "das",
     "english": "sweatshirt",
-    "category": "Clothing",
+    "category": "Shopping",
     "hint": "a casual warm top made of soft cotton, no buttons"
   },
   {
@@ -5396,7 +5396,7 @@
     "german": "Preis",
     "article": "der",
     "english": "price",
-    "category": "Shopping & Money",
+    "category": "Shopping",
     "hint": "how much something costs, in Euro"
   },
   {
@@ -5404,7 +5404,7 @@
     "german": "Euro",
     "article": "der",
     "english": "euro",
-    "category": "Shopping & Money",
+    "category": "Shopping",
     "hint": "the currency used in Germany and most of Europe"
   },
   {
@@ -5412,7 +5412,7 @@
     "german": "Cent",
     "article": "der",
     "english": "cent",
-    "category": "Shopping & Money",
+    "category": "Shopping",
     "hint": "one hundredth of a Euro, the small change"
   },
   {
@@ -5420,7 +5420,7 @@
     "german": "Kunde",
     "article": "der",
     "english": "customer (male)",
-    "category": "Shopping & Money",
+    "category": "Shopping",
     "hint": "a person who buys something in a Geschäft"
   },
   {
@@ -5428,7 +5428,7 @@
     "german": "Verkäufer",
     "article": "der",
     "english": "salesperson (male)",
-    "category": "Shopping & Money",
+    "category": "Shopping",
     "hint": "a person who works in a shop and sells things"
   },
   {
@@ -5436,7 +5436,7 @@
     "german": "Kundin",
     "article": "die",
     "english": "customer (female)",
-    "category": "Shopping & Money",
+    "category": "Shopping",
     "hint": "a female person who buys something in a Geschäft"
   },
   {
@@ -5444,7 +5444,7 @@
     "german": "Verkäuferin",
     "article": "die",
     "english": "salesperson (female)",
-    "category": "Shopping & Money",
+    "category": "Shopping",
     "hint": "a female person who works in a shop and sells things"
   },
   {
@@ -5452,7 +5452,7 @@
     "german": "Größe",
     "article": "die",
     "english": "size",
-    "category": "Shopping & Money",
+    "category": "Shopping",
     "hint": "S, M, L, XL — how big or small a piece of clothing is"
   },
   {
@@ -5460,7 +5460,7 @@
     "german": "Farbe",
     "article": "die",
     "english": "colour",
-    "category": "Shopping & Money",
+    "category": "Shopping",
     "hint": "rot, blau, grün — the visual quality of something"
   },
   {
@@ -5468,7 +5468,7 @@
     "german": "Rechnung",
     "article": "die",
     "english": "bill/invoice",
-    "category": "Shopping & Money",
+    "category": "Shopping",
     "hint": "the paper that tells you how much you must pay"
   },
   {
@@ -5476,7 +5476,7 @@
     "german": "Kasse",
     "article": "die",
     "english": "cash register/checkout",
-    "category": "Shopping & Money",
+    "category": "Shopping",
     "hint": "the place in a Geschäft where you pay for your items"
   },
   {
@@ -5484,7 +5484,7 @@
     "german": "Sonderangebot",
     "article": "das",
     "english": "special offer",
-    "category": "Shopping & Money",
+    "category": "Shopping",
     "hint": "when a shop sells something at a lower Preis than normal"
   },
   {
@@ -5492,7 +5492,7 @@
     "german": "Geschäft",
     "article": "das",
     "english": "shop/store",
-    "category": "Shopping & Money",
+    "category": "Shopping",
     "hint": "a place where you can buy things"
   },
   {
@@ -5500,7 +5500,7 @@
     "german": "Kaufhaus",
     "article": "das",
     "english": "department store",
-    "category": "Shopping & Money",
+    "category": "Shopping",
     "hint": "a large Geschäft with many departments selling different products"
   },
   {
@@ -5508,7 +5508,7 @@
     "german": "Gegenstand",
     "article": "der",
     "english": "object/item",
-    "category": "General",
+    "category": "Daily Life",
     "hint": "a thing you can touch and see, a physical item"
   },
   {
@@ -5516,7 +5516,7 @@
     "german": "Artikel",
     "article": "der",
     "english": "article",
-    "category": "General",
+    "category": "Daily Life",
     "hint": "der, die, das — a grammar word that goes before a noun"
   },
   {
@@ -5524,7 +5524,7 @@
     "german": "Teppich",
     "article": "der",
     "english": "carpet/rug",
-    "category": "General",
+    "category": "Daily Life",
     "hint": "a soft floor covering, der rote ___ at film premieres"
   },
   {
@@ -5532,7 +5532,7 @@
     "german": "Flohmarkt",
     "article": "der",
     "english": "flea market",
-    "category": "General",
+    "category": "Daily Life",
     "hint": "an outdoor market where people sell used items cheaply"
   },
   {
@@ -5540,7 +5540,7 @@
     "german": "Geburtstag",
     "article": "der",
     "english": "birthday",
-    "category": "General",
+    "category": "Daily Life",
     "hint": "the anniversary of the day you were born"
   },
   {
@@ -5548,7 +5548,7 @@
     "german": "Mode",
     "article": "die",
     "english": "fashion",
-    "category": "General",
+    "category": "Daily Life",
     "hint": "current trends in clothing and style"
   },
   {
@@ -5556,7 +5556,7 @@
     "german": "Kleidung",
     "article": "die",
     "english": "clothing",
-    "category": "General",
+    "category": "Daily Life",
     "hint": "the general word for all garments you wear"
   },
   {
@@ -5564,7 +5564,7 @@
     "german": "Beschreibung",
     "article": "die",
     "english": "description",
-    "category": "General",
+    "category": "Daily Life",
     "hint": "words that tell you what something looks like or is"
   },
   {
@@ -5572,7 +5572,7 @@
     "german": "Filmpremiere",
     "article": "die",
     "english": "film premiere",
-    "category": "General",
+    "category": "Daily Life",
     "hint": "the first public showing of a new movie"
   }
 ]

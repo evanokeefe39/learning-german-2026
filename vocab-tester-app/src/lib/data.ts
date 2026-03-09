@@ -34,13 +34,22 @@ export function getNounsByChapter(chapter?: number): Noun[] {
   return nouns.filter((n) => n.chapter === chapter);
 }
 
+export function getNounsByFilter(chapter?: number, category?: string): Noun[] {
+  return nouns.filter((n) => {
+    if (chapter && n.chapter !== chapter) return false;
+    if (category && n.category !== category) return false;
+    return true;
+  });
+}
+
 export function getVerbsByChapter(chapter?: number): Verb[] {
   if (!chapter) return verbs;
   return verbs.filter((v) => v.chapter === chapter);
 }
 
-export function getCategories(): string[] {
-  return [...new Set(nouns.map((n) => n.category))];
+export function getCategories(chapter?: number): string[] {
+  const source = chapter ? nouns.filter((n) => n.chapter === chapter) : nouns;
+  return [...new Set(source.map((n) => n.category))].sort();
 }
 
 export function getChapters(): number[] {

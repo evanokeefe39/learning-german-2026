@@ -41,16 +41,16 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-3 sm:grid-cols-2">
         {modes.map((mode) => (
           <Link
             key={mode.href}
             href={mode.href}
-            className="rounded-lg border bg-white p-6 shadow-sm transition hover:shadow-md"
+            className="flex flex-col rounded-xl border bg-white p-5 shadow-sm active:bg-gray-50 sm:p-6 sm:hover:shadow-md"
           >
-            <h2 className="text-lg font-semibold">{mode.title}</h2>
-            <p className="mt-2 text-sm text-gray-600">{mode.description}</p>
-            <p className="mt-4 text-xs text-gray-400">
+            <h2 className="text-base font-semibold sm:text-lg">{mode.title}</h2>
+            <p className="mt-1.5 text-sm text-gray-600">{mode.description}</p>
+            <p className="mt-auto pt-3 text-xs text-gray-400">
               {mode.count} {mode.label}
             </p>
           </Link>

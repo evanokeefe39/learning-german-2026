@@ -20,18 +20,15 @@ export function VerbGrid() {
   const [result, setResult] = useState<Record<string, boolean> | null>(null);
   const [finished, setFinished] = useState(false);
 
-  const filterItems = useCallback(
-    (ch?: number, irrOnly?: boolean) => {
-      let filtered = getVerbsByChapter(ch);
-      if (irrOnly) {
-        filtered = filtered.filter(
-          (v) => v.type === "irregular" || v.type === "modal"
-        );
-      }
-      return shuffle(filtered);
-    },
-    []
-  );
+  const filterItems = useCallback((ch?: number, irrOnly?: boolean) => {
+    let filtered = getVerbsByChapter(ch);
+    if (irrOnly) {
+      filtered = filtered.filter(
+        (v) => v.type === "irregular" || v.type === "modal"
+      );
+    }
+    return shuffle(filtered);
+  }, []);
 
   const restart = useCallback(
     (ch?: number, irrOnly?: boolean) => {
@@ -90,7 +87,7 @@ export function VerbGrid() {
     return (
       <div className="space-y-6 text-center">
         <h2 className="text-2xl font-bold">Test Complete</h2>
-        <p className="text-4xl font-bold">
+        <p className="text-5xl font-bold">
           {correct}/{answered}
         </p>
         <p className="text-gray-600">
@@ -100,7 +97,7 @@ export function VerbGrid() {
         </p>
         <button
           onClick={() => restart(chapter)}
-          className="rounded bg-blue-600 px-6 py-2 text-white hover:bg-blue-700"
+          className="w-full rounded-xl bg-blue-600 py-3 text-lg font-medium text-white active:bg-blue-700 sm:w-auto sm:px-8"
         >
           Try Again
         </button>
@@ -108,18 +105,18 @@ export function VerbGrid() {
     );
   }
 
-  const isIrregular =
-    current.type === "irregular" || current.type === "modal";
+  const isIrregular = current.type === "irregular" || current.type === "modal";
 
   return (
-    <div className="space-y-6">
-      <div className="flex flex-wrap items-center gap-4">
+    <div className="space-y-4 sm:space-y-6">
+      <div className="flex flex-wrap items-center gap-3">
         <ChapterFilter value={chapter} onChange={(ch) => restart(ch)} />
         <label className="flex items-center gap-2 text-sm">
           <input
             type="checkbox"
             checked={irregularOnly}
             onChange={(e) => restart(chapter, e.target.checked)}
+            className="h-4 w-4"
           />
           Irregular/modal only
         </label>
@@ -132,10 +129,12 @@ export function VerbGrid() {
         count={items.length}
       />
 
-      <div className="rounded-lg border bg-white p-8 shadow-sm">
+      <div className="rounded-xl border bg-white p-5 shadow-sm sm:p-8">
         <div className="text-center">
-          <p className="text-3xl font-bold">{current.infinitive}</p>
-          <p className="mt-1 text-gray-600">{current.english}</p>
+          <p className="text-3xl font-bold sm:text-4xl">
+            {current.infinitive}
+          </p>
+          <p className="mt-1 text-base text-gray-600">{current.english}</p>
           {isIrregular && (
             <span className="mt-2 inline-block rounded-full bg-amber-100 px-3 py-1 text-xs font-medium text-amber-800">
               {current.stemChangePattern}
@@ -148,8 +147,8 @@ export function VerbGrid() {
             const isWrong = result && !result[p];
             const isRight = result && result[p];
             return (
-              <div key={p} className="flex items-center gap-3">
-                <label className="w-24 text-right text-sm font-medium text-gray-700">
+              <div key={p} className="flex items-center gap-2 sm:gap-3">
+                <label className="w-20 shrink-0 text-right text-sm font-medium text-gray-700 sm:w-24">
                   {p}
                 </label>
                 <input
@@ -159,7 +158,7 @@ export function VerbGrid() {
                     setInputs((prev) => ({ ...prev, [p]: e.target.value }))
                   }
                   disabled={!!result}
-                  className={`flex-1 rounded border px-3 py-2 text-sm ${
+                  className={`min-w-0 flex-1 rounded-lg border px-3 py-2.5 text-base ${
                     isRight
                       ? "border-green-500 bg-green-50"
                       : isWrong
@@ -167,24 +166,28 @@ export function VerbGrid() {
                         : "border-gray-300"
                   }`}
                   placeholder={`${p} ...`}
+                  autoComplete="off"
+                  autoCapitalize="off"
                 />
                 {isWrong && (
-                  <span className="text-sm text-red-600">
+                  <span className="shrink-0 text-sm font-medium text-red-600">
                     {current.conjugation[p]}
                   </span>
                 )}
                 {isRight && (
-                  <span className="text-sm text-green-600">&#10003;</span>
+                  <span className="shrink-0 text-sm text-green-600">
+                    &#10003;
+                  </span>
                 )}
               </div>
             );
           })}
 
           {!result && (
-            <div className="pt-2 text-center">
+            <div className="pt-3">
               <button
                 type="submit"
-                className="rounded bg-blue-600 px-6 py-2 text-white hover:bg-blue-700"
+                className="w-full rounded-xl bg-blue-600 py-3 text-lg font-medium text-white active:bg-blue-700 sm:w-auto sm:px-8"
               >
                 Check
               </button>
@@ -196,7 +199,7 @@ export function VerbGrid() {
           <div className="mt-4 text-center">
             <button
               onClick={next}
-              className="rounded bg-blue-600 px-6 py-2 text-white hover:bg-blue-700"
+              className="w-full rounded-xl bg-blue-600 py-3 text-lg font-medium text-white active:bg-blue-700 sm:w-auto sm:px-8"
             >
               Next
             </button>

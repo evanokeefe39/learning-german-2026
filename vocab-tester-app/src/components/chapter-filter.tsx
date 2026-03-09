@@ -13,7 +13,7 @@ export function ChapterFilter({
 
   return (
     <select
-      className="rounded border bg-white px-3 py-2 text-sm"
+      className="rounded-lg border bg-white px-3 py-2.5 text-base sm:text-sm"
       value={value ?? ""}
       onChange={(e) =>
         onChange(e.target.value ? Number(e.target.value) : undefined)

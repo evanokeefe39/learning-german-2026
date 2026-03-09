@@ -67,7 +67,7 @@ export function Flashcard() {
     return (
       <div className="space-y-6 text-center">
         <h2 className="text-2xl font-bold">Test Complete</h2>
-        <p className="text-4xl font-bold">
+        <p className="text-5xl font-bold">
           {correct}/{answered}
         </p>
         <p className="text-gray-600">
@@ -75,7 +75,7 @@ export function Flashcard() {
         </p>
         <button
           onClick={() => restart(chapter)}
-          className="rounded bg-blue-600 px-6 py-2 text-white hover:bg-blue-700"
+          className="w-full rounded-xl bg-blue-600 py-3 text-lg font-medium text-white active:bg-blue-700 sm:w-auto sm:px-8"
         >
           Try Again
         </button>
@@ -84,7 +84,7 @@ export function Flashcard() {
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 sm:space-y-6">
       <ChapterFilter value={chapter} onChange={restart} />
 
       <ScoreDisplay
@@ -94,21 +94,23 @@ export function Flashcard() {
         count={items.length}
       />
 
-      <div className="rounded-lg border bg-white p-8 text-center shadow-sm">
-        <p className="text-sm text-gray-500">{current.category}</p>
-        <p className="mt-2 text-lg text-gray-700">{current.english}</p>
-        <p className="mt-4 text-sm italic text-gray-500">
-          Hint: {current.hint}
+      <div className="rounded-xl border bg-white p-5 text-center shadow-sm sm:p-8">
+        <p className="text-xs font-medium uppercase tracking-wide text-gray-400">
+          {current.category}
         </p>
+        <p className="mt-3 text-xl font-semibold text-gray-800 sm:text-2xl">
+          {current.english}
+        </p>
+        <p className="mt-4 text-sm italic text-gray-500">{current.hint}</p>
 
-        <form onSubmit={submit} className="mt-8">
+        <form onSubmit={submit} className="mt-6">
           <input
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             disabled={revealed}
             placeholder="der/die/das + Noun"
-            className={`w-full max-w-sm rounded border px-4 py-3 text-center text-lg ${
+            className={`w-full rounded-xl border px-4 py-3 text-center text-lg ${
               revealed
                 ? isCorrect
                   ? "border-green-500 bg-green-50"
@@ -116,12 +118,14 @@ export function Flashcard() {
                 : "border-gray-300"
             }`}
             autoFocus
+            autoComplete="off"
+            autoCapitalize="off"
           />
           {!revealed && (
             <div className="mt-4">
               <button
                 type="submit"
-                className="rounded bg-blue-600 px-6 py-2 text-white hover:bg-blue-700"
+                className="w-full rounded-xl bg-blue-600 py-3 text-lg font-medium text-white active:bg-blue-700 sm:w-auto sm:px-8"
               >
                 Submit
               </button>
@@ -142,7 +146,7 @@ export function Flashcard() {
             </p>
             <button
               onClick={next}
-              className="mt-4 rounded bg-blue-600 px-6 py-2 text-white hover:bg-blue-700"
+              className="mt-4 w-full rounded-xl bg-blue-600 py-3 text-lg font-medium text-white active:bg-blue-700 sm:w-auto sm:px-8"
             >
               Next
             </button>

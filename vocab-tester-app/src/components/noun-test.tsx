@@ -16,18 +16,15 @@ export function NounTest() {
   const [selected, setSelected] = useState<string | null>(null);
   const [finished, setFinished] = useState(false);
 
-  const restart = useCallback(
-    (ch?: number) => {
-      setChapter(ch);
-      setItems(shuffle(getNounsByChapter(ch)));
-      setIndex(0);
-      setCorrect(0);
-      setAnswered(0);
-      setSelected(null);
-      setFinished(false);
-    },
-    []
-  );
+  const restart = useCallback((ch?: number) => {
+    setChapter(ch);
+    setItems(shuffle(getNounsByChapter(ch)));
+    setIndex(0);
+    setCorrect(0);
+    setAnswered(0);
+    setSelected(null);
+    setFinished(false);
+  }, []);
 
   const current = items[index];
 
@@ -62,7 +59,7 @@ export function NounTest() {
     return (
       <div className="space-y-6 text-center">
         <h2 className="text-2xl font-bold">Test Complete</h2>
-        <p className="text-4xl font-bold">
+        <p className="text-5xl font-bold">
           {correct}/{answered}
         </p>
         <p className="text-gray-600">
@@ -70,7 +67,7 @@ export function NounTest() {
         </p>
         <button
           onClick={() => restart(chapter)}
-          className="rounded bg-blue-600 px-6 py-2 text-white hover:bg-blue-700"
+          className="w-full rounded-xl bg-blue-600 py-3 text-lg font-medium text-white active:bg-blue-700 sm:w-auto sm:px-8"
         >
           Try Again
         </button>
@@ -81,10 +78,8 @@ export function NounTest() {
   const isCorrect = selected === current.article;
 
   return (
-    <div className="space-y-6">
-      <div className="flex items-center justify-between gap-4">
-        <ChapterFilter value={chapter} onChange={restart} />
-      </div>
+    <div className="space-y-4 sm:space-y-6">
+      <ChapterFilter value={chapter} onChange={restart} />
 
       <ScoreDisplay
         correct={correct}
@@ -93,17 +88,19 @@ export function NounTest() {
         count={items.length}
       />
 
-      <div className="rounded-lg border bg-white p-8 text-center shadow-sm">
-        <p className="text-sm text-gray-500">{current.category}</p>
-        <p className="mt-2 text-4xl font-bold">{current.german}</p>
-        <p className="mt-1 text-gray-600">{current.english}</p>
+      <div className="rounded-xl border bg-white p-5 text-center shadow-sm sm:p-8">
+        <p className="text-xs font-medium uppercase tracking-wide text-gray-400">
+          {current.category}
+        </p>
+        <p className="mt-3 text-4xl font-bold sm:text-5xl">{current.german}</p>
+        <p className="mt-2 text-base text-gray-600">{current.english}</p>
 
-        <div className="mt-8 flex justify-center gap-4">
+        <div className="mt-6 grid grid-cols-3 gap-3 sm:mt-8 sm:flex sm:justify-center sm:gap-4">
           {ARTICLES.map((a) => {
             let cls =
-              "rounded-lg border-2 px-8 py-3 text-lg font-semibold transition";
+              "rounded-xl border-2 py-4 text-lg font-semibold transition sm:px-10";
             if (!selected) {
-              cls += " border-gray-300 hover:border-blue-500 hover:bg-blue-50";
+              cls += " border-gray-300 active:bg-blue-50 sm:hover:border-blue-500 sm:hover:bg-blue-50";
             } else if (a === current.article) {
               cls += " border-green-500 bg-green-50 text-green-700";
             } else if (a === selected) {
@@ -137,7 +134,7 @@ export function NounTest() {
             </p>
             <button
               onClick={next}
-              className="mt-4 rounded bg-blue-600 px-6 py-2 text-white hover:bg-blue-700"
+              className="mt-4 w-full rounded-xl bg-blue-600 py-3 text-lg font-medium text-white active:bg-blue-700 sm:w-auto sm:px-8"
             >
               Next
             </button>

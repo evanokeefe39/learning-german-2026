@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useCallback, useEffect, FormEvent } from "react";
-import { Verb, Difficulty, getVerbsByFilter, shuffle } from "@/lib/data";
+import { Verb, Difficulty, getVerbsByFilter, shuffle, getPerfektEntry } from "@/lib/data";
 import { ChapterFilter } from "./chapter-filter";
 import { DifficultyFilter } from "./difficulty-filter";
 import { ScoreDisplay } from "./score-display";

@@ -1,5 +1,6 @@
 import nounsData from "../../data/nouns.json";
 import verbsData from "../../data/verbs.json";
+import perfektData from "../../data/perfekt.json";
 
 export type Difficulty = "easy" | "medium" | "hard";
 
@@ -34,8 +35,36 @@ export type Verb = {
   difficulty: Difficulty;
 };
 
+export type PerfektEntry = {
+  infinitive: string;
+  auxiliary: "haben" | "sein";
+  partizipII: string;
+  perfektType: "regular" | "irregular" | "no-ge" | "separable";
+};
+
 export const nouns: Noun[] = nounsData as Noun[];
 export const verbs: Verb[] = verbsData as Verb[];
+export const perfektEntries: PerfektEntry[] = perfektData as PerfektEntry[];
+
+const perfektMap = new Map<string, PerfektEntry>(
+  perfektEntries.map((p) => [p.infinitive, p])
+);
+
+export function getPerfektEntry(infinitive: string): PerfektEntry | undefined {
+  return perfektMap.get(infinitive);
+}
+
+export type VerbWithPerfekt = Verb & { perfekt: PerfektEntry };
+
+export function getVerbsWithPerfekt(
+  chapter?: number,
+  difficulty?: Difficulty
+): VerbWithPerfekt[] {
+  const filtered = getVerbsByFilter(chapter, difficulty);
+  return filtered
+    .filter((v) => perfektMap.has(v.infinitive))
+    .map((v) => ({ ...v, perfekt: perfektMap.get(v.infinitive)! }));
+}
 
 export function getNounsByChapter(chapter?: number): Noun[] {
   if (!chapter) return nouns;

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { getChapters, nouns, verbs } from "@/lib/data";
+import { getChapters, nouns, verbs, perfektEntries } from "@/lib/data";
 import { getWrongWordCount, getAllHighScores } from "@/lib/storage";
 
 export default function Home() {
@@ -15,6 +15,7 @@ export default function Home() {
       nouns: getWrongWordCount("nouns"),
       verbs: getWrongWordCount("verbs"),
       flashcards: getWrongWordCount("flashcards"),
+      perfekt: getWrongWordCount("perfekt"),
     });
 
     const all = getAllHighScores();
@@ -44,6 +45,14 @@ export default function Home() {
       count: verbs.length,
       label: "verbs",
       mode: "verbs",
+    },
+    {
+      title: "Perfekt (Past Tense)",
+      description: "Pick haben or sein and type the Partizip II for each verb.",
+      href: "/test/perfekt",
+      count: perfektEntries.length,
+      label: "verbs",
+      mode: "perfekt",
     },
     {
       title: "Flashcard Mode",

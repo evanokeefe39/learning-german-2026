@@ -1,14 +1,16 @@
 "use client";
 
 import { useState, useCallback, FormEvent } from "react";
-import { Noun, getNounsByFilter, shuffle } from "@/lib/data";
+import { Noun, Difficulty, getNounsByFilter, shuffle } from "@/lib/data";
 import { ChapterFilter } from "./chapter-filter";
 import { CategoryFilter } from "./category-filter";
+import { DifficultyFilter } from "./difficulty-filter";
 import { ScoreDisplay } from "./score-display";
 
 export function Flashcard() {
   const [chapter, setChapter] = useState<number | undefined>(undefined);
   const [category, setCategory] = useState<string | undefined>(undefined);
+  const [difficulty, setDifficulty] = useState<Difficulty | undefined>(undefined);
   const [items, setItems] = useState<Noun[]>(() => shuffle(getNounsByFilter()));
   const [index, setIndex] = useState(0);
   const [correct, setCorrect] = useState(0);
@@ -18,10 +20,11 @@ export function Flashcard() {
   const [isCorrect, setIsCorrect] = useState(false);
   const [finished, setFinished] = useState(false);
 
-  const restart = useCallback((ch?: number, cat?: string) => {
+  const restart = useCallback((ch?: number, cat?: string, diff?: Difficulty) => {
     setChapter(ch);
     setCategory(cat);
-    setItems(shuffle(getNounsByFilter(ch, cat)));
+    setDifficulty(diff);
+    setItems(shuffle(getNounsByFilter(ch, cat, diff)));
     setIndex(0);
     setCorrect(0);
     setAnswered(0);
@@ -61,8 +64,9 @@ export function Flashcard() {
     return (
       <div className="space-y-4">
         <div className="flex flex-wrap items-center gap-3">
-          <ChapterFilter value={chapter} onChange={(ch) => restart(ch, category)} />
-          <CategoryFilter value={category} chapter={chapter} onChange={(cat) => restart(chapter, cat)} />
+          <ChapterFilter value={chapter} onChange={(ch) => restart(ch, category, difficulty)} />
+          <CategoryFilter value={category} chapter={chapter} onChange={(cat) => restart(chapter, cat, difficulty)} />
+          <DifficultyFilter value={difficulty} onChange={(d) => restart(chapter, category, d)} />
         </div>
         <p>No flashcards found for this filter.</p>
       </div>
@@ -80,7 +84,7 @@ export function Flashcard() {
           {Math.round((correct / answered) * 100)}% correct
         </p>
         <button
-          onClick={() => restart(chapter, category)}
+          onClick={() => restart(chapter, category, difficulty)}
           className="w-full rounded-xl bg-blue-600 py-3 text-lg font-medium text-white active:bg-blue-700 sm:w-auto sm:px-8"
         >
           Try Again
@@ -92,8 +96,9 @@ export function Flashcard() {
   return (
     <div className="space-y-4 sm:space-y-6">
       <div className="flex flex-wrap items-center gap-3">
-        <ChapterFilter value={chapter} onChange={(ch) => restart(ch, category)} />
-        <CategoryFilter value={category} chapter={chapter} onChange={(cat) => restart(chapter, cat)} />
+        <ChapterFilter value={chapter} onChange={(ch) => restart(ch, category, difficulty)} />
+        <CategoryFilter value={category} chapter={chapter} onChange={(cat) => restart(chapter, cat, difficulty)} />
+        <DifficultyFilter value={difficulty} onChange={(d) => restart(chapter, category, d)} />
       </div>
 
       <ScoreDisplay

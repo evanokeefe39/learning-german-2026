@@ -1,16 +1,18 @@
 "use client";
 
 import { useState, useCallback, FormEvent } from "react";
-import { Verb, getVerbsByChapter, shuffle } from "@/lib/data";
+import { Verb, Difficulty, getVerbsByFilter, shuffle } from "@/lib/data";
 import { ChapterFilter } from "./chapter-filter";
+import { DifficultyFilter } from "./difficulty-filter";
 import { ScoreDisplay } from "./score-display";
 
 const PERSONS = ["ich", "du", "er/sie/es", "wir", "ihr", "sie/Sie"] as const;
 
 export function VerbGrid() {
   const [chapter, setChapter] = useState<number | undefined>(undefined);
+  const [difficulty, setDifficulty] = useState<Difficulty | undefined>(undefined);
   const [irregularOnly, setIrregularOnly] = useState(false);
-  const [items, setItems] = useState<Verb[]>(() => shuffle(getVerbsByChapter()));
+  const [items, setItems] = useState<Verb[]>(() => shuffle(getVerbsByFilter()));
   const [index, setIndex] = useState(0);
   const [correct, setCorrect] = useState(0);
   const [answered, setAnswered] = useState(0);
@@ -20,8 +22,8 @@ export function VerbGrid() {
   const [result, setResult] = useState<Record<string, boolean> | null>(null);
   const [finished, setFinished] = useState(false);
 
-  const filterItems = useCallback((ch?: number, irrOnly?: boolean) => {
-    let filtered = getVerbsByChapter(ch);
+  const filterItems = useCallback((ch?: number, irrOnly?: boolean, diff?: Difficulty) => {
+    let filtered = getVerbsByFilter(ch, diff);
     if (irrOnly) {
       filtered = filtered.filter(
         (v) => v.type === "irregular" || v.type === "modal"
@@ -31,10 +33,11 @@ export function VerbGrid() {
   }, []);
 
   const restart = useCallback(
-    (ch?: number, irrOnly?: boolean) => {
+    (ch?: number, irrOnly?: boolean, diff?: Difficulty) => {
       setChapter(ch);
+      setDifficulty(diff);
       setIrregularOnly(irrOnly ?? irregularOnly);
-      setItems(filterItems(ch, irrOnly ?? irregularOnly));
+      setItems(filterItems(ch, irrOnly ?? irregularOnly, diff ?? difficulty));
       setIndex(0);
       setCorrect(0);
       setAnswered(0);
@@ -42,7 +45,7 @@ export function VerbGrid() {
       setResult(null);
       setFinished(false);
     },
-    [filterItems, irregularOnly]
+    [filterItems, irregularOnly, difficulty]
   );
 
   const current = items[index];
@@ -77,7 +80,8 @@ export function VerbGrid() {
   if (items.length === 0) {
     return (
       <div className="space-y-4">
-        <ChapterFilter value={chapter} onChange={(ch) => restart(ch)} />
+        <ChapterFilter value={chapter} onChange={(ch) => restart(ch, irregularOnly, difficulty)} />
+        <DifficultyFilter value={difficulty} onChange={(d) => restart(chapter, irregularOnly, d)} />
         <p>No verbs found for this filter.</p>
       </div>
     );
@@ -96,7 +100,7 @@ export function VerbGrid() {
             : ""}
         </p>
         <button
-          onClick={() => restart(chapter)}
+          onClick={() => restart(chapter, irregularOnly, difficulty)}
           className="w-full rounded-xl bg-blue-600 py-3 text-lg font-medium text-white active:bg-blue-700 sm:w-auto sm:px-8"
         >
           Try Again
@@ -110,12 +114,13 @@ export function VerbGrid() {
   return (
     <div className="space-y-4 sm:space-y-6">
       <div className="flex flex-wrap items-center gap-3">
-        <ChapterFilter value={chapter} onChange={(ch) => restart(ch)} />
+        <ChapterFilter value={chapter} onChange={(ch) => restart(ch, irregularOnly, difficulty)} />
+        <DifficultyFilter value={difficulty} onChange={(d) => restart(chapter, irregularOnly, d)} />
         <label className="flex items-center gap-2 text-sm">
           <input
             type="checkbox"
             checked={irregularOnly}
-            onChange={(e) => restart(chapter, e.target.checked)}
+            onChange={(e) => restart(chapter, e.target.checked, difficulty)}
             className="h-4 w-4"
           />
           Irregular/modal only

@@ -1,6 +1,8 @@
 import nounsData from "../../data/nouns.json";
 import verbsData from "../../data/verbs.json";
 
+export type Difficulty = "easy" | "medium" | "hard";
+
 export type Noun = {
   chapter: number;
   german: string;
@@ -8,6 +10,9 @@ export type Noun = {
   english: string;
   category: string;
   hint: string;
+  frequency: number;
+  chapterSpread: number;
+  difficulty: Difficulty;
 };
 
 export type Verb = {
@@ -24,6 +29,9 @@ export type Verb = {
     ihr: string;
     "sie/Sie": string;
   };
+  frequency: number;
+  chapterSpread: number;
+  difficulty: Difficulty;
 };
 
 export const nouns: Noun[] = nounsData as Noun[];
@@ -34,10 +42,19 @@ export function getNounsByChapter(chapter?: number): Noun[] {
   return nouns.filter((n) => n.chapter === chapter);
 }
 
-export function getNounsByFilter(chapter?: number, category?: string): Noun[] {
+export function getNounsByFilter(chapter?: number, category?: string, difficulty?: Difficulty): Noun[] {
   return nouns.filter((n) => {
     if (chapter && n.chapter !== chapter) return false;
     if (category && n.category !== category) return false;
+    if (difficulty && n.difficulty !== difficulty) return false;
+    return true;
+  });
+}
+
+export function getVerbsByFilter(chapter?: number, difficulty?: Difficulty): Verb[] {
+  return verbs.filter((v) => {
+    if (chapter && v.chapter !== chapter) return false;
+    if (difficulty && v.difficulty !== difficulty) return false;
     return true;
   });
 }

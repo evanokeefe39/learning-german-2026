@@ -1,14 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import { TriangleAlert } from "lucide-react";
 import { useEffect, useState } from "react";
 import { getChapters, nouns, verbs, perfektEntries } from "@/lib/data";
-import { getWrongWordCount, getAllHighScores } from "@/lib/storage";
+import { getWrongWordCount, getLeaderboard, AttemptRecord } from "@/lib/storage";
 
 export default function Home() {
   const chapters = getChapters();
   const [wrongCounts, setWrongCounts] = useState<Record<string, number>>({});
-  const [topScores, setTopScores] = useState<Record<string, number>>({});
+  const [topByMode, setTopByMode] = useState<Record<string, AttemptRecord[]>>({});
 
   useEffect(() => {
     setWrongCounts({
@@ -18,15 +19,13 @@ export default function Home() {
       perfekt: getWrongWordCount("perfekt"),
     });
 
-    const all = getAllHighScores();
-    const best: Record<string, number> = {};
-    for (const [key, score] of Object.entries(all)) {
-      const mode = key.split("|")[0];
-      if (best[mode] === undefined || score > best[mode]) {
-        best[mode] = score;
-      }
+    const modes = ["nouns", "verbs", "perfekt", "flashcards"];
+    const top: Record<string, AttemptRecord[]> = {};
+    for (const m of modes) {
+      const entries = getLeaderboard(m, 3);
+      if (entries.length > 0) top[m] = entries;
     }
-    setTopScores(best);
+    setTopByMode(top);
   }, []);
 
   const modes = [
@@ -82,17 +81,43 @@ export default function Home() {
           >
             <h2 className="text-base font-semibold sm:text-lg">{mode.title}</h2>
             <p className="mt-1.5 text-sm text-gray-600">{mode.description}</p>
-            <div className="mt-auto pt-3 flex flex-wrap items-center gap-3 text-xs text-gray-400">
-              <span>{mode.count} {mode.label}</span>
-              {wrongCounts[mode.mode] > 0 && (
-                <span className="rounded-full bg-red-100 px-2 py-0.5 text-red-700">
-                  {wrongCounts[mode.mode]} to practice
-                </span>
-              )}
-              {topScores[mode.mode] !== undefined && (
-                <span className="rounded-full bg-amber-100 px-2 py-0.5 text-amber-700">
-                  Best: {topScores[mode.mode]}%
-                </span>
+            <div className="mt-auto pt-3 space-y-1.5">
+              <div className="flex flex-wrap items-center gap-3 text-xs text-gray-400">
+                <span>{mode.count} {mode.label}</span>
+                {wrongCounts[mode.mode] > 0 && (
+                  <span className="inline-flex items-center gap-1 rounded-full bg-yellow-100 px-2 py-0.5 text-yellow-700">
+                    <TriangleAlert className="h-3 w-3" />
+                    {wrongCounts[mode.mode]} to practice
+                  </span>
+                )}
+              </div>
+              {topByMode[mode.mode] && topByMode[mode.mode].length > 0 && (
+                <div className="space-y-0.5">
+                  <p className="text-[10px] font-medium uppercase tracking-wide text-gray-400">Best attempts</p>
+                  {topByMode[mode.mode].map((a, i) => {
+                    const diffColor = a.difficulty === "easy"
+                      ? "text-green-600"
+                      : a.difficulty === "medium"
+                        ? "text-orange-500"
+                        : a.difficulty === "hard"
+                          ? "text-red-600"
+                          : "text-gray-400";
+                    return (
+                      <p key={i} className="text-xs text-gray-500">
+                        {a.correct}/{a.total} ({a.percentage}%)
+                        {a.chapter !== null && (
+                          <span className="ml-1 text-gray-400">Ch.{a.chapter}</span>
+                        )}
+                        {a.category && (
+                          <span className="ml-1 text-gray-400">{a.category}</span>
+                        )}
+                        {a.difficulty && (
+                          <span className={`ml-1 ${diffColor}`}>{a.difficulty}</span>
+                        )}
+                      </p>
+                    );
+                  })}
+                </div>
               )}
             </div>
           </Link>

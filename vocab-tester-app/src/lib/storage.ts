@@ -90,3 +90,51 @@ export function saveHighScore(configKey: string, percentage: number) {
 export function getAllHighScores(): HighScores {
   return loadHighScores();
 }
+
+// --- Attempt Records (Personal Leaderboard) ---
+
+export interface AttemptRecord {
+  mode: string;
+  chapter: number | null;
+  category: string | null;
+  difficulty: string | null;
+  correct: number;
+  total: number;
+  percentage: number;
+  timestamp: number;
+}
+
+const ATTEMPTS_KEY = "attempts";
+const MAX_ATTEMPTS = 200;
+
+export function saveAttempt(record: AttemptRecord) {
+  if (typeof window === "undefined") return;
+  try {
+    const raw = localStorage.getItem(ATTEMPTS_KEY);
+    const attempts: AttemptRecord[] = raw ? JSON.parse(raw) : [];
+    attempts.push(record);
+    if (attempts.length > MAX_ATTEMPTS) {
+      attempts.splice(0, attempts.length - MAX_ATTEMPTS);
+    }
+    localStorage.setItem(ATTEMPTS_KEY, JSON.stringify(attempts));
+  } catch {}
+}
+
+export function getAttempts(): AttemptRecord[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = localStorage.getItem(ATTEMPTS_KEY);
+    return raw ? (JSON.parse(raw) as AttemptRecord[]) : [];
+  } catch {
+    return [];
+  }
+}
+
+export function getLeaderboard(mode?: string, limit = 3): AttemptRecord[] {
+  let attempts = getAttempts();
+  if (mode) {
+    attempts = attempts.filter((a) => a.mode === mode);
+  }
+  attempts.sort((a, b) => b.total - a.total || b.percentage - a.percentage);
+  return attempts.slice(0, limit);
+}

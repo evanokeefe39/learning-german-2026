@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useEffect, FormEvent } from "react";
+import { useState, useCallback, useEffect, useRef, FormEvent } from "react";
 import { Noun, Difficulty, getNounsByFilter, shuffle } from "@/lib/data";
 import { ChapterFilter } from "./chapter-filter";
 import { CategoryFilter } from "./category-filter";
@@ -14,6 +14,7 @@ import {
   buildConfigKey,
   getHighScore,
   saveHighScore,
+  saveAttempt,
 } from "@/lib/storage";
 
 export function Flashcard() {
@@ -33,6 +34,30 @@ export function Flashcard() {
 
   useEffect(() => {
     setWrongCount(getWrongWordCount("flashcards"));
+  }, []);
+
+  const stateRef = useRef({ correct, answered, finished, mistakesOnly, chapter, category, difficulty });
+  useEffect(() => {
+    stateRef.current = { correct, answered, finished, mistakesOnly, chapter, category, difficulty };
+  });
+  useEffect(() => {
+    return () => {
+      const s = stateRef.current;
+      if (s.answered > 0 && !s.finished && !s.mistakesOnly) {
+        const pct = Math.round((s.correct / s.answered) * 100);
+        saveHighScore(buildConfigKey("flashcards", s.chapter, s.category, s.difficulty), pct);
+        saveAttempt({
+          mode: "flashcards",
+          chapter: s.chapter ?? null,
+          category: s.category ?? null,
+          difficulty: s.difficulty ?? null,
+          correct: s.correct,
+          total: s.answered,
+          percentage: pct,
+          timestamp: Date.now(),
+        });
+      }
+    };
   }, []);
 
   const applyFilter = useCallback(
@@ -136,7 +161,44 @@ export function Flashcard() {
 
   if (finished) {
     const pct = Math.round((correct / answered) * 100);
+
+    if (mistakesOnly) {
+      return (
+        <div className="space-y-6 text-center">
+          <h2 className="text-2xl font-bold text-green-600">Practice Complete</h2>
+          <p className="text-5xl font-bold">
+            {correct}/{answered}
+          </p>
+          <p className="text-gray-600">{pct}% correct</p>
+          <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
+            <button
+              onClick={() => restart(chapter, category, difficulty, false)}
+              className="w-full rounded-xl bg-blue-600 py-3 text-lg font-medium text-white active:bg-blue-700 sm:w-auto sm:px-8"
+            >
+              Back to Test
+            </button>
+            <button
+              onClick={() => restart(chapter, category, difficulty, true)}
+              className="w-full rounded-xl border-2 border-blue-600 py-3 text-lg font-medium text-blue-600 active:bg-blue-50 sm:w-auto sm:px-8"
+            >
+              Practice Again
+            </button>
+          </div>
+        </div>
+      );
+    }
+
     saveHighScore(configKey, pct);
+    saveAttempt({
+      mode: "flashcards",
+      chapter: chapter ?? null,
+      category: category ?? null,
+      difficulty: difficulty ?? null,
+      correct,
+      total: answered,
+      percentage: pct,
+      timestamp: Date.now(),
+    });
     const best = getHighScore(configKey);
     const isNewBest = best === pct;
 

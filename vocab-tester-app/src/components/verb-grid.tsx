@@ -120,6 +120,7 @@ export function VerbGrid() {
     } else {
       addWrongWord("verbs", current.infinitive);
     }
+    setWrongCount(getWrongWordCount("verbs"));
   };
 
   const next = () => {

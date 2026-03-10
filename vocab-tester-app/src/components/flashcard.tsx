@@ -110,6 +110,7 @@ export function Flashcard() {
     } else {
       addWrongWord("flashcards", current.german);
     }
+    setWrongCount(getWrongWordCount("flashcards"));
   };
 
   const next = () => {

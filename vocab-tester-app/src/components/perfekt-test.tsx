@@ -42,6 +42,7 @@ export function PerfektTest() {
   } | null>(null);
   const [finished, setFinished] = useState(false);
   const [wrongCount, setWrongCount] = useState(0);
+  const [showHint, setShowHint] = useState(true);
 
   useEffect(() => {
     setWrongCount(getWrongWordCount("perfekt"));
@@ -141,6 +142,7 @@ export function PerfektTest() {
     } else {
       addWrongWord("perfekt", current.infinitive);
     }
+    setWrongCount(getWrongWordCount("perfekt"));
   };
 
   const next = () => {
@@ -318,6 +320,15 @@ export function PerfektTest() {
           />
           Practice mistakes{wrongCount > 0 ? ` (${wrongCount})` : ""}
         </label>
+        <label className="flex items-center gap-2 text-sm">
+          <input
+            type="checkbox"
+            checked={showHint}
+            onChange={(e) => setShowHint(e.target.checked)}
+            className="h-4 w-4"
+          />
+          Show hint
+        </label>
       </div>
 
       <ScoreDisplay
@@ -333,9 +344,11 @@ export function PerfektTest() {
             {current.infinitive}
           </p>
           <p className="mt-1 text-base text-gray-600">{current.english}</p>
-          <span className="mt-2 inline-block rounded-full bg-purple-100 px-3 py-1 text-xs font-medium text-purple-800">
-            {typeLabel[current.perfekt.perfektType]}
-          </span>
+          {showHint && (
+            <span className="mt-2 inline-block rounded-full bg-purple-100 px-3 py-1 text-xs font-medium text-purple-800">
+              {typeLabel[current.perfekt.perfektType]}
+            </span>
+          )}
         </div>
 
         <form onSubmit={submit} className="mt-6 space-y-3">

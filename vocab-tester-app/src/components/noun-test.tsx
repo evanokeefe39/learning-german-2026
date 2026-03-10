@@ -102,6 +102,7 @@ export function NounTest() {
     } else {
       addWrongWord("nouns", current.german);
     }
+    setWrongCount(getWrongWordCount("nouns"));
   };
 
   const next = () => {

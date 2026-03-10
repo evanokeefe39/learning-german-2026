@@ -42,21 +42,39 @@ export function getNounsByChapter(chapter?: number): Noun[] {
   return nouns.filter((n) => n.chapter === chapter);
 }
 
-export function getNounsByFilter(chapter?: number, category?: string, difficulty?: Difficulty): Noun[] {
-  return nouns.filter((n) => {
-    if (chapter && n.chapter !== chapter) return false;
-    if (category && n.category !== category) return false;
-    if (difficulty && n.difficulty !== difficulty) return false;
+function dedupeNouns(arr: Noun[]): Noun[] {
+  const seen = new Set<string>();
+  return arr.filter((n) => {
+    if (seen.has(n.german)) return false;
+    seen.add(n.german);
     return true;
   });
 }
 
+function dedupeVerbs(arr: Verb[]): Verb[] {
+  const seen = new Set<string>();
+  return arr.filter((v) => {
+    if (seen.has(v.infinitive)) return false;
+    seen.add(v.infinitive);
+    return true;
+  });
+}
+
+export function getNounsByFilter(chapter?: number, category?: string, difficulty?: Difficulty): Noun[] {
+  return dedupeNouns(nouns.filter((n) => {
+    if (chapter && n.chapter !== chapter) return false;
+    if (category && n.category !== category) return false;
+    if (difficulty && n.difficulty !== difficulty) return false;
+    return true;
+  }));
+}
+
 export function getVerbsByFilter(chapter?: number, difficulty?: Difficulty): Verb[] {
-  return verbs.filter((v) => {
+  return dedupeVerbs(verbs.filter((v) => {
     if (chapter && v.chapter !== chapter) return false;
     if (difficulty && v.difficulty !== difficulty) return false;
     return true;
-  });
+  }));
 }
 
 export function getVerbsByChapter(chapter?: number): Verb[] {

@@ -1,10 +1,19 @@
 "use client";
 
-import { useState, useCallback, FormEvent } from "react";
+import { useState, useCallback, useEffect, FormEvent } from "react";
 import { Verb, Difficulty, getVerbsByFilter, shuffle } from "@/lib/data";
 import { ChapterFilter } from "./chapter-filter";
 import { DifficultyFilter } from "./difficulty-filter";
 import { ScoreDisplay } from "./score-display";
+import {
+  addWrongWord,
+  removeWrongWord,
+  getWrongWords,
+  getWrongWordCount,
+  buildConfigKey,
+  getHighScore,
+  saveHighScore,
+} from "@/lib/storage";
 
 const PERSONS = ["ich", "du", "er/sie/es", "wir", "ihr", "sie/Sie"] as const;
 
@@ -12,6 +21,7 @@ export function VerbGrid() {
   const [chapter, setChapter] = useState<number | undefined>(undefined);
   const [difficulty, setDifficulty] = useState<Difficulty | undefined>(undefined);
   const [irregularOnly, setIrregularOnly] = useState(false);
+  const [mistakesOnly, setMistakesOnly] = useState(false);
   const [items, setItems] = useState<Verb[]>(() => shuffle(getVerbsByFilter()));
   const [index, setIndex] = useState(0);
   const [correct, setCorrect] = useState(0);
@@ -21,31 +31,46 @@ export function VerbGrid() {
   );
   const [result, setResult] = useState<Record<string, boolean> | null>(null);
   const [finished, setFinished] = useState(false);
+  const [wrongCount, setWrongCount] = useState(0);
 
-  const filterItems = useCallback((ch?: number, irrOnly?: boolean, diff?: Difficulty) => {
-    let filtered = getVerbsByFilter(ch, diff);
-    if (irrOnly) {
-      filtered = filtered.filter(
-        (v) => v.type === "irregular" || v.type === "modal"
-      );
-    }
-    return shuffle(filtered);
+  useEffect(() => {
+    setWrongCount(getWrongWordCount("verbs"));
   }, []);
 
+  const filterItems = useCallback(
+    (ch?: number, irrOnly?: boolean, diff?: Difficulty, mistakes?: boolean) => {
+      let filtered = getVerbsByFilter(ch, diff);
+      if (irrOnly) {
+        filtered = filtered.filter(
+          (v) => v.type === "irregular" || v.type === "modal"
+        );
+      }
+      if (mistakes) {
+        const wrong = new Set(getWrongWords("verbs"));
+        filtered = filtered.filter((v) => wrong.has(v.infinitive));
+      }
+      return shuffle(filtered);
+    },
+    []
+  );
+
   const restart = useCallback(
-    (ch?: number, irrOnly?: boolean, diff?: Difficulty) => {
+    (ch?: number, irrOnly?: boolean, diff?: Difficulty, mistakes?: boolean) => {
+      const m = mistakes ?? mistakesOnly;
       setChapter(ch);
       setDifficulty(diff);
       setIrregularOnly(irrOnly ?? irregularOnly);
-      setItems(filterItems(ch, irrOnly ?? irregularOnly, diff ?? difficulty));
+      setMistakesOnly(m);
+      setItems(filterItems(ch, irrOnly ?? irregularOnly, diff ?? difficulty, m));
       setIndex(0);
       setCorrect(0);
       setAnswered(0);
       setInputs(Object.fromEntries(PERSONS.map((p) => [p, ""])));
       setResult(null);
       setFinished(false);
+      setWrongCount(getWrongWordCount("verbs"));
     },
-    [filterItems, irregularOnly, difficulty]
+    [filterItems, irregularOnly, difficulty, mistakesOnly]
   );
 
   const current = items[index];
@@ -64,11 +89,27 @@ export function VerbGrid() {
     }
     setResult(res);
     setAnswered((a) => a + 1);
-    if (allCorrect) setCorrect((c) => c + 1);
+    if (allCorrect) {
+      setCorrect((c) => c + 1);
+      removeWrongWord("verbs", current.infinitive);
+    } else {
+      addWrongWord("verbs", current.infinitive);
+    }
   };
 
   const next = () => {
     if (index + 1 >= items.length) {
+      if (mistakesOnly) {
+        const refreshed = filterItems(chapter, irregularOnly, difficulty, true);
+        if (refreshed.length > 0) {
+          setItems(refreshed);
+          setIndex(0);
+          setInputs(Object.fromEntries(PERSONS.map((p) => [p, ""])));
+          setResult(null);
+          setWrongCount(refreshed.length);
+          return;
+        }
+      }
       setFinished(true);
     } else {
       setIndex((i) => i + 1);
@@ -77,17 +118,35 @@ export function VerbGrid() {
     }
   };
 
+  const configKey = buildConfigKey("verbs", chapter, undefined, difficulty);
+
   if (items.length === 0) {
     return (
       <div className="space-y-4">
-        <ChapterFilter value={chapter} onChange={(ch) => restart(ch, irregularOnly, difficulty)} />
-        <DifficultyFilter value={difficulty} onChange={(d) => restart(chapter, irregularOnly, d)} />
-        <p>No verbs found for this filter.</p>
+        <div className="flex flex-wrap items-center gap-3">
+          <ChapterFilter value={chapter} onChange={(ch) => restart(ch, irregularOnly, difficulty)} />
+          <DifficultyFilter value={difficulty} onChange={(d) => restart(chapter, irregularOnly, d)} />
+          <label className="flex items-center gap-2 text-sm">
+            <input
+              type="checkbox"
+              checked={mistakesOnly}
+              onChange={(e) => restart(chapter, irregularOnly, difficulty, e.target.checked)}
+              className="h-4 w-4"
+            />
+            Practice mistakes{wrongCount > 0 ? ` (${wrongCount})` : ""}
+          </label>
+        </div>
+        <p>{mistakesOnly ? "No mistakes to practice!" : "No verbs found for this filter."}</p>
       </div>
     );
   }
 
   if (finished) {
+    const pct = answered > 0 ? Math.round((correct / answered) * 100) : 0;
+    saveHighScore(configKey, pct);
+    const best = getHighScore(configKey);
+    const isNewBest = best === pct;
+
     return (
       <div className="space-y-6 text-center">
         <h2 className="text-2xl font-bold">Test Complete</h2>
@@ -95,10 +154,14 @@ export function VerbGrid() {
           {correct}/{answered}
         </p>
         <p className="text-gray-600">
-          {answered > 0
-            ? `${Math.round((correct / answered) * 100)}% fully correct`
-            : ""}
+          {answered > 0 ? `${pct}% fully correct` : ""}
         </p>
+        {isNewBest && pct > 0 && (
+          <p className="text-lg font-semibold text-amber-500">New high score!</p>
+        )}
+        {best !== null && !isNewBest && (
+          <p className="text-sm text-gray-500">Best: {best}%</p>
+        )}
         <button
           onClick={() => restart(chapter, irregularOnly, difficulty)}
           className="w-full rounded-xl bg-blue-600 py-3 text-lg font-medium text-white active:bg-blue-700 sm:w-auto sm:px-8"
@@ -124,6 +187,15 @@ export function VerbGrid() {
             className="h-4 w-4"
           />
           Irregular/modal only
+        </label>
+        <label className="flex items-center gap-2 text-sm">
+          <input
+            type="checkbox"
+            checked={mistakesOnly}
+            onChange={(e) => restart(chapter, irregularOnly, difficulty, e.target.checked)}
+            className="h-4 w-4"
+          />
+          Practice mistakes{wrongCount > 0 ? ` (${wrongCount})` : ""}
         </label>
       </div>
 

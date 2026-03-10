@@ -1,10 +1,32 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { getChapters, nouns, verbs } from "@/lib/data";
+import { getWrongWordCount, getAllHighScores } from "@/lib/storage";
 
 export default function Home() {
   const chapters = getChapters();
+  const [wrongCounts, setWrongCounts] = useState<Record<string, number>>({});
+  const [topScores, setTopScores] = useState<Record<string, number>>({});
+
+  useEffect(() => {
+    setWrongCounts({
+      nouns: getWrongWordCount("nouns"),
+      verbs: getWrongWordCount("verbs"),
+      flashcards: getWrongWordCount("flashcards"),
+    });
+
+    const all = getAllHighScores();
+    const best: Record<string, number> = {};
+    for (const [key, score] of Object.entries(all)) {
+      const mode = key.split("|")[0];
+      if (best[mode] === undefined || score > best[mode]) {
+        best[mode] = score;
+      }
+    }
+    setTopScores(best);
+  }, []);
 
   const modes = [
     {
@@ -13,22 +35,23 @@ export default function Home() {
       href: "/test/nouns",
       count: nouns.length,
       label: "nouns",
+      mode: "nouns",
     },
     {
       title: "Verb Conjugation Grid",
-      description:
-        "Fill in all six conjugation forms for each verb.",
+      description: "Fill in all six conjugation forms for each verb.",
       href: "/test/verbs",
       count: verbs.length,
       label: "verbs",
+      mode: "verbs",
     },
     {
       title: "Flashcard Mode",
-      description:
-        "Read a hint, type the German word with its article.",
+      description: "Read a hint, type the German word with its article.",
       href: "/test/flashcards",
       count: nouns.length,
       label: "flashcards",
+      mode: "flashcards",
     },
   ];
 
@@ -50,9 +73,19 @@ export default function Home() {
           >
             <h2 className="text-base font-semibold sm:text-lg">{mode.title}</h2>
             <p className="mt-1.5 text-sm text-gray-600">{mode.description}</p>
-            <p className="mt-auto pt-3 text-xs text-gray-400">
-              {mode.count} {mode.label}
-            </p>
+            <div className="mt-auto pt-3 flex flex-wrap items-center gap-3 text-xs text-gray-400">
+              <span>{mode.count} {mode.label}</span>
+              {wrongCounts[mode.mode] > 0 && (
+                <span className="rounded-full bg-red-100 px-2 py-0.5 text-red-700">
+                  {wrongCounts[mode.mode]} to practice
+                </span>
+              )}
+              {topScores[mode.mode] !== undefined && (
+                <span className="rounded-full bg-amber-100 px-2 py-0.5 text-amber-700">
+                  Best: {topScores[mode.mode]}%
+                </span>
+              )}
+            </div>
           </Link>
         ))}
       </div>

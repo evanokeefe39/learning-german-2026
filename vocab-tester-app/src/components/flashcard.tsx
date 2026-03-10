@@ -1,16 +1,26 @@
 "use client";
 
-import { useState, useCallback, FormEvent } from "react";
+import { useState, useCallback, useEffect, FormEvent } from "react";
 import { Noun, Difficulty, getNounsByFilter, shuffle } from "@/lib/data";
 import { ChapterFilter } from "./chapter-filter";
 import { CategoryFilter } from "./category-filter";
 import { DifficultyFilter } from "./difficulty-filter";
 import { ScoreDisplay } from "./score-display";
+import {
+  addWrongWord,
+  removeWrongWord,
+  getWrongWords,
+  getWrongWordCount,
+  buildConfigKey,
+  getHighScore,
+  saveHighScore,
+} from "@/lib/storage";
 
 export function Flashcard() {
   const [chapter, setChapter] = useState<number | undefined>(undefined);
   const [category, setCategory] = useState<string | undefined>(undefined);
   const [difficulty, setDifficulty] = useState<Difficulty | undefined>(undefined);
+  const [mistakesOnly, setMistakesOnly] = useState(false);
   const [items, setItems] = useState<Noun[]>(() => shuffle(getNounsByFilter()));
   const [index, setIndex] = useState(0);
   const [correct, setCorrect] = useState(0);
@@ -19,20 +29,43 @@ export function Flashcard() {
   const [revealed, setRevealed] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
   const [finished, setFinished] = useState(false);
+  const [wrongCount, setWrongCount] = useState(0);
 
-  const restart = useCallback((ch?: number, cat?: string, diff?: Difficulty) => {
-    setChapter(ch);
-    setCategory(cat);
-    setDifficulty(diff);
-    setItems(shuffle(getNounsByFilter(ch, cat, diff)));
-    setIndex(0);
-    setCorrect(0);
-    setAnswered(0);
-    setInput("");
-    setRevealed(false);
-    setIsCorrect(false);
-    setFinished(false);
+  useEffect(() => {
+    setWrongCount(getWrongWordCount("flashcards"));
   }, []);
+
+  const applyFilter = useCallback(
+    (ch?: number, cat?: string, diff?: Difficulty, mistakes?: boolean) => {
+      let filtered = getNounsByFilter(ch, cat, diff);
+      if (mistakes) {
+        const wrong = new Set(getWrongWords("flashcards"));
+        filtered = filtered.filter((n) => wrong.has(n.german));
+      }
+      return shuffle(filtered);
+    },
+    []
+  );
+
+  const restart = useCallback(
+    (ch?: number, cat?: string, diff?: Difficulty, mistakes?: boolean) => {
+      const m = mistakes ?? mistakesOnly;
+      setChapter(ch);
+      setCategory(cat);
+      setDifficulty(diff);
+      setMistakesOnly(m);
+      setItems(applyFilter(ch, cat, diff, m));
+      setIndex(0);
+      setCorrect(0);
+      setAnswered(0);
+      setInput("");
+      setRevealed(false);
+      setIsCorrect(false);
+      setFinished(false);
+      setWrongCount(getWrongWordCount("flashcards"));
+    },
+    [applyFilter, mistakesOnly]
+  );
 
   const current = items[index];
 
@@ -46,11 +79,28 @@ export function Flashcard() {
     setIsCorrect(match);
     setRevealed(true);
     setAnswered((a) => a + 1);
-    if (match) setCorrect((c) => c + 1);
+    if (match) {
+      setCorrect((c) => c + 1);
+      removeWrongWord("flashcards", current.german);
+    } else {
+      addWrongWord("flashcards", current.german);
+    }
   };
 
   const next = () => {
     if (index + 1 >= items.length) {
+      if (mistakesOnly) {
+        const refreshed = applyFilter(chapter, category, difficulty, true);
+        if (refreshed.length > 0) {
+          setItems(refreshed);
+          setIndex(0);
+          setInput("");
+          setRevealed(false);
+          setIsCorrect(false);
+          setWrongCount(refreshed.length);
+          return;
+        }
+      }
       setFinished(true);
     } else {
       setIndex((i) => i + 1);
@@ -60,6 +110,8 @@ export function Flashcard() {
     }
   };
 
+  const configKey = buildConfigKey("flashcards", chapter, category, difficulty);
+
   if (items.length === 0) {
     return (
       <div className="space-y-4">
@@ -67,22 +119,40 @@ export function Flashcard() {
           <ChapterFilter value={chapter} onChange={(ch) => restart(ch, category, difficulty)} />
           <CategoryFilter value={category} chapter={chapter} onChange={(cat) => restart(chapter, cat, difficulty)} />
           <DifficultyFilter value={difficulty} onChange={(d) => restart(chapter, category, d)} />
+          <label className="flex items-center gap-2 text-sm">
+            <input
+              type="checkbox"
+              checked={mistakesOnly}
+              onChange={(e) => restart(chapter, category, difficulty, e.target.checked)}
+              className="h-4 w-4"
+            />
+            Practice mistakes{wrongCount > 0 ? ` (${wrongCount})` : ""}
+          </label>
         </div>
-        <p>No flashcards found for this filter.</p>
+        <p>{mistakesOnly ? "No mistakes to practice!" : "No flashcards found for this filter."}</p>
       </div>
     );
   }
 
   if (finished) {
+    const pct = Math.round((correct / answered) * 100);
+    saveHighScore(configKey, pct);
+    const best = getHighScore(configKey);
+    const isNewBest = best === pct;
+
     return (
       <div className="space-y-6 text-center">
         <h2 className="text-2xl font-bold">Test Complete</h2>
         <p className="text-5xl font-bold">
           {correct}/{answered}
         </p>
-        <p className="text-gray-600">
-          {Math.round((correct / answered) * 100)}% correct
-        </p>
+        <p className="text-gray-600">{pct}% correct</p>
+        {isNewBest && pct > 0 && (
+          <p className="text-lg font-semibold text-amber-500">New high score!</p>
+        )}
+        {best !== null && !isNewBest && (
+          <p className="text-sm text-gray-500">Best: {best}%</p>
+        )}
         <button
           onClick={() => restart(chapter, category, difficulty)}
           className="w-full rounded-xl bg-blue-600 py-3 text-lg font-medium text-white active:bg-blue-700 sm:w-auto sm:px-8"
@@ -99,6 +169,15 @@ export function Flashcard() {
         <ChapterFilter value={chapter} onChange={(ch) => restart(ch, category, difficulty)} />
         <CategoryFilter value={category} chapter={chapter} onChange={(cat) => restart(chapter, cat, difficulty)} />
         <DifficultyFilter value={difficulty} onChange={(d) => restart(chapter, category, d)} />
+        <label className="flex items-center gap-2 text-sm">
+          <input
+            type="checkbox"
+            checked={mistakesOnly}
+            onChange={(e) => restart(chapter, category, difficulty, e.target.checked)}
+            className="h-4 w-4"
+          />
+          Practice mistakes{wrongCount > 0 ? ` (${wrongCount})` : ""}
+        </label>
       </div>
 
       <ScoreDisplay

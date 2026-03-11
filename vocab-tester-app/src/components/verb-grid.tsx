@@ -42,25 +42,31 @@ export function VerbGrid() {
   useEffect(() => {
     stateRef.current = { correct, answered, finished, mistakesOnly, chapter, irregularOnly, difficulty };
   });
-  useEffect(() => {
-    return () => {
-      const s = stateRef.current;
-      if (s.answered > 0 && !s.finished && !s.mistakesOnly) {
-        const pct = Math.round((s.correct / s.answered) * 100);
-        saveHighScore(buildConfigKey("verbs", s.chapter, undefined, s.difficulty), pct);
-        saveAttempt({
-          mode: "verbs",
-          chapter: s.chapter ?? null,
-          category: s.irregularOnly ? "irregular" : null,
-          difficulty: s.difficulty ?? null,
-          correct: s.correct,
-          total: s.answered,
-          percentage: pct,
-          timestamp: Date.now(),
-        });
-      }
-    };
+  const savedRef = useRef(false);
+  const saveOnLeave = useCallback(() => {
+    const s = stateRef.current;
+    if (savedRef.current || s.answered === 0 || s.finished || s.mistakesOnly) return;
+    savedRef.current = true;
+    const pct = Math.round((s.correct / s.answered) * 100);
+    saveHighScore(buildConfigKey("verbs", s.chapter, undefined, s.difficulty), pct);
+    saveAttempt({
+      mode: "verbs",
+      chapter: s.chapter ?? null,
+      category: s.irregularOnly ? "irregular" : null,
+      difficulty: s.difficulty ?? null,
+      correct: s.correct,
+      total: s.answered,
+      percentage: pct,
+      timestamp: Date.now(),
+    });
   }, []);
+  useEffect(() => {
+    window.addEventListener("pagehide", saveOnLeave);
+    return () => {
+      window.removeEventListener("pagehide", saveOnLeave);
+      saveOnLeave();
+    };
+  }, [saveOnLeave]);
 
   const filterItems = useCallback(
     (ch?: number, irrOnly?: boolean, diff?: Difficulty, mistakes?: boolean) => {
@@ -94,6 +100,7 @@ export function VerbGrid() {
       setResult(null);
       setFinished(false);
       setWrongCount(getWrongWordCount("verbs"));
+      savedRef.current = false;
     },
     [filterItems, irregularOnly, difficulty, mistakesOnly]
   );

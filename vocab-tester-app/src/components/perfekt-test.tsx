@@ -53,19 +53,22 @@ export function PerfektTest() {
     stateRef.current = { correct, answered, finished, mistakesOnly, chapter, exceptionsOnly, difficulty };
   });
   const savedRef = useRef(false);
+  const pausedProgress = useRef<{ correct: number; answered: number } | null>(null);
   const saveOnLeave = useCallback(() => {
+    if (savedRef.current) return;
     const s = stateRef.current;
-    if (savedRef.current || s.answered === 0 || s.finished || s.mistakesOnly) return;
+    const progress = s.mistakesOnly ? pausedProgress.current : (s.answered > 0 && !s.finished ? { correct: s.correct, answered: s.answered } : null);
+    if (!progress) return;
     savedRef.current = true;
-    const pct = Math.round((s.correct / s.answered) * 100);
+    const pct = Math.round((progress.correct / progress.answered) * 100);
     saveHighScore(buildConfigKey("perfekt", s.chapter, undefined, s.difficulty), pct);
     saveAttempt({
       mode: "perfekt",
       chapter: s.chapter ?? null,
       category: s.exceptionsOnly ? "exceptions" : null,
       difficulty: s.difficulty ?? null,
-      correct: s.correct,
-      total: s.answered,
+      correct: progress.correct,
+      total: progress.answered,
       percentage: pct,
       timestamp: Date.now(),
     });
@@ -107,8 +110,13 @@ export function PerfektTest() {
       diff?: Difficulty,
       mistakes?: boolean
     ) => {
-      saveOnLeave();
       const m = mistakes ?? mistakesOnly;
+      if (m && !mistakesOnly && answered > 0 && !finished) {
+        pausedProgress.current = { correct, answered };
+      } else if (!m) {
+        pausedProgress.current = null;
+        savedRef.current = false;
+      }
       setChapter(ch);
       setDifficulty(diff);
       setExceptionsOnly(excOnly ?? exceptionsOnly);
@@ -124,9 +132,8 @@ export function PerfektTest() {
       setResult(null);
       setFinished(false);
       setWrongCount(getWrongWordCount("perfekt"));
-      savedRef.current = false;
     },
-    [filterItems, exceptionsOnly, difficulty, mistakesOnly]
+    [filterItems, exceptionsOnly, difficulty, mistakesOnly, answered, correct, finished]
   );
 
   const current = items[index];

@@ -43,19 +43,22 @@ export function VerbGrid() {
     stateRef.current = { correct, answered, finished, mistakesOnly, chapter, irregularOnly, difficulty };
   });
   const savedRef = useRef(false);
+  const pausedProgress = useRef<{ correct: number; answered: number } | null>(null);
   const saveOnLeave = useCallback(() => {
+    if (savedRef.current) return;
     const s = stateRef.current;
-    if (savedRef.current || s.answered === 0 || s.finished || s.mistakesOnly) return;
+    const progress = s.mistakesOnly ? pausedProgress.current : (s.answered > 0 && !s.finished ? { correct: s.correct, answered: s.answered } : null);
+    if (!progress) return;
     savedRef.current = true;
-    const pct = Math.round((s.correct / s.answered) * 100);
+    const pct = Math.round((progress.correct / progress.answered) * 100);
     saveHighScore(buildConfigKey("verbs", s.chapter, undefined, s.difficulty), pct);
     saveAttempt({
       mode: "verbs",
       chapter: s.chapter ?? null,
       category: s.irregularOnly ? "irregular" : null,
       difficulty: s.difficulty ?? null,
-      correct: s.correct,
-      total: s.answered,
+      correct: progress.correct,
+      total: progress.answered,
       percentage: pct,
       timestamp: Date.now(),
     });
@@ -87,8 +90,13 @@ export function VerbGrid() {
 
   const restart = useCallback(
     (ch?: number, irrOnly?: boolean, diff?: Difficulty, mistakes?: boolean) => {
-      saveOnLeave();
       const m = mistakes ?? mistakesOnly;
+      if (m && !mistakesOnly && answered > 0 && !finished) {
+        pausedProgress.current = { correct, answered };
+      } else if (!m) {
+        pausedProgress.current = null;
+        savedRef.current = false;
+      }
       setChapter(ch);
       setDifficulty(diff);
       setIrregularOnly(irrOnly ?? irregularOnly);
@@ -101,9 +109,8 @@ export function VerbGrid() {
       setResult(null);
       setFinished(false);
       setWrongCount(getWrongWordCount("verbs"));
-      savedRef.current = false;
     },
-    [filterItems, irregularOnly, difficulty, mistakesOnly]
+    [filterItems, irregularOnly, difficulty, mistakesOnly, answered, correct, finished]
   );
 
   const current = items[index];

@@ -41,19 +41,22 @@ export function NounTest() {
     stateRef.current = { correct, answered, finished, mistakesOnly, chapter, category, difficulty };
   });
   const savedRef = useRef(false);
+  const pausedProgress = useRef<{ correct: number; answered: number } | null>(null);
   const saveOnLeave = useCallback(() => {
+    if (savedRef.current) return;
     const s = stateRef.current;
-    if (savedRef.current || s.answered === 0 || s.finished || s.mistakesOnly) return;
+    const progress = s.mistakesOnly ? pausedProgress.current : (s.answered > 0 && !s.finished ? { correct: s.correct, answered: s.answered } : null);
+    if (!progress) return;
     savedRef.current = true;
-    const pct = Math.round((s.correct / s.answered) * 100);
+    const pct = Math.round((progress.correct / progress.answered) * 100);
     saveHighScore(buildConfigKey("nouns", s.chapter, s.category, s.difficulty), pct);
     saveAttempt({
       mode: "nouns",
       chapter: s.chapter ?? null,
       category: s.category ?? null,
       difficulty: s.difficulty ?? null,
-      correct: s.correct,
-      total: s.answered,
+      correct: progress.correct,
+      total: progress.answered,
       percentage: pct,
       timestamp: Date.now(),
     });
@@ -80,8 +83,13 @@ export function NounTest() {
 
   const restart = useCallback(
     (ch?: number, cat?: string, diff?: Difficulty, mistakes?: boolean) => {
-      saveOnLeave();
       const m = mistakes ?? mistakesOnly;
+      if (m && !mistakesOnly && answered > 0 && !finished) {
+        pausedProgress.current = { correct, answered };
+      } else if (!m) {
+        pausedProgress.current = null;
+        savedRef.current = false;
+      }
       setChapter(ch);
       setCategory(cat);
       setDifficulty(diff);
@@ -93,9 +101,8 @@ export function NounTest() {
       setSelected(null);
       setFinished(false);
       setWrongCount(getWrongWordCount("nouns"));
-      savedRef.current = false;
     },
-    [applyFilter, mistakesOnly]
+    [applyFilter, mistakesOnly, answered, correct, finished]
   );
 
   const current = items[index];

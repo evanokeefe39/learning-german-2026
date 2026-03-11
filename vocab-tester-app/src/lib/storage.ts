@@ -1,4 +1,4 @@
-type Mode = "nouns" | "verbs" | "flashcards" | "perfekt";
+type Mode = "nouns" | "verbs" | "flashcards" | "perfekt" | "praeteritum";
 
 // --- Wrong Words ---
 

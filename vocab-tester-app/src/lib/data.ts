@@ -1,6 +1,7 @@
 import nounsData from "../../data/nouns.json";
 import verbsData from "../../data/verbs.json";
 import perfektData from "../../data/perfekt.json";
+import praeteritumData from "../../data/praeteritum.json";
 
 export type Difficulty = "easy" | "medium" | "hard";
 
@@ -42,9 +43,25 @@ export type PerfektEntry = {
   perfektType: "regular" | "irregular" | "no-ge" | "separable";
 };
 
+export type PraeteritumEntry = {
+  infinitive: string;
+  english: string;
+  chapter: number;
+  type: "strong" | "mixed" | "weak";
+  conjugation: {
+    ich: string;
+    du: string;
+    "er/sie/es": string;
+    wir: string;
+    ihr: string;
+    "sie/Sie": string;
+  };
+};
+
 export const nouns: Noun[] = nounsData as Noun[];
 export const verbs: Verb[] = verbsData as Verb[];
 export const perfektEntries: PerfektEntry[] = perfektData as PerfektEntry[];
+export const praeteritumEntries: PraeteritumEntry[] = praeteritumData as PraeteritumEntry[];
 
 const perfektMap = new Map<string, PerfektEntry>(
   perfektEntries.map((p) => [p.infinitive, p])

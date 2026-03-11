@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { TriangleAlert } from "lucide-react";
 import { useEffect, useState } from "react";
-import { getChapters, nouns, verbs, perfektEntries } from "@/lib/data";
+import { getChapters, nouns, verbs, perfektEntries, praeteritumEntries } from "@/lib/data";
 import { getWrongWordCount, getLeaderboard, AttemptRecord } from "@/lib/storage";
 
 export default function Home() {
@@ -17,9 +17,10 @@ export default function Home() {
       verbs: getWrongWordCount("verbs"),
       flashcards: getWrongWordCount("flashcards"),
       perfekt: getWrongWordCount("perfekt"),
+      praeteritum: getWrongWordCount("praeteritum"),
     });
 
-    const modes = ["nouns", "verbs", "perfekt", "flashcards"];
+    const modes = ["nouns", "verbs", "perfekt", "praeteritum", "flashcards"];
     const top: Record<string, AttemptRecord[]> = {};
     for (const m of modes) {
       const entries = getLeaderboard(m, 3);
@@ -53,6 +54,15 @@ export default function Home() {
       label: "verbs",
       mode: "perfekt",
     },
+    // Past Tense Mix (Perfekt & Präteritum combined) — hidden while rethinking approach
+    // {
+    //   title: "Past Tense Mix",
+    //   description: "Fill in Perfekt and Präteritum forms, and identify which tense is which.",
+    //   href: "/test/praeteritum",
+    //   count: praeteritumEntries.length * 6 + perfektEntries.length * 2,
+    //   label: "questions",
+    //   mode: "praeteritum",
+    // },
     {
       title: "Flashcard Mode",
       description: "Read a hint, type the German word with its article.",

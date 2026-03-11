@@ -1,0 +1,30 @@
+[
+  {
+    "infinitive": "haben",
+    "english": "to have",
+    "chapter": 6,
+    "type": "mixed",
+    "conjugation": {
+      "ich": "hatte",
+      "du": "hattest",
+      "er/sie/es": "hatte",
+      "wir": "hatten",
+      "ihr": "hattet",
+      "sie/Sie": "hatten"
+    }
+  },
+  {
+    "infinitive": "sein",
+    "english": "to be",
+    "chapter": 6,
+    "type": "strong",
+    "conjugation": {
+      "ich": "war",
+      "du": "warst",
+      "er/sie/es": "war",
+      "wir": "waren",
+      "ihr": "wart",
+      "sie/Sie": "waren"
+    }
+  }
+]

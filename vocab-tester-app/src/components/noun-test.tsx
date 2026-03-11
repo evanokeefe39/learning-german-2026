@@ -80,6 +80,7 @@ export function NounTest() {
 
   const restart = useCallback(
     (ch?: number, cat?: string, diff?: Difficulty, mistakes?: boolean) => {
+      saveOnLeave();
       const m = mistakes ?? mistakesOnly;
       setChapter(ch);
       setCategory(cat);

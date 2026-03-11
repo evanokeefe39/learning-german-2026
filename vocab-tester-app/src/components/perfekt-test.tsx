@@ -107,6 +107,7 @@ export function PerfektTest() {
       diff?: Difficulty,
       mistakes?: boolean
     ) => {
+      saveOnLeave();
       const m = mistakes ?? mistakesOnly;
       setChapter(ch);
       setDifficulty(diff);

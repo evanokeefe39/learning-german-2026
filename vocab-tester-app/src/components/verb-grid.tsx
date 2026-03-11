@@ -87,6 +87,7 @@ export function VerbGrid() {
 
   const restart = useCallback(
     (ch?: number, irrOnly?: boolean, diff?: Difficulty, mistakes?: boolean) => {
+      saveOnLeave();
       const m = mistakes ?? mistakesOnly;
       setChapter(ch);
       setDifficulty(diff);

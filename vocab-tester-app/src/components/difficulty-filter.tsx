@@ -16,19 +16,22 @@ export function DifficultyFilter({
   onChange: (d: Difficulty | undefined) => void;
 }) {
   return (
-    <select
-      className="rounded-lg border bg-white px-3 py-2.5 text-base sm:text-sm"
-      value={value ?? ""}
-      onChange={(e) =>
-        onChange(e.target.value ? (e.target.value as Difficulty) : undefined)
-      }
-    >
-      <option value="">All levels</option>
-      {OPTIONS.map((o) => (
-        <option key={o.value} value={o.value}>
-          {o.label}
-        </option>
-      ))}
-    </select>
+    <div className="flex flex-col gap-1">
+      <label className="text-xs font-medium text-gray-500">Difficulty</label>
+      <select
+        className="rounded-lg border bg-white px-3 py-2.5 text-base sm:text-sm"
+        value={value ?? ""}
+        onChange={(e) =>
+          onChange(e.target.value ? (e.target.value as Difficulty) : undefined)
+        }
+      >
+        <option value="">All</option>
+        {OPTIONS.map((o) => (
+          <option key={o.value} value={o.value}>
+            {o.label}
+          </option>
+        ))}
+      </select>
+    </div>
   );
 }

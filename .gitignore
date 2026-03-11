@@ -1,2 +1,34 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+
+# build
+dist/
+build/
+
+# typescript
+*.tsbuildinfo
+
+# env files
 .env
+.env*.local
+
+# debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# vercel
+.vercel
+
+# misc
+.DS_Store
+*.pem
+Thumbs.db
+
+# playwright
 .playwright-mcp

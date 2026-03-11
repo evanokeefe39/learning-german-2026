@@ -214,13 +214,8 @@ export function PerfektTest() {
     if (mistakesOnly) {
       return (
         <div className="space-y-6 text-center">
-          <h2 className="text-2xl font-bold text-green-600">Practice Complete</h2>
-          <p className="text-5xl font-bold">
-            {correct}/{answered}
-          </p>
-          <p className="text-gray-600">
-            {answered > 0 ? `${pct}% fully correct` : ""}
-          </p>
+          <h2 className="text-2xl font-bold text-green-600">All Done</h2>
+          <p className="text-lg text-gray-600">No more mistakes to practice!</p>
           <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
             <button
               onClick={() => restart(chapter, exceptionsOnly, difficulty, false)}
@@ -228,12 +223,12 @@ export function PerfektTest() {
             >
               Back to Test
             </button>
-            <button
-              onClick={() => restart(chapter, exceptionsOnly, difficulty, true)}
+            <a
+              href="/"
               className="w-full rounded-xl border-2 border-blue-600 py-3 text-lg font-medium text-blue-600 active:bg-blue-50 sm:w-auto sm:px-8"
             >
-              Practice Again
-            </button>
+              Home
+            </a>
           </div>
         </div>
       );

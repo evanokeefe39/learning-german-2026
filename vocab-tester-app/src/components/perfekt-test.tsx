@@ -19,6 +19,9 @@ import {
   getHighScore,
   saveHighScore,
   saveAttempt,
+  incrementMastery,
+  getMasteredWords,
+  getMasteredWordCount,
 } from "@/lib/storage";
 
 export function PerfektTest() {
@@ -28,6 +31,7 @@ export function PerfektTest() {
   );
   const [exceptionsOnly, setExceptionsOnly] = useState(false);
   const [mistakesOnly, setMistakesOnly] = useState(false);
+  const [excludeMastered, setExcludeMastered] = useState(false);
   const [items, setItems] = useState<VerbWithPerfekt[]>(() =>
     shuffle(getVerbsWithPerfekt())
   );
@@ -42,15 +46,17 @@ export function PerfektTest() {
   } | null>(null);
   const [finished, setFinished] = useState(false);
   const [wrongCount, setWrongCount] = useState(0);
+  const [masteredCount, setMasteredCount] = useState(0);
   const [showHint, setShowHint] = useState(true);
 
   useEffect(() => {
     setWrongCount(getWrongWordCount("perfekt"));
+    setMasteredCount(getMasteredWordCount("perfekt"));
   }, []);
 
-  const stateRef = useRef({ correct, answered, finished, mistakesOnly, chapter, exceptionsOnly, difficulty });
+  const stateRef = useRef({ correct, answered, finished, mistakesOnly, excludeMastered, chapter, exceptionsOnly, difficulty });
   useEffect(() => {
-    stateRef.current = { correct, answered, finished, mistakesOnly, chapter, exceptionsOnly, difficulty };
+    stateRef.current = { correct, answered, finished, mistakesOnly, excludeMastered, chapter, exceptionsOnly, difficulty };
   });
   const savedRef = useRef(false);
   const pausedProgress = useRef<{ correct: number; answered: number } | null>(null);
@@ -86,7 +92,8 @@ export function PerfektTest() {
       ch?: number,
       excOnly?: boolean,
       diff?: Difficulty,
-      mistakes?: boolean
+      mistakes?: boolean,
+      excludeMast?: boolean
     ) => {
       let filtered = getVerbsWithPerfekt(ch, diff);
       if (excOnly) {
@@ -98,6 +105,10 @@ export function PerfektTest() {
         const wrong = new Set(getWrongWords("perfekt"));
         filtered = filtered.filter((v) => wrong.has(v.infinitive));
       }
+      if (excludeMast) {
+        const mastered = getMasteredWords("perfekt");
+        filtered = filtered.filter((v) => !mastered.has(v.infinitive));
+      }
       return shuffle(filtered);
     },
     []
@@ -108,9 +119,11 @@ export function PerfektTest() {
       ch?: number,
       excOnly?: boolean,
       diff?: Difficulty,
-      mistakes?: boolean
+      mistakes?: boolean,
+      excludeMast?: boolean
     ) => {
       const m = mistakes ?? mistakesOnly;
+      const em = excludeMast ?? excludeMastered;
       if (m && !mistakesOnly && answered > 0 && !finished) {
         pausedProgress.current = { correct, answered };
       } else if (!m) {
@@ -121,8 +134,9 @@ export function PerfektTest() {
       setDifficulty(diff);
       setExceptionsOnly(excOnly ?? exceptionsOnly);
       setMistakesOnly(m);
+      setExcludeMastered(em);
       setItems(
-        filterItems(ch, excOnly ?? exceptionsOnly, diff ?? difficulty, m)
+        filterItems(ch, excOnly ?? exceptionsOnly, diff ?? difficulty, m, em)
       );
       setIndex(0);
       setCorrect(0);
@@ -132,8 +146,9 @@ export function PerfektTest() {
       setResult(null);
       setFinished(false);
       setWrongCount(getWrongWordCount("perfekt"));
+      setMasteredCount(getMasteredWordCount("perfekt"));
     },
-    [filterItems, exceptionsOnly, difficulty, mistakesOnly, answered, correct, finished]
+    [filterItems, exceptionsOnly, difficulty, mistakesOnly, excludeMastered, answered, correct, finished]
   );
 
   const current = items[index];
@@ -154,6 +169,7 @@ export function PerfektTest() {
     if (auxCorrect && partCorrect) {
       setCorrect((c) => c + 1);
       removeWrongWord("perfekt", current.infinitive);
+      if (!mistakesOnly) incrementMastery("perfekt", current.infinitive);
     } else {
       addWrongWord("perfekt", current.infinitive);
     }
@@ -212,6 +228,17 @@ export function PerfektTest() {
               className="h-4 w-4"
             />
             Practice mistakes{wrongCount > 0 ? ` (${wrongCount})` : ""}
+          </label>
+          <label className="flex items-center gap-2 text-sm">
+            <input
+              type="checkbox"
+              checked={excludeMastered}
+              onChange={(e) =>
+                restart(chapter, exceptionsOnly, difficulty, mistakesOnly, e.target.checked)
+              }
+              className="h-4 w-4"
+            />
+            Exclude mastered{masteredCount > 0 ? ` (${masteredCount})` : ""}
           </label>
         </div>
         <p>
@@ -329,6 +356,17 @@ export function PerfektTest() {
             className="h-4 w-4"
           />
           Practice mistakes{wrongCount > 0 ? ` (${wrongCount})` : ""}
+        </label>
+        <label className="flex items-center gap-2 text-sm">
+          <input
+            type="checkbox"
+            checked={excludeMastered}
+            onChange={(e) =>
+              restart(chapter, exceptionsOnly, difficulty, mistakesOnly, e.target.checked)
+            }
+            className="h-4 w-4"
+          />
+          Exclude mastered{masteredCount > 0 ? ` (${masteredCount})` : ""}
         </label>
         <label className="flex items-center gap-2 text-sm">
           <input

@@ -2,16 +2,21 @@
 
 import Link from "next/link";
 import { TriangleAlert } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { getChapters, nouns, verbs, perfektEntries, praeteritumEntries } from "@/lib/data";
-import { getWrongWordCount, getLeaderboard, AttemptRecord } from "@/lib/storage";
+import {
+  getWrongWordCount,
+  getLeaderboard,
+  AttemptRecord,
+  getMasteredWordCount,
+} from "@/lib/storage";
 
 export default function Home() {
   const chapters = getChapters();
   const [wrongCounts, setWrongCounts] = useState<Record<string, number>>({});
+  const [masteredCounts, setMasteredCounts] = useState<Record<string, number>>({});
   const [topByMode, setTopByMode] = useState<Record<string, AttemptRecord[]>>({});
-
-  useEffect(() => {
+  const refreshCounts = useCallback(() => {
     setWrongCounts({
       nouns: getWrongWordCount("nouns"),
       verbs: getWrongWordCount("verbs"),
@@ -19,7 +24,15 @@ export default function Home() {
       perfekt: getWrongWordCount("perfekt"),
       praeteritum: getWrongWordCount("praeteritum"),
     });
+    setMasteredCounts({
+      nouns: getMasteredWordCount("nouns"),
+      verbs: getMasteredWordCount("verbs"),
+      flashcards: getMasteredWordCount("flashcards"),
+      perfekt: getMasteredWordCount("perfekt"),
+    });
+  }, []);
 
+  const refreshLeaderboard = useCallback(() => {
     const modes = ["nouns", "verbs", "perfekt", "praeteritum", "flashcards"];
     const top: Record<string, AttemptRecord[]> = {};
     for (const m of modes) {
@@ -28,6 +41,11 @@ export default function Home() {
     }
     setTopByMode(top);
   }, []);
+
+  useEffect(() => {
+    refreshCounts();
+    refreshLeaderboard();
+  }, [refreshCounts, refreshLeaderboard]);
 
   const modes = [
     {
@@ -98,6 +116,11 @@ export default function Home() {
                   <span className="inline-flex items-center gap-1 rounded-full bg-yellow-100 px-2 py-0.5 text-yellow-700">
                     <TriangleAlert className="h-3 w-3" />
                     {wrongCounts[mode.mode]} to practice
+                  </span>
+                )}
+                {masteredCounts[mode.mode] > 0 && (
+                  <span className="inline-flex items-center rounded-full bg-green-100 px-2 py-0.5 text-green-700">
+                    {masteredCounts[mode.mode]} mastered
                   </span>
                 )}
               </div>

@@ -14,6 +14,9 @@ import {
   getHighScore,
   saveHighScore,
   saveAttempt,
+  incrementMastery,
+  getMasteredWords,
+  getMasteredWordCount,
 } from "@/lib/storage";
 
 const PERSONS = ["ich", "du", "er/sie/es", "wir", "ihr", "sie/Sie"] as const;
@@ -23,6 +26,7 @@ export function VerbGrid() {
   const [difficulty, setDifficulty] = useState<Difficulty | undefined>(undefined);
   const [irregularOnly, setIrregularOnly] = useState(false);
   const [mistakesOnly, setMistakesOnly] = useState(false);
+  const [excludeMastered, setExcludeMastered] = useState(false);
   const [items, setItems] = useState<Verb[]>(() => shuffle(getVerbsByFilter()));
   const [index, setIndex] = useState(0);
   const [correct, setCorrect] = useState(0);
@@ -33,14 +37,16 @@ export function VerbGrid() {
   const [result, setResult] = useState<Record<string, boolean> | null>(null);
   const [finished, setFinished] = useState(false);
   const [wrongCount, setWrongCount] = useState(0);
+  const [masteredCount, setMasteredCount] = useState(0);
 
   useEffect(() => {
     setWrongCount(getWrongWordCount("verbs"));
+    setMasteredCount(getMasteredWordCount("verbs"));
   }, []);
 
-  const stateRef = useRef({ correct, answered, finished, mistakesOnly, chapter, irregularOnly, difficulty });
+  const stateRef = useRef({ correct, answered, finished, mistakesOnly, excludeMastered, chapter, irregularOnly, difficulty });
   useEffect(() => {
-    stateRef.current = { correct, answered, finished, mistakesOnly, chapter, irregularOnly, difficulty };
+    stateRef.current = { correct, answered, finished, mistakesOnly, excludeMastered, chapter, irregularOnly, difficulty };
   });
   const savedRef = useRef(false);
   const pausedProgress = useRef<{ correct: number; answered: number } | null>(null);
@@ -72,7 +78,7 @@ export function VerbGrid() {
   }, [saveOnLeave]);
 
   const filterItems = useCallback(
-    (ch?: number, irrOnly?: boolean, diff?: Difficulty, mistakes?: boolean) => {
+    (ch?: number, irrOnly?: boolean, diff?: Difficulty, mistakes?: boolean, excludeMast?: boolean) => {
       let filtered = getVerbsByFilter(ch, diff);
       if (irrOnly) {
         filtered = filtered.filter(
@@ -83,14 +89,19 @@ export function VerbGrid() {
         const wrong = new Set(getWrongWords("verbs"));
         filtered = filtered.filter((v) => wrong.has(v.infinitive));
       }
+      if (excludeMast) {
+        const mastered = getMasteredWords("verbs");
+        filtered = filtered.filter((v) => !mastered.has(v.infinitive));
+      }
       return shuffle(filtered);
     },
     []
   );
 
   const restart = useCallback(
-    (ch?: number, irrOnly?: boolean, diff?: Difficulty, mistakes?: boolean) => {
+    (ch?: number, irrOnly?: boolean, diff?: Difficulty, mistakes?: boolean, excludeMast?: boolean) => {
       const m = mistakes ?? mistakesOnly;
+      const em = excludeMast ?? excludeMastered;
       if (m && !mistakesOnly && answered > 0 && !finished) {
         pausedProgress.current = { correct, answered };
       } else if (!m) {
@@ -101,7 +112,8 @@ export function VerbGrid() {
       setDifficulty(diff);
       setIrregularOnly(irrOnly ?? irregularOnly);
       setMistakesOnly(m);
-      setItems(filterItems(ch, irrOnly ?? irregularOnly, diff ?? difficulty, m));
+      setExcludeMastered(em);
+      setItems(filterItems(ch, irrOnly ?? irregularOnly, diff ?? difficulty, m, em));
       setIndex(0);
       setCorrect(0);
       setAnswered(0);
@@ -109,8 +121,9 @@ export function VerbGrid() {
       setResult(null);
       setFinished(false);
       setWrongCount(getWrongWordCount("verbs"));
+      setMasteredCount(getMasteredWordCount("verbs"));
     },
-    [filterItems, irregularOnly, difficulty, mistakesOnly, answered, correct, finished]
+    [filterItems, irregularOnly, difficulty, mistakesOnly, excludeMastered, answered, correct, finished]
   );
 
   const current = items[index];
@@ -132,6 +145,7 @@ export function VerbGrid() {
     if (allCorrect) {
       setCorrect((c) => c + 1);
       removeWrongWord("verbs", current.infinitive);
+      if (!mistakesOnly) incrementMastery("verbs", current.infinitive);
     } else {
       addWrongWord("verbs", current.infinitive);
     }
@@ -175,6 +189,15 @@ export function VerbGrid() {
               className="h-4 w-4"
             />
             Practice mistakes{wrongCount > 0 ? ` (${wrongCount})` : ""}
+          </label>
+          <label className="flex items-center gap-2 text-sm">
+            <input
+              type="checkbox"
+              checked={excludeMastered}
+              onChange={(e) => restart(chapter, irregularOnly, difficulty, mistakesOnly, e.target.checked)}
+              className="h-4 w-4"
+            />
+            Exclude mastered{masteredCount > 0 ? ` (${masteredCount})` : ""}
           </label>
         </div>
         <p>{mistakesOnly ? "No mistakes to practice!" : "No verbs found for this filter."}</p>
@@ -271,6 +294,15 @@ export function VerbGrid() {
             className="h-4 w-4"
           />
           Practice mistakes{wrongCount > 0 ? ` (${wrongCount})` : ""}
+        </label>
+        <label className="flex items-center gap-2 text-sm">
+          <input
+            type="checkbox"
+            checked={excludeMastered}
+            onChange={(e) => restart(chapter, irregularOnly, difficulty, mistakesOnly, e.target.checked)}
+            className="h-4 w-4"
+          />
+          Exclude mastered{masteredCount > 0 ? ` (${masteredCount})` : ""}
         </label>
       </div>
 

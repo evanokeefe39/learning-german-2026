@@ -15,6 +15,9 @@ import {
   getHighScore,
   saveHighScore,
   saveAttempt,
+  incrementMastery,
+  getMasteredWords,
+  getMasteredWordCount,
 } from "@/lib/storage";
 
 const ARTICLES = ["der", "die", "das"] as const;
@@ -24,6 +27,7 @@ export function NounTest() {
   const [category, setCategory] = useState<string | undefined>(undefined);
   const [difficulty, setDifficulty] = useState<Difficulty | undefined>(undefined);
   const [mistakesOnly, setMistakesOnly] = useState(false);
+  const [excludeMastered, setExcludeMastered] = useState(false);
   const [items, setItems] = useState<Noun[]>(() => shuffle(getNounsByFilter()));
   const [index, setIndex] = useState(0);
   const [correct, setCorrect] = useState(0);
@@ -31,14 +35,16 @@ export function NounTest() {
   const [selected, setSelected] = useState<string | null>(null);
   const [finished, setFinished] = useState(false);
   const [wrongCount, setWrongCount] = useState(0);
+  const [masteredCount, setMasteredCount] = useState(0);
 
   useEffect(() => {
     setWrongCount(getWrongWordCount("nouns"));
+    setMasteredCount(getMasteredWordCount("nouns"));
   }, []);
 
-  const stateRef = useRef({ correct, answered, finished, mistakesOnly, chapter, category, difficulty });
+  const stateRef = useRef({ correct, answered, finished, mistakesOnly, excludeMastered, chapter, category, difficulty });
   useEffect(() => {
-    stateRef.current = { correct, answered, finished, mistakesOnly, chapter, category, difficulty };
+    stateRef.current = { correct, answered, finished, mistakesOnly, excludeMastered, chapter, category, difficulty };
   });
   const savedRef = useRef(false);
   const pausedProgress = useRef<{ correct: number; answered: number } | null>(null);
@@ -70,11 +76,15 @@ export function NounTest() {
   }, [saveOnLeave]);
 
   const applyFilter = useCallback(
-    (ch?: number, cat?: string, diff?: Difficulty, mistakes?: boolean) => {
+    (ch?: number, cat?: string, diff?: Difficulty, mistakes?: boolean, excludeMast?: boolean) => {
       let filtered = getNounsByFilter(ch, cat, diff);
       if (mistakes) {
         const wrong = new Set(getWrongWords("nouns"));
         filtered = filtered.filter((n) => wrong.has(n.german));
+      }
+      if (excludeMast) {
+        const mastered = getMasteredWords("nouns");
+        filtered = filtered.filter((n) => !mastered.has(n.german));
       }
       return shuffle(filtered);
     },
@@ -82,8 +92,9 @@ export function NounTest() {
   );
 
   const restart = useCallback(
-    (ch?: number, cat?: string, diff?: Difficulty, mistakes?: boolean) => {
+    (ch?: number, cat?: string, diff?: Difficulty, mistakes?: boolean, excludeMast?: boolean) => {
       const m = mistakes ?? mistakesOnly;
+      const em = excludeMast ?? excludeMastered;
       if (m && !mistakesOnly && answered > 0 && !finished) {
         pausedProgress.current = { correct, answered };
       } else if (!m) {
@@ -94,15 +105,17 @@ export function NounTest() {
       setCategory(cat);
       setDifficulty(diff);
       setMistakesOnly(m);
-      setItems(applyFilter(ch, cat, diff, m));
+      setExcludeMastered(em);
+      setItems(applyFilter(ch, cat, diff, m, em));
       setIndex(0);
       setCorrect(0);
       setAnswered(0);
       setSelected(null);
       setFinished(false);
       setWrongCount(getWrongWordCount("nouns"));
+      setMasteredCount(getMasteredWordCount("nouns"));
     },
-    [applyFilter, mistakesOnly, answered, correct, finished]
+    [applyFilter, mistakesOnly, excludeMastered, answered, correct, finished]
   );
 
   const current = items[index];
@@ -114,6 +127,7 @@ export function NounTest() {
     if (article === current.article) {
       setCorrect((c) => c + 1);
       removeWrongWord("nouns", current.german);
+      if (!mistakesOnly) incrementMastery("nouns", current.german);
     } else {
       addWrongWord("nouns", current.german);
     }
@@ -156,6 +170,15 @@ export function NounTest() {
               className="h-4 w-4"
             />
             Practice mistakes{wrongCount > 0 ? ` (${wrongCount})` : ""}
+          </label>
+          <label className="flex items-center gap-2 text-sm">
+            <input
+              type="checkbox"
+              checked={excludeMastered}
+              onChange={(e) => restart(chapter, category, difficulty, mistakesOnly, e.target.checked)}
+              className="h-4 w-4"
+            />
+            Exclude mastered{masteredCount > 0 ? ` (${masteredCount})` : ""}
           </label>
         </div>
         <p>{mistakesOnly ? "No mistakes to practice!" : "No nouns found for this filter."}</p>
@@ -242,6 +265,15 @@ export function NounTest() {
             className="h-4 w-4"
           />
           Practice mistakes{wrongCount > 0 ? ` (${wrongCount})` : ""}
+        </label>
+        <label className="flex items-center gap-2 text-sm">
+          <input
+            type="checkbox"
+            checked={excludeMastered}
+            onChange={(e) => restart(chapter, category, difficulty, mistakesOnly, e.target.checked)}
+            className="h-4 w-4"
+          />
+          Exclude mastered{masteredCount > 0 ? ` (${masteredCount})` : ""}
         </label>
       </div>
 

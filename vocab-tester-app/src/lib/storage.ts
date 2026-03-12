@@ -1,5 +1,7 @@
 type Mode = "nouns" | "verbs" | "flashcards" | "perfekt" | "praeteritum";
 
+const ALL_MODES: Mode[] = ["nouns", "verbs", "flashcards", "perfekt", "praeteritum"];
+
 // --- Wrong Words ---
 
 function wrongKey(mode: Mode): string {
@@ -137,4 +139,109 @@ export function getLeaderboard(mode?: string, limit = 3): AttemptRecord[] {
   }
   attempts.sort((a, b) => b.total - a.total || b.percentage - a.percentage);
   return attempts.slice(0, limit);
+}
+
+// --- Mastery Tracking ---
+
+function masteryKey(mode: Mode): string {
+  return `mastery:${mode}`;
+}
+
+function loadMasteryMap(mode: Mode): Record<string, number> {
+  if (typeof window === "undefined") return {};
+  try {
+    const raw = localStorage.getItem(masteryKey(mode));
+    return raw ? (JSON.parse(raw) as Record<string, number>) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveMasteryMap(mode: Mode, map: Record<string, number>) {
+  localStorage.setItem(masteryKey(mode), JSON.stringify(map));
+}
+
+export function incrementMastery(mode: Mode, identifier: string) {
+  const map = loadMasteryMap(mode);
+  map[identifier] = (map[identifier] ?? 0) + 1;
+  saveMasteryMap(mode, map);
+}
+
+export function getMasteredWords(mode: Mode, threshold?: number): Set<string> {
+  const t = threshold ?? getMasteryThreshold();
+  const map = loadMasteryMap(mode);
+  const set = new Set<string>();
+  for (const [key, count] of Object.entries(map)) {
+    if (count >= t) set.add(key);
+  }
+  return set;
+}
+
+export function getMasteredWordCount(mode: Mode): number {
+  return getMasteredWords(mode).size;
+}
+
+export function clearMastery(mode: Mode) {
+  if (typeof window === "undefined") return;
+  localStorage.removeItem(masteryKey(mode));
+}
+
+export function clearAllMastery() {
+  for (const mode of ALL_MODES) clearMastery(mode);
+}
+
+// --- Settings ---
+
+const SETTINGS_KEY = "settings";
+
+interface Settings {
+  masteryThreshold: number;
+}
+
+function loadSettings(): Settings {
+  if (typeof window === "undefined") return { masteryThreshold: 3 };
+  try {
+    const raw = localStorage.getItem(SETTINGS_KEY);
+    return raw ? (JSON.parse(raw) as Settings) : { masteryThreshold: 3 };
+  } catch {
+    return { masteryThreshold: 3 };
+  }
+}
+
+function saveSettings(settings: Settings) {
+  localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
+}
+
+export function getMasteryThreshold(): number {
+  return loadSettings().masteryThreshold;
+}
+
+export function setMasteryThreshold(n: number) {
+  const settings = loadSettings();
+  settings.masteryThreshold = n;
+  saveSettings(settings);
+}
+
+// --- Reset Helpers ---
+
+export function clearAttempts() {
+  if (typeof window === "undefined") return;
+  localStorage.removeItem(ATTEMPTS_KEY);
+}
+
+export function clearHighScores() {
+  if (typeof window === "undefined") return;
+  localStorage.removeItem(HS_KEY);
+}
+
+export function clearAllWrongWords() {
+  for (const mode of ALL_MODES) clearWrongWords(mode);
+}
+
+export function clearAllData() {
+  clearAllWrongWords();
+  clearAllMastery();
+  clearAttempts();
+  clearHighScores();
+  if (typeof window !== "undefined") localStorage.removeItem(SETTINGS_KEY);
 }

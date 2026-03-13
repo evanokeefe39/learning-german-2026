@@ -120,7 +120,7 @@ export default function Home() {
                 )}
                 {masteredCounts[mode.mode] > 0 && (
                   <span className="inline-flex items-center rounded-full bg-green-100 px-2 py-0.5 text-green-700">
-                    {masteredCounts[mode.mode]} mastered
+                    {masteredCounts[mode.mode]} known
                   </span>
                 )}
               </div>

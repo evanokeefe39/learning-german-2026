@@ -10,6 +10,10 @@ import {
 import { ChapterFilter } from "./chapter-filter";
 import { DifficultyFilter } from "./difficulty-filter";
 import { ScoreDisplay } from "./score-display";
+import { FilterBar } from "./filter-bar";
+import { FinishedScreen, MistakesFinishedScreen } from "./finished-screen";
+import { EmptyState } from "./empty-state";
+import { PracticeBanner } from "./practice-banner";
 import {
   addWrongWord,
   removeWrongWord,
@@ -48,6 +52,9 @@ export function PerfektTest() {
   const [wrongCount, setWrongCount] = useState(0);
   const [masteredCount, setMasteredCount] = useState(0);
   const [showHint, setShowHint] = useState(true);
+  const [animKey, setAnimKey] = useState(0);
+
+  const partInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     setWrongCount(getWrongWordCount("perfekt"));
@@ -165,6 +172,7 @@ export function PerfektTest() {
 
     setResult({ auxCorrect, partCorrect });
     setAnswered((a) => a + 1);
+    setAnimKey((k) => k + 1);
 
     if (auxCorrect && partCorrect) {
       setCorrect((c) => c + 1);
@@ -206,76 +214,37 @@ export function PerfektTest() {
 
   const configKey = buildConfigKey("perfekt", chapter, undefined, difficulty);
 
+  const filterBar = (
+    <FilterBar
+      dropdowns={
+        <>
+          <ChapterFilter value={chapter} onChange={(ch) => restart(ch, exceptionsOnly, difficulty)} />
+          <DifficultyFilter value={difficulty} onChange={(d) => restart(chapter, exceptionsOnly, d)} />
+        </>
+      }
+      toggles={[
+        { key: "exceptions", label: "Exceptions only", checked: exceptionsOnly, onChange: (v) => restart(chapter, v, difficulty) },
+        { key: "mistakes", label: "Practice mistakes", count: wrongCount, checked: mistakesOnly, onChange: (v) => restart(chapter, exceptionsOnly, difficulty, v), variant: "warning" },
+        { key: "mastered", label: "Exclude known words", count: masteredCount, checked: excludeMastered, onChange: (v) => restart(chapter, exceptionsOnly, difficulty, mistakesOnly, v) },
+        { key: "hint", label: "Show hint", checked: showHint, onChange: (v) => setShowHint(v) },
+      ]}
+    />
+  );
+
   if (items.length === 0) {
     return (
       <div className="space-y-4">
-        <div className="flex flex-wrap items-center gap-3">
-          <ChapterFilter
-            value={chapter}
-            onChange={(ch) => restart(ch, exceptionsOnly, difficulty)}
-          />
-          <DifficultyFilter
-            value={difficulty}
-            onChange={(d) => restart(chapter, exceptionsOnly, d)}
-          />
-          <label className="flex items-center gap-2 text-sm">
-            <input
-              type="checkbox"
-              checked={mistakesOnly}
-              onChange={(e) =>
-                restart(chapter, exceptionsOnly, difficulty, e.target.checked)
-              }
-              className="h-4 w-4"
-            />
-            Practice mistakes{wrongCount > 0 ? ` (${wrongCount})` : ""}
-          </label>
-          <label className="flex items-center gap-2 text-sm">
-            <input
-              type="checkbox"
-              checked={excludeMastered}
-              onChange={(e) =>
-                restart(chapter, exceptionsOnly, difficulty, mistakesOnly, e.target.checked)
-              }
-              className="h-4 w-4"
-            />
-            Exclude mastered{masteredCount > 0 ? ` (${masteredCount})` : ""}
-          </label>
-        </div>
-        <p>
-          {mistakesOnly
-            ? "No mistakes to practice!"
-            : "No verbs found for this filter."}
-        </p>
+        {filterBar}
+        <EmptyState mistakesOnly={mistakesOnly} modeLabel="verbs" />
       </div>
     );
   }
 
   if (finished) {
     const pct = answered > 0 ? Math.round((correct / answered) * 100) : 0;
-
     if (mistakesOnly) {
-      return (
-        <div className="space-y-6 text-center">
-          <h2 className="text-2xl font-bold text-green-600">All Done</h2>
-          <p className="text-lg text-gray-600">No more mistakes to practice!</p>
-          <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
-            <button
-              onClick={() => restart(chapter, exceptionsOnly, difficulty, false)}
-              className="w-full rounded-xl bg-blue-600 py-3 text-lg font-medium text-white active:bg-blue-700 sm:w-auto sm:px-8"
-            >
-              Back to Test
-            </button>
-            <a
-              href="/"
-              className="w-full rounded-xl border-2 border-blue-600 py-3 text-lg font-medium text-blue-600 active:bg-blue-50 sm:w-auto sm:px-8"
-            >
-              Home
-            </a>
-          </div>
-        </div>
-      );
+      return <MistakesFinishedScreen onBackToTest={() => restart(chapter, exceptionsOnly, difficulty, false)} />;
     }
-
     saveHighScore(configKey, pct);
     saveAttempt({
       mode: "perfekt",
@@ -289,32 +258,7 @@ export function PerfektTest() {
     });
     const best = getHighScore(configKey);
     const isNewBest = best === pct;
-
-    return (
-      <div className="space-y-6 text-center">
-        <h2 className="text-2xl font-bold">Test Complete</h2>
-        <p className="text-5xl font-bold">
-          {correct}/{answered}
-        </p>
-        <p className="text-gray-600">
-          {answered > 0 ? `${pct}% fully correct` : ""}
-        </p>
-        {isNewBest && pct > 0 && (
-          <p className="text-lg font-semibold text-amber-500">
-            New high score!
-          </p>
-        )}
-        {best !== null && !isNewBest && (
-          <p className="text-sm text-gray-500">Best: {best}%</p>
-        )}
-        <button
-          onClick={() => restart(chapter, exceptionsOnly, difficulty)}
-          className="w-full rounded-xl bg-blue-600 py-3 text-lg font-medium text-white active:bg-blue-700 sm:w-auto sm:px-8"
-        >
-          Try Again
-        </button>
-      </div>
-    );
+    return <FinishedScreen correct={correct} answered={answered} percentage={pct} isNewBest={isNewBest && pct > 0} bestScore={(!isNewBest && best) || null} onTryAgain={() => restart(chapter, exceptionsOnly, difficulty)} />;
   }
 
   const typeLabel: Record<string, string> = {
@@ -324,69 +268,32 @@ export function PerfektTest() {
     separable: "separable prefix",
   };
 
+  const animClass = result
+    ? result.auxCorrect && result.partCorrect
+      ? "animate-pop"
+      : "animate-shake"
+    : "";
+
   return (
     <div className="space-y-4 sm:space-y-6">
-      <div className="flex flex-wrap items-center gap-3">
-        <ChapterFilter
-          value={chapter}
-          onChange={(ch) => restart(ch, exceptionsOnly, difficulty)}
+      {filterBar}
+
+      {mistakesOnly && (
+        <PracticeBanner
+          count={items.length}
+          onExit={() => restart(chapter, exceptionsOnly, difficulty, false)}
         />
-        <DifficultyFilter
-          value={difficulty}
-          onChange={(d) => restart(chapter, exceptionsOnly, d)}
-        />
-        <label className="flex items-center gap-2 text-sm">
-          <input
-            type="checkbox"
-            checked={exceptionsOnly}
-            onChange={(e) =>
-              restart(chapter, e.target.checked, difficulty)
-            }
-            className="h-4 w-4"
-          />
-          Exceptions only
-        </label>
-        <label className="flex items-center gap-2 text-sm">
-          <input
-            type="checkbox"
-            checked={mistakesOnly}
-            onChange={(e) =>
-              restart(chapter, exceptionsOnly, difficulty, e.target.checked)
-            }
-            className="h-4 w-4"
-          />
-          Practice mistakes{wrongCount > 0 ? ` (${wrongCount})` : ""}
-        </label>
-        <label className="flex items-center gap-2 text-sm">
-          <input
-            type="checkbox"
-            checked={excludeMastered}
-            onChange={(e) =>
-              restart(chapter, exceptionsOnly, difficulty, mistakesOnly, e.target.checked)
-            }
-            className="h-4 w-4"
-          />
-          Exclude mastered{masteredCount > 0 ? ` (${masteredCount})` : ""}
-        </label>
-        <label className="flex items-center gap-2 text-sm">
-          <input
-            type="checkbox"
-            checked={showHint}
-            onChange={(e) => setShowHint(e.target.checked)}
-            className="h-4 w-4"
-          />
-          Show hint
-        </label>
-      </div>
+      )}
 
       <ScoreDisplay
         correct={correct}
         total={answered}
         current={index + 1}
         count={items.length}
+        practiceMode={mistakesOnly}
       />
 
-      <div className="rounded-xl border bg-white p-5 shadow-sm sm:p-8">
+      <div key={animKey} className={`rounded-xl border bg-white p-5 shadow-sm sm:p-8 ${animClass}`}>
         <div className="text-center">
           <p className="text-3xl font-bold sm:text-4xl">
             {current.infinitive}
@@ -410,7 +317,10 @@ export function PerfektTest() {
                   key={aux}
                   type="button"
                   disabled={!!result}
-                  onClick={() => setAuxInput(aux)}
+                  onClick={() => {
+                    setAuxInput(aux);
+                    partInputRef.current?.focus();
+                  }}
                   className={`flex-1 rounded-lg border px-3 py-2.5 text-base font-medium transition-colors ${
                     result
                       ? aux === current.perfekt.auxiliary
@@ -434,6 +344,7 @@ export function PerfektTest() {
               Partizip II
             </label>
             <input
+              ref={partInputRef}
               type="text"
               value={partInput}
               onChange={(e) => setPartInput(e.target.value)}

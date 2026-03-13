@@ -5,6 +5,10 @@ import { Verb, Difficulty, getVerbsByFilter, shuffle, getPerfektEntry } from "@/
 import { ChapterFilter } from "./chapter-filter";
 import { DifficultyFilter } from "./difficulty-filter";
 import { ScoreDisplay } from "./score-display";
+import { FilterBar } from "./filter-bar";
+import { FinishedScreen, MistakesFinishedScreen } from "./finished-screen";
+import { EmptyState } from "./empty-state";
+import { PracticeBanner } from "./practice-banner";
 import {
   addWrongWord,
   removeWrongWord,
@@ -38,11 +42,19 @@ export function VerbGrid() {
   const [finished, setFinished] = useState(false);
   const [wrongCount, setWrongCount] = useState(0);
   const [masteredCount, setMasteredCount] = useState(0);
+  const [animKey, setAnimKey] = useState(0);
+
+  const inputRefs = useRef<(HTMLInputElement | null)[]>([]);
 
   useEffect(() => {
     setWrongCount(getWrongWordCount("verbs"));
     setMasteredCount(getMasteredWordCount("verbs"));
   }, []);
+
+  // Auto-focus first input when a new verb loads
+  useEffect(() => {
+    inputRefs.current[0]?.focus();
+  }, [index]);
 
   const stateRef = useRef({ correct, answered, finished, mistakesOnly, excludeMastered, chapter, irregularOnly, difficulty });
   useEffect(() => {
@@ -141,6 +153,7 @@ export function VerbGrid() {
       if (!res[p]) allCorrect = false;
     }
     setResult(res);
+    if (!allCorrect) setAnimKey((k) => k + 1);
     setAnswered((a) => a + 1);
     if (allCorrect) {
       setCorrect((c) => c + 1);
@@ -175,142 +188,63 @@ export function VerbGrid() {
 
   const configKey = buildConfigKey("verbs", chapter, undefined, difficulty);
 
+  const filterBar = (
+    <FilterBar
+      dropdowns={
+        <>
+          <ChapterFilter value={chapter} onChange={(ch) => restart(ch, irregularOnly, difficulty)} />
+          <DifficultyFilter value={difficulty} onChange={(d) => restart(chapter, irregularOnly, d)} />
+        </>
+      }
+      toggles={[
+        { key: "irregular", label: "Irregular/modal only", checked: irregularOnly, onChange: (v) => restart(chapter, v, difficulty) },
+        { key: "mistakes", label: "Practice mistakes", count: wrongCount, checked: mistakesOnly, onChange: (v) => restart(chapter, irregularOnly, difficulty, v), variant: "warning" },
+        { key: "mastered", label: "Exclude known words", count: masteredCount, checked: excludeMastered, onChange: (v) => restart(chapter, irregularOnly, difficulty, mistakesOnly, v) },
+      ]}
+    />
+  );
+
   if (items.length === 0) {
     return (
       <div className="space-y-4">
-        <div className="flex flex-wrap items-center gap-3">
-          <ChapterFilter value={chapter} onChange={(ch) => restart(ch, irregularOnly, difficulty)} />
-          <DifficultyFilter value={difficulty} onChange={(d) => restart(chapter, irregularOnly, d)} />
-          <label className="flex items-center gap-2 text-sm">
-            <input
-              type="checkbox"
-              checked={mistakesOnly}
-              onChange={(e) => restart(chapter, irregularOnly, difficulty, e.target.checked)}
-              className="h-4 w-4"
-            />
-            Practice mistakes{wrongCount > 0 ? ` (${wrongCount})` : ""}
-          </label>
-          <label className="flex items-center gap-2 text-sm">
-            <input
-              type="checkbox"
-              checked={excludeMastered}
-              onChange={(e) => restart(chapter, irregularOnly, difficulty, mistakesOnly, e.target.checked)}
-              className="h-4 w-4"
-            />
-            Exclude mastered{masteredCount > 0 ? ` (${masteredCount})` : ""}
-          </label>
-        </div>
-        <p>{mistakesOnly ? "No mistakes to practice!" : "No verbs found for this filter."}</p>
+        {filterBar}
+        <EmptyState mistakesOnly={mistakesOnly} modeLabel="verbs" />
       </div>
     );
   }
 
   if (finished) {
     const pct = answered > 0 ? Math.round((correct / answered) * 100) : 0;
-
     if (mistakesOnly) {
-      return (
-        <div className="space-y-6 text-center">
-          <h2 className="text-2xl font-bold text-green-600">All Done</h2>
-          <p className="text-lg text-gray-600">No more mistakes to practice!</p>
-          <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
-            <button
-              onClick={() => restart(chapter, irregularOnly, difficulty, false)}
-              className="w-full rounded-xl bg-blue-600 py-3 text-lg font-medium text-white active:bg-blue-700 sm:w-auto sm:px-8"
-            >
-              Back to Test
-            </button>
-            <a
-              href="/"
-              className="w-full rounded-xl border-2 border-blue-600 py-3 text-lg font-medium text-blue-600 active:bg-blue-50 sm:w-auto sm:px-8"
-            >
-              Home
-            </a>
-          </div>
-        </div>
-      );
+      return <MistakesFinishedScreen onBackToTest={() => restart(chapter, irregularOnly, difficulty, false)} />;
     }
-
     saveHighScore(configKey, pct);
-    saveAttempt({
-      mode: "verbs",
-      chapter: chapter ?? null,
-      category: irregularOnly ? "irregular" : null,
-      difficulty: difficulty ?? null,
-      correct,
-      total: answered,
-      percentage: pct,
-      timestamp: Date.now(),
-    });
+    saveAttempt({ mode: "verbs", chapter: chapter ?? null, category: irregularOnly ? "irregular" : null, difficulty: difficulty ?? null, correct, total: answered, percentage: pct, timestamp: Date.now() });
     const best = getHighScore(configKey);
     const isNewBest = best === pct;
-
-    return (
-      <div className="space-y-6 text-center">
-        <h2 className="text-2xl font-bold">Test Complete</h2>
-        <p className="text-5xl font-bold">
-          {correct}/{answered}
-        </p>
-        <p className="text-gray-600">
-          {answered > 0 ? `${pct}% fully correct` : ""}
-        </p>
-        {isNewBest && pct > 0 && (
-          <p className="text-lg font-semibold text-amber-500">New high score!</p>
-        )}
-        {best !== null && !isNewBest && (
-          <p className="text-sm text-gray-500">Best: {best}%</p>
-        )}
-        <button
-          onClick={() => restart(chapter, irregularOnly, difficulty)}
-          className="w-full rounded-xl bg-blue-600 py-3 text-lg font-medium text-white active:bg-blue-700 sm:w-auto sm:px-8"
-        >
-          Try Again
-        </button>
-      </div>
-    );
+    return <FinishedScreen correct={correct} answered={answered} percentage={pct} isNewBest={isNewBest && pct > 0} bestScore={(!isNewBest && best) || null} onTryAgain={() => restart(chapter, irregularOnly, difficulty)} />;
   }
 
   const isIrregular = current.type === "irregular" || current.type === "modal";
+  const allCorrect = result ? Object.values(result).every(Boolean) : false;
 
   return (
     <div className="space-y-4 sm:space-y-6">
-      <div className="flex flex-wrap items-center gap-3">
-        <ChapterFilter value={chapter} onChange={(ch) => restart(ch, irregularOnly, difficulty)} />
-        <DifficultyFilter value={difficulty} onChange={(d) => restart(chapter, irregularOnly, d)} />
-        <label className="flex items-center gap-2 text-sm">
-          <input
-            type="checkbox"
-            checked={irregularOnly}
-            onChange={(e) => restart(chapter, e.target.checked, difficulty)}
-            className="h-4 w-4"
-          />
-          Irregular/modal only
-        </label>
-        <label className="flex items-center gap-2 text-sm">
-          <input
-            type="checkbox"
-            checked={mistakesOnly}
-            onChange={(e) => restart(chapter, irregularOnly, difficulty, e.target.checked)}
-            className="h-4 w-4"
-          />
-          Practice mistakes{wrongCount > 0 ? ` (${wrongCount})` : ""}
-        </label>
-        <label className="flex items-center gap-2 text-sm">
-          <input
-            type="checkbox"
-            checked={excludeMastered}
-            onChange={(e) => restart(chapter, irregularOnly, difficulty, mistakesOnly, e.target.checked)}
-            className="h-4 w-4"
-          />
-          Exclude mastered{masteredCount > 0 ? ` (${masteredCount})` : ""}
-        </label>
-      </div>
+      {filterBar}
+
+      {mistakesOnly && (
+        <PracticeBanner
+          count={items.length}
+          onExit={() => restart(chapter, irregularOnly, difficulty, false)}
+        />
+      )}
 
       <ScoreDisplay
         correct={correct}
         total={answered}
         current={index + 1}
         count={items.length}
+        practiceMode={mistakesOnly}
       />
 
       <div className="rounded-xl border bg-white p-5 shadow-sm sm:p-8">
@@ -326,58 +260,70 @@ export function VerbGrid() {
           )}
         </div>
 
-        <form onSubmit={submit} className="mt-6 space-y-3">
-          {PERSONS.map((p) => {
-            const isWrong = result && !result[p];
-            const isRight = result && result[p];
-            return (
-              <div key={p} className="flex items-center gap-2 sm:gap-3">
-                <label className="w-20 shrink-0 text-right text-sm font-medium text-gray-700 sm:w-24">
-                  {p}
-                </label>
-                <input
-                  type="text"
-                  value={inputs[p]}
-                  onChange={(e) =>
-                    setInputs((prev) => ({ ...prev, [p]: e.target.value }))
-                  }
-                  disabled={!!result}
-                  className={`min-w-0 flex-1 rounded-lg border px-3 py-2.5 text-base ${
-                    isRight
-                      ? "border-green-500 bg-green-50"
-                      : isWrong
-                        ? "border-red-500 bg-red-50"
-                        : "border-gray-300"
-                  }`}
-                  placeholder={`${p} ...`}
-                  autoComplete="off"
-                  autoCapitalize="off"
-                />
-                {isWrong && (
-                  <span className="shrink-0 text-sm font-medium text-red-600">
-                    {current.conjugation[p]}
-                  </span>
-                )}
-                {isRight && (
-                  <span className="shrink-0 text-sm text-green-600">
-                    &#10003;
-                  </span>
-                )}
-              </div>
-            );
-          })}
+        <div key={animKey} className={result && !allCorrect ? "animate-shake" : ""}>
+          <form onSubmit={submit} className="mt-6 space-y-2">
+            {PERSONS.map((p, i) => {
+              const isWrong = result && !result[p];
+              const isRight = result && result[p];
+              return (
+                <div key={p} className="flex items-center gap-2 sm:gap-3">
+                  <label className="w-16 shrink-0 text-right text-sm font-medium text-gray-700 sm:w-24">
+                    {p}
+                  </label>
+                  <input
+                    ref={(el) => { inputRefs.current[i] = el; }}
+                    type="text"
+                    value={inputs[p]}
+                    onChange={(e) =>
+                      setInputs((prev) => ({ ...prev, [p]: e.target.value }))
+                    }
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter") {
+                        if (i < PERSONS.length - 1) {
+                          e.preventDefault();
+                          inputRefs.current[i + 1]?.focus();
+                        }
+                        // Last field: let form submit naturally
+                      }
+                    }}
+                    disabled={!!result}
+                    className={`min-w-0 flex-1 rounded-lg border px-3 py-2.5 text-base ${
+                      isRight
+                        ? "border-green-500 bg-green-50"
+                        : isWrong
+                          ? "border-red-500 bg-red-50"
+                          : "border-gray-300"
+                    }`}
+                    placeholder={`${p} ...`}
+                    autoComplete="off"
+                    autoCapitalize="off"
+                  />
+                  {isWrong && (
+                    <span className="shrink-0 text-sm font-medium text-red-600">
+                      {current.conjugation[p]}
+                    </span>
+                  )}
+                  {isRight && (
+                    <span className="shrink-0 text-sm text-green-600">
+                      &#10003;
+                    </span>
+                  )}
+                </div>
+              );
+            })}
 
-          {!result && (
-            <div className="pt-3">
-              <button
-                type="submit"
-                className="w-full rounded-xl bg-blue-600 py-3 text-lg font-medium text-white active:bg-blue-700 sm:w-auto sm:px-8"
-              >
-                Check
-              </button>
-            </div>
-          )}
-        </form>
+            {!result && (
+              <div className="pt-3">
+                <button
+                  type="submit"
+                  className="w-full rounded-xl bg-blue-600 py-3 text-lg font-medium text-white active:bg-blue-700 sm:w-auto sm:px-8"
+                >
+                  Check
+                </button>
+              </div>
+            )}
+          </form>
+        </div>
 
         {result && (
           <div className="mt-4 text-center">

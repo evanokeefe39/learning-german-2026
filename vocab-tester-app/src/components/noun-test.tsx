@@ -6,6 +6,10 @@ import { ChapterFilter } from "./chapter-filter";
 import { CategoryFilter } from "./category-filter";
 import { DifficultyFilter } from "./difficulty-filter";
 import { ScoreDisplay } from "./score-display";
+import { FilterBar } from "./filter-bar";
+import { FinishedScreen, MistakesFinishedScreen } from "./finished-screen";
+import { EmptyState } from "./empty-state";
+import { PracticeBanner } from "./practice-banner";
 import {
   addWrongWord,
   removeWrongWord,
@@ -36,6 +40,7 @@ export function NounTest() {
   const [finished, setFinished] = useState(false);
   const [wrongCount, setWrongCount] = useState(0);
   const [masteredCount, setMasteredCount] = useState(0);
+  const [animKey, setAnimKey] = useState(0);
 
   useEffect(() => {
     setWrongCount(getWrongWordCount("nouns"));
@@ -124,6 +129,7 @@ export function NounTest() {
     if (selected) return;
     setSelected(article);
     setAnswered((a) => a + 1);
+    setAnimKey((k) => k + 1);
     if (article === current.article) {
       setCorrect((c) => c + 1);
       removeWrongWord("nouns", current.german);
@@ -155,33 +161,27 @@ export function NounTest() {
 
   const configKey = buildConfigKey("nouns", chapter, category, difficulty);
 
-  if (items.length === 0) {
-    return (
-      <div className="space-y-4">
-        <div className="flex flex-wrap items-center gap-3">
+  const filterBar = (
+    <FilterBar
+      dropdowns={
+        <>
           <ChapterFilter value={chapter} onChange={(ch) => restart(ch, category, difficulty)} />
           <CategoryFilter value={category} chapter={chapter} onChange={(cat) => restart(chapter, cat, difficulty)} />
           <DifficultyFilter value={difficulty} onChange={(d) => restart(chapter, category, d)} />
-          <label className="flex items-center gap-2 text-sm">
-            <input
-              type="checkbox"
-              checked={mistakesOnly}
-              onChange={(e) => restart(chapter, category, difficulty, e.target.checked)}
-              className="h-4 w-4"
-            />
-            Practice mistakes{wrongCount > 0 ? ` (${wrongCount})` : ""}
-          </label>
-          <label className="flex items-center gap-2 text-sm">
-            <input
-              type="checkbox"
-              checked={excludeMastered}
-              onChange={(e) => restart(chapter, category, difficulty, mistakesOnly, e.target.checked)}
-              className="h-4 w-4"
-            />
-            Exclude mastered{masteredCount > 0 ? ` (${masteredCount})` : ""}
-          </label>
-        </div>
-        <p>{mistakesOnly ? "No mistakes to practice!" : "No nouns found for this filter."}</p>
+        </>
+      }
+      toggles={[
+        { key: "mistakes", label: "Practice mistakes", count: wrongCount, checked: mistakesOnly, onChange: (v) => restart(chapter, category, difficulty, v), variant: "warning" },
+        { key: "mastered", label: "Exclude known words", count: masteredCount, checked: excludeMastered, onChange: (v) => restart(chapter, category, difficulty, mistakesOnly, v) },
+      ]}
+    />
+  );
+
+  if (items.length === 0) {
+    return (
+      <div className="space-y-4">
+        {filterBar}
+        <EmptyState mistakesOnly={mistakesOnly} modeLabel="nouns" />
       </div>
     );
   }
@@ -190,26 +190,7 @@ export function NounTest() {
     const pct = Math.round((correct / answered) * 100);
 
     if (mistakesOnly) {
-      return (
-        <div className="space-y-6 text-center">
-          <h2 className="text-2xl font-bold text-green-600">All Done</h2>
-          <p className="text-lg text-gray-600">No more mistakes to practice!</p>
-          <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
-            <button
-              onClick={() => restart(chapter, category, difficulty, false)}
-              className="w-full rounded-xl bg-blue-600 py-3 text-lg font-medium text-white active:bg-blue-700 sm:w-auto sm:px-8"
-            >
-              Back to Test
-            </button>
-            <a
-              href="/"
-              className="w-full rounded-xl border-2 border-blue-600 py-3 text-lg font-medium text-blue-600 active:bg-blue-50 sm:w-auto sm:px-8"
-            >
-              Home
-            </a>
-          </div>
-        </div>
-      );
+      return <MistakesFinishedScreen onBackToTest={() => restart(chapter, category, difficulty, false)} />;
     }
 
     saveHighScore(configKey, pct);
@@ -227,25 +208,14 @@ export function NounTest() {
     const isNewBest = best === pct;
 
     return (
-      <div className="space-y-6 text-center">
-        <h2 className="text-2xl font-bold">Test Complete</h2>
-        <p className="text-5xl font-bold">
-          {correct}/{answered}
-        </p>
-        <p className="text-gray-600">{pct}% correct</p>
-        {isNewBest && pct > 0 && (
-          <p className="text-lg font-semibold text-amber-500">New high score!</p>
-        )}
-        {best !== null && !isNewBest && (
-          <p className="text-sm text-gray-500">Best: {best}%</p>
-        )}
-        <button
-          onClick={() => restart(chapter, category, difficulty)}
-          className="w-full rounded-xl bg-blue-600 py-3 text-lg font-medium text-white active:bg-blue-700 sm:w-auto sm:px-8"
-        >
-          Try Again
-        </button>
-      </div>
+      <FinishedScreen
+        correct={correct}
+        answered={answered}
+        percentage={pct}
+        isNewBest={isNewBest && pct > 0}
+        bestScore={(!isNewBest && best) || null}
+        onTryAgain={() => restart(chapter, category, difficulty)}
+      />
     );
   }
 
@@ -253,38 +223,29 @@ export function NounTest() {
 
   return (
     <div className="space-y-4 sm:space-y-6">
-      <div className="flex flex-wrap items-center gap-3">
-        <ChapterFilter value={chapter} onChange={(ch) => restart(ch, category, difficulty)} />
-        <CategoryFilter value={category} chapter={chapter} onChange={(cat) => restart(chapter, cat, difficulty)} />
-        <DifficultyFilter value={difficulty} onChange={(d) => restart(chapter, category, d)} />
-        <label className="flex items-center gap-2 text-sm">
-          <input
-            type="checkbox"
-            checked={mistakesOnly}
-            onChange={(e) => restart(chapter, category, difficulty, e.target.checked)}
-            className="h-4 w-4"
-          />
-          Practice mistakes{wrongCount > 0 ? ` (${wrongCount})` : ""}
-        </label>
-        <label className="flex items-center gap-2 text-sm">
-          <input
-            type="checkbox"
-            checked={excludeMastered}
-            onChange={(e) => restart(chapter, category, difficulty, mistakesOnly, e.target.checked)}
-            className="h-4 w-4"
-          />
-          Exclude mastered{masteredCount > 0 ? ` (${masteredCount})` : ""}
-        </label>
-      </div>
+      {filterBar}
+
+      {mistakesOnly && (
+        <PracticeBanner
+          count={items.length}
+          onExit={() => restart(chapter, category, difficulty, false)}
+        />
+      )}
 
       <ScoreDisplay
         correct={correct}
         total={answered}
         current={index + 1}
         count={items.length}
+        practiceMode={mistakesOnly}
       />
 
-      <div className="rounded-xl border bg-white p-5 text-center shadow-sm sm:p-8">
+      <div
+        key={animKey}
+        className={`rounded-xl border bg-white p-5 text-center shadow-sm sm:p-8${
+          selected ? (isCorrect ? " animate-pop" : " animate-shake") : ""
+        }`}
+      >
         <p className="text-xs font-medium uppercase tracking-wide text-gray-400">
           {current.category}
         </p>

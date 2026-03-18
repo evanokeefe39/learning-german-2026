@@ -1,0 +1,3307 @@
+{
+  "matches": [
+    {
+      "german": "Name",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Vorname",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Nachname",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Familienname",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Wohnort",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Geburtsort",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Beruf",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kurs",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kursteilnehmer",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kursteilnehmerin",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Morgen",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Tag",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Abend",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Nacht",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Herr",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Frau",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Telefonnummer",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Handynummer",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "E-Mail-Adresse",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Adresse",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Postleitzahl",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Nummer",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Land",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Deutsch",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Englisch",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Französisch",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Spanisch",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Italienisch",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Russisch",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Türkisch",
+      "article": "das",
+      "source": "duden-search"
+    },
+    {
+      "german": "Polnisch",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Arabisch",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Chinesisch",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Portugiesisch",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Schwedisch",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Sprache",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Fußball",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Volleyball",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Tennis",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Hobby",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Musik",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Alphabet",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Buchstabe",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Wort",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Satz",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Frage",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Antwort",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Dialog",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Beispiel",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Aufgabe",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Bild",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Tabelle",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Formular",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Visitenkarte",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Steckbrief",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Vater",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Bruder",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Sohn",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Großvater",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Onkel",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Mann",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Mutter",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Schwester",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Tochter",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Großmutter",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Tante",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Familie",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kind",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Baby",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Ingenieur",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Architekt",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Informatiker",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Manager",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Student",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Arzt",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Lehrer",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Ingenieurin",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Architektin",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Informatikerin",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Studentin",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Ärztin",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Lehrerin",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Künstlerin",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Firma",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Computer",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Drucker",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kalender",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kugelschreiber",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Bildschirm",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Stuhl",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Schreibtisch",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Tisch",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Schlüssel",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Briefumschlag",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Maus",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Tastatur",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Lampe",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Brille",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Tasche",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Schere",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Handy",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Telefon",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Büro",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Buch",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Wörterbuch",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Notizbuch",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Papier",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Familienstand",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "E-Mail",
+      "article": "die",
+      "source": "duden-search"
+    },
+    {
+      "german": "Muttersprache",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Sport",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Deutschland",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Österreich",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Spanien",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Frankreich",
+      "article": "das",
+      "source": "duden-direct"
+    },
+    {
+      "german": "England",
+      "article": "das",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Russland",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "China",
+      "article": "das",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Türkei",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Schweiz",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Slowakei",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Stadt",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Marktplatz",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Park",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Fluss",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Turm",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Römer",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Altstadt",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Zeil",
+      "article": "die",
+      "source": "duden-search"
+    },
+    {
+      "german": "Kaffee",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Tee",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Saft",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Orangensaft",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Apfelsaft",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kuchen",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Schokoladenkuchen",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Käsekuchen",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Zucker",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Braten",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Salat",
+      "article": "der",
+      "source": "duden-search"
+    },
+    {
+      "german": "Toast",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Schinken",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Käse",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Nachtisch",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Wein",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Reis",
+      "article": "der",
+      "source": "duden-search"
+    },
+    {
+      "german": "Fisch",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kellner",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Milch",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Marmelade",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Suppe",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Tomatensuppe",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Soße",
+      "article": "die",
+      "source": "duden-search"
+    },
+    {
+      "german": "Kartoffel",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Speisekarte",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Vorspeise",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Hauptspeise",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Rechnung",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kellnerin",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Beilage",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Brötchen",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Käsebrötchen",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Brot",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Ei",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Frühstück",
+      "article": "das",
+      "source": "duden-search"
+    },
+    {
+      "german": "Mittagessen",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Abendessen",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Mineralwasser",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Wasser",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Gericht",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Hähnchen",
+      "article": "das",
+      "source": "duden-search"
+    },
+    {
+      "german": "Gemüse",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Fleisch",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Obst",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Restaurant",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Café",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Trinkgeld",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Stück",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Glas",
+      "article": "das",
+      "source": "duden-search"
+    },
+    {
+      "german": "Supermarkt",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Laden",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Bäcker",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Metzger",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kiosk",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Apotheke",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Drogerie",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Buchhandlung",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Bäckerei",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Metzgerei",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Reinigung",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Bank",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Lebensmittel",
+      "article": "das",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Kaufhaus",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Geschäft",
+      "article": "das",
+      "source": "duden-search"
+    },
+    {
+      "german": "Einkaufszentrum",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Museumsbesuch",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Palmengarten",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Zoo",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Eintritt",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Lieblingsort",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Oper",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Messe",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Sehenswürdigkeit",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kirche",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Bibliothek",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Museum",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Theater",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kino",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Konzert",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Schwimmbad",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Schloss",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Artikel",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Akkusativ",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Preis",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Euro",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Cent",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Mensch",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Einwohner",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Zeitung",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Information",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Wohnung",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kreditkarte",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Uhr",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Flasche",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Tasse",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Fahrrad",
+      "article": "das",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Auto",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Geld",
+      "article": "das",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Zimmer",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Vormittag",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Mittag",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Nachmittag",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Uhrzeit",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Stunde",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Minute",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Viertel",
+      "article": "das",
+      "source": "duden-search"
+    },
+    {
+      "german": "Zeit",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Zeitpunkt",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Dauer",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Pause",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Montag",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Dienstag",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Mittwoch",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Donnerstag",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Freitag",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Samstag",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Sonntag",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Wochentag",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Wochenende",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Januar",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Februar",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "März",
+      "article": "der",
+      "source": "duden-search"
+    },
+    {
+      "german": "April",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Mai",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Juni",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Juli",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "August",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "September",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Oktober",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "November",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Dezember",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Monat",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Jahr",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Woche",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Unterricht",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Deutschkurs",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Bericht",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Kollege",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kollegin",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Projekt",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Tagesablauf",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Termin",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Markt",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Bett",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Geburtstag",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Einladung",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Geburtstagsparty",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Fest",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Telefongespräch",
+      "article": "das",
+      "source": "duden-search"
+    },
+    {
+      "german": "Freizeit",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Schwimmen",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Film",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Fernsehen",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Freund",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Freundin",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Sprudel",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Quark",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Apfel",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Tomatensaft",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Hunger",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Durst",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Löffel",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Teller",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Topf",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Herd",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kühlschrank",
+      "article": "der",
+      "source": "duden-search"
+    },
+    {
+      "german": "Einkauf",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Liter",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Sahne",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Nachspeise",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Bedienung",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Tomate",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Gurke",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Zwiebel",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Banane",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Birne",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Ananas",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Orange",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Wurst",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Currywurst",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Nudel",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Torte",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Schokolade",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Süßigkeit",
+      "article": "die",
+      "source": "duden-search"
+    },
+    {
+      "german": "Küche",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Pfanne",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Gabel",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Dose",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Packung",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Scheibe",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Konditorei",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Mozartkugel",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Salami",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Bier",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Getränk",
+      "article": "das",
+      "source": "duden-search"
+    },
+    {
+      "german": "Mehl",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Salz",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Öl",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Rindfleisch",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Schweinefleisch",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Hauptgericht",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Messer",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Gramm",
+      "article": "das",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Kilogramm",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Pfund",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Rezept",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Gummibärchen",
+      "article": "das",
+      "source": "duden-search"
+    },
+    {
+      "german": "Getreideprodukt",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Milchprodukt",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Schnitzel",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Haushalt",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Abwasch",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Müll",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Boden",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Staub",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Staubsauger",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Geschirrspüler",
+      "article": "der",
+      "source": "duden-search"
+    },
+    {
+      "german": "Wäsche",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Spülmaschine",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Geschirr",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Fenster",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Bad",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Nachbar",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Nachbarin",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Party",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Kindergarten",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Studienplatz",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Studiengang",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Stundenplan",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Dozent",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Professor",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Universität",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Uni",
+      "article": "die",
+      "source": "duden-search"
+    },
+    {
+      "german": "Hochschule",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Vorlesung",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Mensa",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Prüfung",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Karriere",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Studium",
+      "article": "das",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Semester",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Seminar",
+      "article": "das",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Stipendium",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Fach",
+      "article": "das",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Informatik",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Medienwissenschaft",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Religionswissenschaft",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Mathematik",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Medizin",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Architektur",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Zug",
+      "article": "der",
+      "source": "duden-search"
+    },
+    {
+      "german": "Bus",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Bahn",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "S-Bahn",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Straßenbahn",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "U-Bahn",
+      "article": "die",
+      "source": "duden-search"
+    },
+    {
+      "german": "Schnellbahn",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Fähre",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Motorrad",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Flugzeug",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Taxi",
+      "article": "das",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Boot",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Schiff",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Bahnhof",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Parkplatz",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Flughafen",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Sitzplatz",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Fahrplan",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Flugsteig",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Tankstelle",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Straße",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Autobahn",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Ampel",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Ankunftshalle",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Passkontrolle",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Gleis",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Verkehrsschild",
+      "article": "das",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Haltesignal",
+      "article": "das",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Fahrkartenautomat",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Check-in-Schalter",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Passagier",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Fahrgast",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Autofahrer",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Großraumwagen",
+      "article": "der",
+      "source": "duden-search"
+    },
+    {
+      "german": "Abflug",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Stau",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Fahrkarte",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Abfahrt",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Ankunft",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Fahrt",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Verspätung",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Hin- und Rückfahrt",
+      "article": "die",
+      "source": "duden-search"
+    },
+    {
+      "german": "Flugticket",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Sicherheitspersonal",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Verkehr",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Urlaub",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Weg",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Berg",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Meter",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Plan",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Winterurlaub",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Chef",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Hafen",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Motorroller",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Intercity",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Großstadt",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Urlaubsreise",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Aussage",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Durchsage",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Richtung",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Fahrbahn",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Jahreszeit",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Insel",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Reise",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Postkarte",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Brücke",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Höhe",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Massage",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Absicht",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Pferdekutsche",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Fitness",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Masterarbeit",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Verkehrsmittel",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Gegenteil",
+      "article": "das",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Reiseziel",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Hotel",
+      "article": "das",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Wellnesshotel",
+      "article": "das",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Freizeitangebot",
+      "article": "das",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Elektrofahrzeug",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Rätsel",
+      "article": "das",
+      "source": "duden-search"
+    },
+    {
+      "german": "Lösungswort",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Modalverb",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Winter",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Frühling",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Sommer",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Herbst",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Wind",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Nebel",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Regen",
+      "article": "der",
+      "source": "duden-search"
+    },
+    {
+      "german": "Schnee",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kälte",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Wärme",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Hitze",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Sonne",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Wetter",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Geldbeutel",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Regenschirm",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Ausweis",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Führerschein",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kamm",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Lippenstift",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Spiegel",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "USB-Stick",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kopfhörer",
+      "article": "der",
+      "source": "duden-search"
+    },
+    {
+      "german": "Ring",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Handtasche",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Sonnenbrille",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kamera",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Briefmarke",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Münze",
+      "article": "die",
+      "source": "duden-search"
+    },
+    {
+      "german": "Zahnbürste",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Feuerzeug",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Portemonnaie",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Taschentuch",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Parfüm",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Mantel",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Pullover",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Rock",
+      "article": "der",
+      "source": "duden-search"
+    },
+    {
+      "german": "Schuh",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Stiefel",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Hut",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Schal",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Gürtel",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Handschuh",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Anzug",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Bikini",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Hose",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Jeans",
+      "article": "die",
+      "source": "duden-search"
+    },
+    {
+      "german": "Jacke",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Bluse",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Krawatte",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Mütze",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Socke",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kleid",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Hemd",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "T-Shirt",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Top",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Sweatshirt",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kunde",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Verkäufer",
+      "article": "der",
+      "source": "duden-search"
+    },
+    {
+      "german": "Kundin",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Verkäuferin",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Größe",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Farbe",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kasse",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Sonderangebot",
+      "article": "das",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Gegenstand",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Teppich",
+      "article": "der",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Flohmarkt",
+      "article": "der",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Mode",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Kleidung",
+      "article": "die",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Beschreibung",
+      "article": "die",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Filmpremiere",
+      "article": "die",
+      "source": "wiktionary-api"
+    }
+  ],
+  "mismatches": [
+    {
+      "german": "Foto",
+      "ourArticle": "das",
+      "dudenArticle": "der",
+      "dudenGender": "Maskulinum",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Geschwister",
+      "ourArticle": "die",
+      "dudenArticle": "das",
+      "dudenGender": "Neutrum",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Alter",
+      "ourArticle": "das",
+      "dudenArticle": "der",
+      "dudenGender": "Maskulinum",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Italien",
+      "ourArticle": "das",
+      "dudenArticle": "der",
+      "dudenGender": "Maskulinum",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Dom",
+      "ourArticle": "der",
+      "dudenArticle": "die",
+      "dudenGender": "feminin",
+      "source": "duden-search"
+    },
+    {
+      "german": "Butter",
+      "ourArticle": "die",
+      "dudenArticle": "das",
+      "dudenGender": "Neutrum",
+      "source": "wiktionary-api"
+    },
+    {
+      "german": "Post",
+      "ourArticle": "die",
+      "dudenArticle": "der",
+      "dudenGender": "maskulin",
+      "source": "duden-direct"
+    },
+    {
+      "german": "Joghurt",
+      "ourArticle": "der",
+      "dudenArticle": "das",
+      "dudenGender": "Neutrum",
+      "source": "wiktionary-api"
+    }
+  ],
+  "notFound": [
+    {
+      "german": "Eltern",
+      "ourArticle": "die"
+    },
+    {
+      "german": "Ernährungspyramide",
+      "ourArticle": "die"
+    },
+    {
+      "german": "Informationsschalter",
+      "ourArticle": "der"
+    },
+    {
+      "german": "Bahnticket",
+      "ourArticle": "das"
+    },
+    {
+      "german": "Golfkurs",
+      "ourArticle": "der"
+    },
+    {
+      "german": "Bergblick",
+      "ourArticle": "der"
+    },
+    {
+      "german": "Posthotel",
+      "ourArticle": "das"
+    },
+    {
+      "german": "Shorts",
+      "ourArticle": "die"
+    }
+  ],
+  "completedWords": [
+    "Name",
+    "Vorname",
+    "Nachname",
+    "Familienname",
+    "Wohnort",
+    "Geburtsort",
+    "Beruf",
+    "Kurs",
+    "Kursteilnehmer",
+    "Kursteilnehmerin",
+    "Morgen",
+    "Tag",
+    "Abend",
+    "Nacht",
+    "Herr",
+    "Frau",
+    "Telefonnummer",
+    "Handynummer",
+    "E-Mail-Adresse",
+    "Adresse",
+    "Postleitzahl",
+    "Nummer",
+    "Land",
+    "Deutsch",
+    "Englisch",
+    "Französisch",
+    "Spanisch",
+    "Italienisch",
+    "Russisch",
+    "Türkisch",
+    "Polnisch",
+    "Arabisch",
+    "Chinesisch",
+    "Portugiesisch",
+    "Schwedisch",
+    "Sprache",
+    "Fußball",
+    "Volleyball",
+    "Tennis",
+    "Hobby",
+    "Musik",
+    "Alphabet",
+    "Buchstabe",
+    "Wort",
+    "Satz",
+    "Frage",
+    "Antwort",
+    "Dialog",
+    "Beispiel",
+    "Aufgabe",
+    "Foto",
+    "Bild",
+    "Tabelle",
+    "Formular",
+    "Visitenkarte",
+    "Steckbrief",
+    "Vater",
+    "Bruder",
+    "Sohn",
+    "Großvater",
+    "Onkel",
+    "Mann",
+    "Mutter",
+    "Schwester",
+    "Tochter",
+    "Großmutter",
+    "Tante",
+    "Familie",
+    "Eltern",
+    "Geschwister",
+    "Kind",
+    "Baby",
+    "Ingenieur",
+    "Architekt",
+    "Informatiker",
+    "Manager",
+    "Student",
+    "Arzt",
+    "Lehrer",
+    "Ingenieurin",
+    "Architektin",
+    "Informatikerin",
+    "Studentin",
+    "Ärztin",
+    "Lehrerin",
+    "Künstlerin",
+    "Firma",
+    "Computer",
+    "Drucker",
+    "Kalender",
+    "Kugelschreiber",
+    "Bildschirm",
+    "Stuhl",
+    "Schreibtisch",
+    "Tisch",
+    "Schlüssel",
+    "Briefumschlag",
+    "Maus",
+    "Tastatur",
+    "Lampe",
+    "Brille",
+    "Tasche",
+    "Schere",
+    "Handy",
+    "Telefon",
+    "Büro",
+    "Buch",
+    "Wörterbuch",
+    "Notizbuch",
+    "Papier",
+    "Familienstand",
+    "E-Mail",
+    "Muttersprache",
+    "Alter",
+    "Sport",
+    "Deutschland",
+    "Österreich",
+    "Spanien",
+    "Frankreich",
+    "Italien",
+    "England",
+    "Russland",
+    "China",
+    "Türkei",
+    "Schweiz",
+    "Slowakei",
+    "Stadt",
+    "Marktplatz",
+    "Dom",
+    "Park",
+    "Fluss",
+    "Turm",
+    "Römer",
+    "Altstadt",
+    "Zeil",
+    "Kaffee",
+    "Tee",
+    "Saft",
+    "Orangensaft",
+    "Apfelsaft",
+    "Kuchen",
+    "Schokoladenkuchen",
+    "Käsekuchen",
+    "Zucker",
+    "Braten",
+    "Salat",
+    "Toast",
+    "Schinken",
+    "Käse",
+    "Nachtisch",
+    "Wein",
+    "Reis",
+    "Fisch",
+    "Kellner",
+    "Milch",
+    "Butter",
+    "Marmelade",
+    "Suppe",
+    "Tomatensuppe",
+    "Soße",
+    "Kartoffel",
+    "Speisekarte",
+    "Vorspeise",
+    "Hauptspeise",
+    "Rechnung",
+    "Kellnerin",
+    "Beilage",
+    "Brötchen",
+    "Käsebrötchen",
+    "Brot",
+    "Ei",
+    "Frühstück",
+    "Mittagessen",
+    "Abendessen",
+    "Mineralwasser",
+    "Wasser",
+    "Gericht",
+    "Hähnchen",
+    "Gemüse",
+    "Fleisch",
+    "Obst",
+    "Restaurant",
+    "Café",
+    "Trinkgeld",
+    "Stück",
+    "Glas",
+    "Supermarkt",
+    "Laden",
+    "Bäcker",
+    "Metzger",
+    "Kiosk",
+    "Apotheke",
+    "Drogerie",
+    "Buchhandlung",
+    "Bäckerei",
+    "Metzgerei",
+    "Reinigung",
+    "Post",
+    "Bank",
+    "Lebensmittel",
+    "Kaufhaus",
+    "Geschäft",
+    "Einkaufszentrum",
+    "Museumsbesuch",
+    "Palmengarten",
+    "Zoo",
+    "Eintritt",
+    "Lieblingsort",
+    "Oper",
+    "Messe",
+    "Sehenswürdigkeit",
+    "Kirche",
+    "Bibliothek",
+    "Museum",
+    "Theater",
+    "Kino",
+    "Konzert",
+    "Schwimmbad",
+    "Schloss",
+    "Artikel",
+    "Akkusativ",
+    "Preis",
+    "Euro",
+    "Cent",
+    "Mensch",
+    "Einwohner",
+    "Zeitung",
+    "Information",
+    "Wohnung",
+    "Kreditkarte",
+    "Uhr",
+    "Flasche",
+    "Tasse",
+    "Fahrrad",
+    "Auto",
+    "Geld",
+    "Zimmer",
+    "Vormittag",
+    "Mittag",
+    "Nachmittag",
+    "Uhrzeit",
+    "Stunde",
+    "Minute",
+    "Viertel",
+    "Zeit",
+    "Zeitpunkt",
+    "Dauer",
+    "Pause",
+    "Montag",
+    "Dienstag",
+    "Mittwoch",
+    "Donnerstag",
+    "Freitag",
+    "Samstag",
+    "Sonntag",
+    "Wochentag",
+    "Wochenende",
+    "Januar",
+    "Februar",
+    "März",
+    "April",
+    "Mai",
+    "Juni",
+    "Juli",
+    "August",
+    "September",
+    "Oktober",
+    "November",
+    "Dezember",
+    "Monat",
+    "Jahr",
+    "Woche",
+    "Unterricht",
+    "Deutschkurs",
+    "Bericht",
+    "Kollege",
+    "Kollegin",
+    "Projekt",
+    "Tagesablauf",
+    "Termin",
+    "Markt",
+    "Bett",
+    "Geburtstag",
+    "Einladung",
+    "Geburtstagsparty",
+    "Fest",
+    "Telefongespräch",
+    "Freizeit",
+    "Schwimmen",
+    "Film",
+    "Fernsehen",
+    "Freund",
+    "Freundin",
+    "Sprudel",
+    "Joghurt",
+    "Quark",
+    "Apfel",
+    "Tomatensaft",
+    "Hunger",
+    "Durst",
+    "Löffel",
+    "Teller",
+    "Topf",
+    "Herd",
+    "Kühlschrank",
+    "Einkauf",
+    "Liter",
+    "Sahne",
+    "Nachspeise",
+    "Bedienung",
+    "Tomate",
+    "Gurke",
+    "Zwiebel",
+    "Banane",
+    "Birne",
+    "Ananas",
+    "Orange",
+    "Wurst",
+    "Currywurst",
+    "Nudel",
+    "Torte",
+    "Schokolade",
+    "Süßigkeit",
+    "Ernährungspyramide",
+    "Küche",
+    "Pfanne",
+    "Gabel",
+    "Dose",
+    "Packung",
+    "Scheibe",
+    "Konditorei",
+    "Mozartkugel",
+    "Salami",
+    "Bier",
+    "Getränk",
+    "Mehl",
+    "Salz",
+    "Öl",
+    "Rindfleisch",
+    "Schweinefleisch",
+    "Hauptgericht",
+    "Messer",
+    "Gramm",
+    "Kilogramm",
+    "Pfund",
+    "Rezept",
+    "Gummibärchen",
+    "Getreideprodukt",
+    "Milchprodukt",
+    "Schnitzel",
+    "Haushalt",
+    "Abwasch",
+    "Müll",
+    "Boden",
+    "Staub",
+    "Staubsauger",
+    "Geschirrspüler",
+    "Wäsche",
+    "Spülmaschine",
+    "Geschirr",
+    "Fenster",
+    "Bad",
+    "Nachbar",
+    "Nachbarin",
+    "Party",
+    "Kindergarten",
+    "Studienplatz",
+    "Studiengang",
+    "Stundenplan",
+    "Dozent",
+    "Professor",
+    "Universität",
+    "Uni",
+    "Hochschule",
+    "Vorlesung",
+    "Mensa",
+    "Prüfung",
+    "Karriere",
+    "Studium",
+    "Semester",
+    "Seminar",
+    "Stipendium",
+    "Fach",
+    "Informatik",
+    "Medienwissenschaft",
+    "Religionswissenschaft",
+    "Mathematik",
+    "Medizin",
+    "Architektur",
+    "Zug",
+    "Bus",
+    "Bahn",
+    "S-Bahn",
+    "Straßenbahn",
+    "U-Bahn",
+    "Schnellbahn",
+    "Fähre",
+    "Motorrad",
+    "Flugzeug",
+    "Taxi",
+    "Boot",
+    "Schiff",
+    "Bahnhof",
+    "Parkplatz",
+    "Flughafen",
+    "Sitzplatz",
+    "Fahrplan",
+    "Flugsteig",
+    "Tankstelle",
+    "Straße",
+    "Autobahn",
+    "Ampel",
+    "Ankunftshalle",
+    "Passkontrolle",
+    "Gleis",
+    "Verkehrsschild",
+    "Haltesignal",
+    "Fahrkartenautomat",
+    "Informationsschalter",
+    "Check-in-Schalter",
+    "Passagier",
+    "Fahrgast",
+    "Autofahrer",
+    "Großraumwagen",
+    "Abflug",
+    "Stau",
+    "Fahrkarte",
+    "Abfahrt",
+    "Ankunft",
+    "Fahrt",
+    "Verspätung",
+    "Hin- und Rückfahrt",
+    "Bahnticket",
+    "Flugticket",
+    "Sicherheitspersonal",
+    "Verkehr",
+    "Urlaub",
+    "Weg",
+    "Berg",
+    "Meter",
+    "Plan",
+    "Winterurlaub",
+    "Chef",
+    "Hafen",
+    "Golfkurs",
+    "Bergblick",
+    "Motorroller",
+    "Intercity",
+    "Großstadt",
+    "Urlaubsreise",
+    "Aussage",
+    "Durchsage",
+    "Richtung",
+    "Fahrbahn",
+    "Jahreszeit",
+    "Insel",
+    "Reise",
+    "Postkarte",
+    "Brücke",
+    "Höhe",
+    "Massage",
+    "Absicht",
+    "Pferdekutsche",
+    "Fitness",
+    "Masterarbeit",
+    "Verkehrsmittel",
+    "Gegenteil",
+    "Reiseziel",
+    "Hotel",
+    "Wellnesshotel",
+    "Freizeitangebot",
+    "Elektrofahrzeug",
+    "Rätsel",
+    "Lösungswort",
+    "Posthotel",
+    "Modalverb",
+    "Winter",
+    "Frühling",
+    "Sommer",
+    "Herbst",
+    "Wind",
+    "Nebel",
+    "Regen",
+    "Schnee",
+    "Kälte",
+    "Wärme",
+    "Hitze",
+    "Sonne",
+    "Wetter",
+    "Geldbeutel",
+    "Regenschirm",
+    "Ausweis",
+    "Führerschein",
+    "Kamm",
+    "Lippenstift",
+    "Spiegel",
+    "USB-Stick",
+    "Kopfhörer",
+    "Ring",
+    "Handtasche",
+    "Sonnenbrille",
+    "Kamera",
+    "Briefmarke",
+    "Münze",
+    "Zahnbürste",
+    "Feuerzeug",
+    "Portemonnaie",
+    "Taschentuch",
+    "Parfüm",
+    "Mantel",
+    "Pullover",
+    "Rock",
+    "Schuh",
+    "Stiefel",
+    "Hut",
+    "Schal",
+    "Gürtel",
+    "Handschuh",
+    "Anzug",
+    "Bikini",
+    "Hose",
+    "Jeans",
+    "Jacke",
+    "Bluse",
+    "Krawatte",
+    "Mütze",
+    "Socke",
+    "Shorts",
+    "Kleid",
+    "Hemd",
+    "T-Shirt",
+    "Top",
+    "Sweatshirt",
+    "Kunde",
+    "Verkäufer",
+    "Kundin",
+    "Verkäuferin",
+    "Größe",
+    "Farbe",
+    "Kasse",
+    "Sonderangebot",
+    "Gegenstand",
+    "Teppich",
+    "Flohmarkt",
+    "Mode",
+    "Kleidung",
+    "Beschreibung",
+    "Filmpremiere"
+  ],
+  "timestamp": "2026-03-13T13:07:51.648Z"
+}
